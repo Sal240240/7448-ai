@@ -5,12 +5,12 @@ functional composition), without running mass spectrometry. Full technical
 rationale, prior-art positioning, and phased roadmap are in the project spec
 (not checked into this repo — see your own copy).
 
-This repo currently covers **Phase 0: data acquisition and standardization**.
+This repo covers **Phase 0 (data)** and an initial **Phase 1 (baseline models)**.
 
 **Current dataset:** 2,900 paired samples, 1,759 unique subjects, across all
-14 Borenstein-collection cohorts. 12,263 genus-level taxonomic features;
-1,384 unique HMDB-annotated metabolite targets. Patient-level 70/15/15
-train/val/test split already computed.
+14 Borenstein-collection cohorts. 12,263 genus-level taxonomic features (5,038
+after a low-prevalence filter); 1,384 unique HMDB-annotated metabolite
+targets. Patient-level 70/15/15 train/val/test split already computed.
 
 ## Status
 
@@ -20,9 +20,43 @@ train/val/test split already computed.
 | Standardize taxonomy (arcsine-sqrt transform, cross-cohort column union) | Done — `scripts/standardize_taxonomy.py` |
 | Map metabolites to HMDB IDs, log-transform | Done — `scripts/standardize_metabolites.py` |
 | Join into modeling-ready tables + subject/cohort manifest | Done — `scripts/build_dataset.py` |
+| Patient-level train/val/test split | Done — `scripts/make_splits.py` |
+| Elastic net baseline (spec section 5.1 comparison point) | Done — `scripts/train_elastic_net.py` |
+| MLP baseline (spec section 5.1) | Done — `scripts/train_mlp.py` — **does not yet beat the elastic net**, see below |
 | Functional (gene/pathway) profiling via HUMAnN3 | **Not done** — see below |
 | HMP2 / PRISM / PROTECT as separate sources | **Not needed** — already included in the Borenstein collection (`iHMP_IBDMDB_2019`, `FRANZOSA_IBD_2019`) |
 | Paired Omics Data Platform (PoDP) expansion | Deferred to Phase 3 per spec |
+
+## Phase 1 results: elastic net vs. MLP
+
+Trained and evaluated on the same patient-level splits, taxonomy-only
+features (no HUMAnN3 functional features yet — see below), 1,098 metabolites
+with enough measured samples to fit reliably (`scripts/compare_baselines.py`):
+
+| Metric | Elastic net | MLP |
+|---|---:|---:|
+| Median test Pearson r | **0.458** | 0.375 |
+| Mean test Pearson r | 0.485 | 0.460 |
+| Median test MAE | 1.073 | **0.975** |
+| Targets where it wins | 367/1098 (33%) | 545/1098 (50%) |
+
+**Reading this straight, per the spec's own rule** ("if you don't beat the
+2019 linear baseline, the deep model isn't earning its complexity yet"): **the
+MLP has not cleared that bar.** It wins on the plurality of individual
+metabolites and has a competitive mean, but the elastic net's *median*
+performance — the more representative number given the spread — is still
+ahead, and it trains in a fraction of the time.
+
+This isn't a bug to fix so much as the exact risk the spec calls out in
+section 9: *"public paired cohorts are small relative to the feature
+dimensionality — overfitting risk is real."* ~2,000 training samples against
+5,038 input features and 1,384 joint outputs is a hard regime for a 24M-parameter
+network; the elastic net's per-target regularization is a better fit for this
+data volume specifically. The architecture upgrades in spec section 5.2
+(encoder-decoder bottleneck, multi-task learning) exist partly to address
+this by sharing statistical strength across metabolites more efficiently than
+a plain wide MLP — worth trying before concluding deep learning doesn't help
+here. Full per-target numbers: `experiments/baseline_comparison.csv`.
 
 ## Why HUMAnN3 functional profiling isn't wired up yet
 
@@ -99,11 +133,24 @@ All indexed by `(cohort, sample_id)`.
   splitting by `sample_id` leaks patient identity across the split
   wherever a subject contributed multiple samples.
 
-## Next steps (Phase 1)
+## Next steps
 
-1. Patient-level train/val/test split script keyed on `manifest.subject_id`.
-2. MelonnPan-style elastic net baseline (`scikit-learn`) on `features.parquet` → `targets.parquet`.
-3. MLP baseline (spec section 5.1, PyTorch) — must beat the elastic net on
-   held-out data before any architecture upgrades are worth pursuing.
-4. Decide on the HUMAnN3 functional-profiling investment before or after
-   the first baseline, depending on how far taxonomy-only gets you.
+1. Try the spec section 5.2 architecture upgrades (encoder-decoder bottleneck,
+   multi-task learning with a clinical label) to see if a smarter architecture
+   — not just a wider one — can beat the elastic net where the plain MLP couldn't.
+2. Decide on the HUMAnN3 functional-profiling investment — the spec notes
+   functional features are "often more predictive than taxonomy alone," and
+   neither baseline has them yet.
+3. Cross-cohort generalization test (spec section 6.2): train on some cohorts,
+   test on held-out cohorts entirely, not just held-out patients within cohorts.
+4. Per-metabolite-class breakdown (SCFAs vs. bile acids vs. amino acid
+   derivatives — spec section 6.1) using the `Putative.Chemical.Class` column
+   already present in each cohort's `mtb.map.tsv`, not yet carried through the pipeline.
+
+## Reproducing the Phase 1 baselines
+
+```
+python scripts/train_elastic_net.py --min-train-measured 100
+python scripts/train_mlp.py --epochs 200 --patience 15
+python scripts/compare_baselines.py
+```
