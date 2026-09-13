@@ -1,0 +1,40 @@
+cohort,study_group_raw,condition,role,disbiome_disease,n_samples
+ERAWIJANTARI_GASTRIC_CANCER_2020,Gastrectomy,post_gastrectomy,case,Gastric cancer,42
+ERAWIJANTARI_GASTRIC_CANCER_2020,Healthy,healthy,control,,54
+FRANZOSA_IBD_2019,CD,crohns_disease,case,Crohn's Disease,88
+FRANZOSA_IBD_2019,Control,healthy,control,,56
+FRANZOSA_IBD_2019,UC,ulcerative_colitis,case,Ulcerative Colitis,76
+HE_INFANTS_MFGM_2019,Baseline,not_a_condition,excluded,,67
+HE_INFANTS_MFGM_2019,Month12,not_a_condition,excluded,,68
+HE_INFANTS_MFGM_2019,With.comp.food,not_a_condition,excluded,,50
+HE_INFANTS_MFGM_2019,Without.comp.food,not_a_condition,excluded,,92
+JACOBS_IBD_FAMILIES_2016,CD,crohns_disease,case,Crohn's Disease,26
+JACOBS_IBD_FAMILIES_2016,Normal,healthy,control,,54
+JACOBS_IBD_FAMILIES_2016,UC,ulcerative_colitis,case,Ulcerative Colitis,10
+KANG_AUTISM_2017,Autistic ,autism,case,Autism,23
+KANG_AUTISM_2017,Neurotypical,healthy,control,,21
+KIM_ADENOMAS_2020,Adenoma,colorectal_adenoma,case,Colorectal cancer,102
+KIM_ADENOMAS_2020,Carcinoma,colorectal_cancer,case,Colorectal cancer,36
+KIM_ADENOMAS_2020,Control,healthy,control,,102
+KOSTIC_INFANTS_DIABETES_2015,case,type_1_diabetes,case,Type 1 Diabetes,66
+KOSTIC_INFANTS_DIABETES_2015,control,healthy,control,,37
+MARS_IBS_2020,C,ibs_constipation,case,Irritable Bowel Syndrome,133
+MARS_IBS_2020,D,ibs_diarrhea,case,Irritable Bowel Syndrome,172
+MARS_IBS_2020,H,healthy,control,,139
+SINHA_CRC_2016,0,healthy,control,,89
+SINHA_CRC_2016,1,colorectal_cancer,case,Colorectal cancer,42
+WANDRO_PRETERMS_2018,GI,not_a_condition,excluded,,1
+WANDRO_PRETERMS_2018,control,preterm_stable,control,,37
+WANDRO_PRETERMS_2018,nec,necrotizing_enterocolitis,case,Necrotizing enterocolitis,14
+WANDRO_PRETERMS_2018,septic,neonatal_sepsis,case,Sepsis,23
+WANG_ESRD_2020,Control,healthy,control,,67
+WANG_ESRD_2020,ESRD,end_stage_renal_disease,case,Chronic kidney disease,220
+YACHIDA_CRC_2019,HS,colorectal_other,excluded,,30
+YACHIDA_CRC_2019,Healthy,healthy,control,,127
+YACHIDA_CRC_2019,MP,colorectal_polyp,case,Colorectal cancer,40
+YACHIDA_CRC_2019,Stage_0,colorectal_cancer_stage_0,case,Colorectal cancer,27
+YACHIDA_CRC_2019,Stage_III_IV,colorectal_cancer,case,Colorectal cancer,54
+YACHIDA_CRC_2019,Stage_I_II,colorectal_cancer,case,Colorectal cancer,69
+iHMP_IBDMDB_2019,CD,crohns_disease,case,Crohn's Disease,177
+iHMP_IBDMDB_2019,UC,ulcerative_colitis,case,Ulcerative Colitis,101
+iHMP_IBDMDB_2019,nonIBD,healthy,control,,104

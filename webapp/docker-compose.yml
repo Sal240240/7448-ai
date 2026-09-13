@@ -1,0 +1,44 @@
+# Local production-shaped run: nginx serves the built frontend and proxies
+# /api to the backend container, so the browser talks to a single origin and
+# CORS never enters the picture.
+#
+#     docker compose -f webapp/docker-compose.yml up --build
+#     open http://localhost:8080
+#
+# For development use the dev servers instead (see DEPLOYMENT.md) — they give
+# hot reload, which this does not.
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: webapp/backend/Dockerfile
+    environment:
+      ENVIRONMENT: production
+      # Same-origin through the nginx proxy, so no cross-origin request is ever
+      # made. Set this only if the frontend is served from a different host.
+      CORS_ORIGINS: ""
+      TRUST_PROXY_HEADERS: "true"
+      RATE_LIMIT_REQUESTS: "120"
+      RATE_LIMIT_WINDOW_S: "60"
+    volumes:
+      # Optional: enables the Outlook (trajectory) feature, which needs the
+      # processed feature table. The endpoint degrades honestly without it.
+      - ../data/processed:/app/data/processed:ro
+      - ../experiments:/app/experiments:ro
+    expose:
+      - "8000"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Empty: the browser calls /api on its own origin, which nginx proxies.
+        VITE_API_BASE: ""
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped

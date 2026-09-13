@@ -1,0 +1,325 @@
+{
+  "_about": {
+    "purpose": "Plain-language descriptions of the gut metabolites this model predicts, written for readers with no biochemistry background. Curated by hand rather than generated, because the failure mode of an auto-generated health glossary is confident wrongness.",
+    "scope": "Covers the best-characterised and best-predicted metabolites, not all 1,384 targets. Metabolites without an entry are still predicted; they just render with their HMDB name and no explanation, which is the honest default.",
+    "caveat": "Every 'associated with' below is an observed statistical association in published human studies, not a demonstrated cause, and not a statement about any individual. Metabolite levels vary enormously with diet, medication, transit time and sampling method.",
+    "families_note": "Grouping is by biological role, chosen so the UI can cluster related readouts rather than list 1,384 unordered compounds."
+  },
+  "metabolites": {
+    "HMDB0000039": {
+      "display_name": "Butyrate",
+      "family": "Short-chain fatty acid",
+      "what_it_is": "A short fatty acid made when gut bacteria ferment dietary fibre that your own digestion cannot break down.",
+      "why_it_matters": "It is the preferred fuel of the cells lining your colon — those cells take most of their energy directly from butyrate rather than from blood sugar. It has been studied extensively for effects on gut barrier integrity and inflammation.",
+      "made_by": "Faecalibacterium, Roseburia, Eubacterium, Anaerostipes and other fibre-fermenting bacteria.",
+      "high_means": "Generally reported in profiles rich in fibre-fermenting bacteria.",
+      "low_means": "Reduced butyrate and reduced butyrate producers are among the most consistently reported findings in inflammatory bowel disease, though whether that is cause or consequence is unsettled."
+    },
+    "HMDB0000042": {
+      "display_name": "Acetate",
+      "family": "Short-chain fatty acid",
+      "what_it_is": "The most abundant short-chain fatty acid in the gut, produced by a very wide range of bacteria during fermentation.",
+      "why_it_matters": "Much of it is absorbed and used elsewhere in the body as an energy source, and it is a building block other gut bacteria convert into butyrate.",
+      "made_by": "Produced broadly across the gut community, including Bacteroides and Bifidobacterium.",
+      "high_means": "Reflects active fermentation; because so many species make it, it is a less specific signal than butyrate.",
+      "low_means": "Unusually low levels can accompany a community with little fermentative activity."
+    },
+    "HMDB0000237": {
+      "display_name": "Propionate",
+      "family": "Short-chain fatty acid",
+      "what_it_is": "A short-chain fatty acid produced during fibre fermentation, particularly by Bacteroides species.",
+      "why_it_matters": "Largely taken up by the liver, where it participates in glucose metabolism. Studied for associations with appetite signalling and cholesterol handling.",
+      "made_by": "Bacteroides, Phocaeicola, Veillonella, Akkermansia.",
+      "high_means": "Common in Bacteroides-dominated communities.",
+      "low_means": "Lower levels accompany reduced fermentative capacity."
+    },
+    "HMDB0000892": {
+      "display_name": "Valerate",
+      "family": "Short-chain fatty acid",
+      "what_it_is": "A minor short-chain fatty acid, produced both from fibre and from protein fermentation.",
+      "why_it_matters": "Less studied than butyrate or acetate, but tracked because it partly reflects protein rather than carbohydrate fermentation.",
+      "made_by": "Various Clostridia.",
+      "high_means": "Can indicate a greater share of protein fermentation.",
+      "low_means": "Not well characterised in isolation."
+    },
+    "HMDB0001873": {
+      "display_name": "Isobutyrate",
+      "family": "Branched short-chain fatty acid",
+      "what_it_is": "A branched fatty acid produced when bacteria ferment protein rather than fibre.",
+      "why_it_matters": "Branched fatty acids are used as a rough marker of how much protein fermentation is happening in the colon, which rises when less fibre is available.",
+      "made_by": "Protein-fermenting Clostridia and Bacteroides.",
+      "high_means": "Often reported alongside higher-protein, lower-fibre fermentation patterns.",
+      "low_means": "Consistent with fermentation dominated by carbohydrates."
+    },
+    "HMDB0000925": {
+      "display_name": "TMAO (trimethylamine-N-oxide)",
+      "family": "Microbial-host co-metabolite",
+      "what_it_is": "Made in two steps: gut bacteria convert choline and carnitine (from foods like red meat, eggs and fish) into trimethylamine, and the liver then oxidises it into TMAO.",
+      "why_it_matters": "One of the most-studied examples of gut bacteria producing a compound that circulates in the blood. Higher circulating TMAO has been associated with cardiovascular risk in multiple cohorts, although the causal role is actively debated and fish consumption raises it directly.",
+      "made_by": "Requires bacteria carrying choline/carnitine-converting enzymes, then host liver enzymes.",
+      "high_means": "Associated in the literature with higher cardiovascular risk markers, but strongly influenced by recent diet.",
+      "low_means": "Common on lower-animal-product diets or with fewer TMA-producing bacteria."
+    },
+    "HMDB0002302": {
+      "display_name": "Indole-3-propionate",
+      "family": "Tryptophan metabolite",
+      "what_it_is": "Produced when gut bacteria break down tryptophan, an amino acid from dietary protein.",
+      "why_it_matters": "Studied for antioxidant activity and for associations with gut barrier function; lower levels have been reported in type 2 diabetes cohorts.",
+      "made_by": "Notably Clostridium sporogenes and related species.",
+      "high_means": "Reported in profiles with intact tryptophan-fermenting populations.",
+      "low_means": "Lower levels have been observed in several metabolic and inflammatory conditions."
+    },
+    "HMDB0000197": {
+      "display_name": "Indole-3-acetate",
+      "family": "Tryptophan metabolite",
+      "what_it_is": "Another bacterial breakdown product of tryptophan.",
+      "why_it_matters": "Binds a host receptor (the aryl hydrocarbon receptor) involved in immune signalling at the gut lining, which is one of the clearer mechanisms by which gut bacteria talk to the immune system.",
+      "made_by": "Bacteroides, Clostridium, Lactobacillus and others.",
+      "high_means": "Indicates active bacterial tryptophan metabolism.",
+      "low_means": "Reported reduced in some inflammatory conditions."
+    },
+    "HMDB0000682": {
+      "display_name": "Indoxyl sulfate",
+      "family": "Tryptophan metabolite",
+      "what_it_is": "Formed from bacterial indole, then modified by the liver. Normally cleared by the kidneys.",
+      "why_it_matters": "Accumulates when kidney function is impaired, and is one of the best-known 'uraemic toxins' — a case where gut bacterial output and kidney disease intersect.",
+      "made_by": "Indole-producing bacteria plus host liver processing.",
+      "high_means": "Markedly elevated in chronic kidney disease because clearance falls, not necessarily because production rises.",
+      "low_means": "Typical of normal kidney clearance."
+    },
+    "HMDB0000619": {
+      "display_name": "Cholate",
+      "family": "Primary bile acid",
+      "what_it_is": "A bile acid your liver makes from cholesterol and releases into the gut to help digest fat.",
+      "why_it_matters": "Most is reabsorbed and recycled. What reaches the colon becomes raw material for bacteria, so the balance between primary and secondary bile acids is a direct readout of microbial activity.",
+      "made_by": "Made by the host liver, not by bacteria.",
+      "high_means": "A high primary-to-secondary ratio suggests reduced bacterial conversion, seen when the converting bacteria are depleted, including after antibiotics.",
+      "low_means": "Consistent with efficient reabsorption or active bacterial conversion downstream."
+    },
+    "HMDB0000626": {
+      "display_name": "Deoxycholate",
+      "family": "Secondary bile acid",
+      "what_it_is": "Made by gut bacteria chemically modifying the primary bile acid cholate.",
+      "why_it_matters": "A clear example of bacteria transforming a host molecule into something with different biological activity. Secondary bile acids have been studied both for protective signalling roles and, at high levels, for associations with colorectal cancer risk.",
+      "made_by": "A small set of bacteria able to perform 7α-dehydroxylation, mostly certain Clostridia.",
+      "high_means": "Higher levels have been associated with high-fat diets and, in some cohorts, colorectal cancer risk.",
+      "low_means": "Suggests few bile-acid-converting bacteria; often reported after antibiotic exposure."
+    },
+    "HMDB0000717": {
+      "display_name": "Lithocholate",
+      "family": "Secondary bile acid",
+      "what_it_is": "Another bacterially-produced secondary bile acid, derived from chenodeoxycholate.",
+      "why_it_matters": "Biologically potent and, at high concentrations, one of the more cytotoxic bile acids, so its level is watched in gut health research.",
+      "made_by": "The same restricted group of converting bacteria.",
+      "high_means": "Indicates active bacterial bile acid conversion.",
+      "low_means": "Indicates limited conversion capacity in the community."
+    },
+    "HMDB0000946": {
+      "display_name": "Ursodeoxycholic acid",
+      "family": "Secondary bile acid",
+      "what_it_is": "A secondary bile acid also manufactured as a prescription medicine for certain liver conditions.",
+      "why_it_matters": "Generally regarded as one of the gentler bile acids. Note that a high reading may simply mean someone is taking it as a drug.",
+      "made_by": "Bacterial conversion, or taken directly as medication.",
+      "high_means": "Possible bacterial production, or medication use.",
+      "low_means": "Unremarkable on its own."
+    },
+    "HMDB0000518": {
+      "display_name": "Chenodeoxycholate",
+      "family": "Primary bile acid",
+      "what_it_is": "The other main primary bile acid the liver makes from cholesterol.",
+      "why_it_matters": "A strong activator of the host FXR receptor, which regulates bile acid production and has downstream effects on fat and sugar metabolism.",
+      "made_by": "Host liver.",
+      "high_means": "Elevated primary bile acids in stool can indicate reduced bacterial conversion or accelerated transit.",
+      "low_means": "Consistent with normal recycling."
+    },
+    "HMDB0002271": {
+      "display_name": "Imidazole propionate",
+      "family": "Histidine metabolite",
+      "what_it_is": "Produced when gut bacteria break down the amino acid histidine.",
+      "why_it_matters": "A relatively recent finding: higher levels have been reported in people with type 2 diabetes, with laboratory work suggesting it can interfere with insulin signalling. An active research area rather than settled science.",
+      "made_by": "Certain bacteria carrying the relevant histidine-processing enzyme.",
+      "high_means": "Higher levels have been reported in type 2 diabetes cohorts.",
+      "low_means": "Typical of profiles without substantial bacterial histidine metabolism."
+    },
+    "HMDB0000714": {
+      "display_name": "Hippurate",
+      "family": "Polyphenol metabolite",
+      "what_it_is": "Formed when gut bacteria break down plant polyphenols (from fruit, vegetables, tea, coffee) and the liver then modifies the products.",
+      "why_it_matters": "One of the more reliable urinary and faecal markers associated with higher microbial diversity and higher plant intake across multiple studies.",
+      "made_by": "Broad polyphenol-degrading community plus host liver.",
+      "high_means": "Commonly associated with greater microbial diversity and plant-rich diets.",
+      "low_means": "Reported lower in several metabolic conditions, and in lower-plant-intake diets."
+    },
+    "HMDB0000259": {
+      "display_name": "Serotonin",
+      "family": "Neuroactive compound",
+      "what_it_is": "A signalling molecule. The large majority of the body's serotonin is made in the gut — by specialised gut cells, not directly by bacteria.",
+      "why_it_matters": "Gut bacteria influence how much the gut produces, and gut serotonin regulates motility. This is one of the concrete threads in the 'gut-brain axis' story, though gut serotonin does not cross into the brain.",
+      "made_by": "Host enterochromaffin cells, influenced by bacterial metabolites including short-chain fatty acids.",
+      "high_means": "Associated with altered gut motility in some studies.",
+      "low_means": "Also reported in motility disorders; direction is not consistent across studies."
+    },
+    "HMDB0000472": {
+      "display_name": "5-hydroxytryptophan",
+      "family": "Neuroactive precursor",
+      "what_it_is": "The direct chemical precursor the body converts into serotonin.",
+      "why_it_matters": "Tracks the activity of the tryptophan-to-serotonin route, which competes with the bacterial routes that make indoles.",
+      "made_by": "Host, from dietary tryptophan.",
+      "high_means": "Indicates flux toward serotonin production.",
+      "low_means": "May indicate tryptophan being routed down other pathways instead."
+    },
+    "HMDB0000870": {
+      "display_name": "Histamine",
+      "family": "Biogenic amine",
+      "what_it_is": "A signalling molecule involved in immune and allergic responses, also produced by some gut bacteria from the amino acid histidine.",
+      "why_it_matters": "Bacterially-produced histamine in the gut has been investigated in relation to food intolerance and IBS symptoms, though evidence in humans remains limited.",
+      "made_by": "Certain Lactobacillus, Morganella, Klebsiella species.",
+      "high_means": "Has been discussed in relation to histamine intolerance, but this is not established clinically.",
+      "low_means": "Unremarkable."
+    },
+    "HMDB0002322": {
+      "display_name": "Cadaverine",
+      "family": "Biogenic amine",
+      "what_it_is": "A compound produced when bacteria break down the amino acid lysine. Responsible for part of the characteristic smell of decay.",
+      "why_it_matters": "A marker of protein putrefaction in the colon, which increases when protein reaches the large intestine undigested.",
+      "made_by": "Protein-fermenting bacteria including E. coli.",
+      "high_means": "Indicates substantial bacterial protein breakdown.",
+      "low_means": "Consistent with fermentation dominated by carbohydrates."
+    },
+    "HMDB0001414": {
+      "display_name": "Putrescine",
+      "family": "Polyamine",
+      "what_it_is": "A polyamine produced by bacterial breakdown of amino acids, and also made by host cells.",
+      "why_it_matters": "Polyamines are needed for cell growth and turnover of the gut lining; both very low and very high levels have been discussed in different contexts.",
+      "made_by": "Both gut bacteria and host cells.",
+      "high_means": "Elevated in high-protein fermentation; also studied in relation to rapid cell turnover.",
+      "low_means": "Not well characterised in isolation."
+    },
+    "HMDB0001257": {
+      "display_name": "Spermidine",
+      "family": "Polyamine",
+      "what_it_is": "A polyamine found in both food and bacterial production, involved in cellular maintenance processes.",
+      "why_it_matters": "Studied for roles in autophagy — the cell's recycling process — and in gut lining maintenance.",
+      "made_by": "Gut bacteria and dietary sources.",
+      "high_means": "Reflects bacterial polyamine production or dietary intake.",
+      "low_means": "Not well characterised in isolation."
+    },
+    "HMDB0001858": {
+      "display_name": "p-Cresol",
+      "family": "Tyrosine metabolite",
+      "what_it_is": "Produced when gut bacteria ferment the amino acid tyrosine.",
+      "why_it_matters": "Its sulfated form is another compound normally cleared by the kidneys that accumulates in kidney disease. It has also been studied in relation to gut barrier function.",
+      "made_by": "Clostridium and other protein-fermenting bacteria.",
+      "high_means": "Indicates protein fermentation; accumulates when kidney clearance is reduced.",
+      "low_means": "Consistent with lower protein fermentation."
+    },
+    "HMDB0000190": {
+      "display_name": "Lactate",
+      "family": "Fermentation intermediate",
+      "what_it_is": "An intermediate product of fermentation, normally consumed by other bacteria almost as fast as it is produced.",
+      "why_it_matters": "Because it is usually an intermediate, finding a lot of it suggests the bacteria that normally consume it — converting it onward to butyrate — are not keeping up. Accumulation has been reported in some IBD and infant gut states.",
+      "made_by": "Lactobacillus, Bifidobacterium and others; consumed by Anaerostipes, Eubacterium.",
+      "high_means": "Accumulation can suggest a disrupted fermentation chain.",
+      "low_means": "Normal — it is usually consumed rather than accumulating."
+    },
+    "HMDB0000254": {
+      "display_name": "Succinate",
+      "family": "Fermentation intermediate",
+      "what_it_is": "Another fermentation intermediate, normally converted onward to propionate by other bacteria.",
+      "why_it_matters": "Accumulated succinate has been reported in inflammatory states and is recognised by host immune cells as an inflammatory signal.",
+      "made_by": "Bacteroides, Prevotella; consumed by propionate producers.",
+      "high_means": "Accumulation has been associated with inflammation and with IBD in several studies.",
+      "low_means": "Normal — it is typically an intermediate, not an end product."
+    },
+    "HMDB0000289": {
+      "display_name": "Urate",
+      "family": "Purine metabolite",
+      "what_it_is": "The end product of purine breakdown; purines come from both diet and normal cell turnover.",
+      "why_it_matters": "Best known from gout, where blood levels matter. Some gut bacteria can degrade urate, which is an area of active study.",
+      "made_by": "Host metabolism; some bacteria degrade it.",
+      "high_means": "In blood this relates to gout risk; faecal levels are less directly interpretable.",
+      "low_means": "May reflect bacterial degradation capacity."
+    },
+    "HMDB0000097": {
+      "display_name": "Choline",
+      "family": "Dietary precursor",
+      "what_it_is": "An essential nutrient found in eggs, liver, and soy, among other foods.",
+      "why_it_matters": "The starting material gut bacteria convert into trimethylamine, which the liver then turns into TMAO — so choline levels and TMAO are two ends of the same pathway.",
+      "made_by": "Dietary; consumed by certain bacteria.",
+      "high_means": "May indicate lower bacterial conversion to trimethylamine, or higher intake.",
+      "low_means": "May indicate active bacterial conversion."
+    },
+    "HMDB0000929": {
+      "display_name": "Tryptophan",
+      "family": "Amino acid",
+      "what_it_is": "An essential amino acid from dietary protein, and the raw material for several of the metabolites in this list.",
+      "why_it_matters": "It sits at a branch point: it can go toward serotonin, toward the kynurenine pathway, or toward bacterial indoles. Which route dominates is shaped in part by the gut community.",
+      "made_by": "Dietary; competed for by host and bacteria.",
+      "high_means": "Suggests tryptophan is not being heavily consumed by bacteria.",
+      "low_means": "Suggests active consumption down one of the downstream routes."
+    },
+    "HMDB0000148": {
+      "display_name": "Glutamate",
+      "family": "Amino acid",
+      "what_it_is": "An abundant amino acid, both from food and from bacterial metabolism.",
+      "why_it_matters": "A precursor to GABA, a major inhibitory neurotransmitter that some gut bacteria can produce — another strand of gut-brain research.",
+      "made_by": "Dietary and bacterial.",
+      "high_means": "Common; not specific on its own.",
+      "low_means": "Not well characterised in isolation."
+    },
+    "HMDB0000062": {
+      "display_name": "Carnitine",
+      "family": "Dietary precursor",
+      "what_it_is": "A compound abundant in red meat, involved in transporting fats for energy production.",
+      "why_it_matters": "Like choline, it is a substrate gut bacteria convert toward TMAO, which is why dietary carnitine appears in cardiovascular research.",
+      "made_by": "Dietary and endogenous.",
+      "high_means": "Higher intake or lower bacterial conversion.",
+      "low_means": "May indicate bacterial conversion to trimethylamine."
+    },
+    "HMDB0000054": {
+      "display_name": "Bilirubin",
+      "family": "Haem metabolite",
+      "what_it_is": "The breakdown product of haemoglobin from old red blood cells, excreted via bile into the gut.",
+      "why_it_matters": "Gut bacteria convert it onward into the pigments that give stool its colour — an unusually visible example of bacterial metabolism.",
+      "made_by": "Host; further converted by gut bacteria.",
+      "high_means": "Unconverted bilirubin can indicate reduced bacterial conversion, common in infants and after antibiotics.",
+      "low_means": "Consistent with normal bacterial conversion."
+    },
+    "HMDB0000209": {
+      "display_name": "Phenylacetate",
+      "family": "Phenylalanine metabolite",
+      "what_it_is": "Produced by bacterial fermentation of the amino acid phenylalanine.",
+      "why_it_matters": "Another marker of protein fermentation in the colon; has also been studied in relation to liver disease.",
+      "made_by": "Protein-fermenting bacteria including Clostridium.",
+      "high_means": "Indicates protein fermentation.",
+      "low_means": "Consistent with carbohydrate-dominated fermentation."
+    },
+    "HMDB0000020": {
+      "display_name": "p-Hydroxyphenylacetate",
+      "family": "Tyrosine metabolite",
+      "what_it_is": "A bacterial breakdown product of tyrosine.",
+      "why_it_matters": "Used alongside p-cresol and phenylacetate as part of the protein-fermentation picture.",
+      "made_by": "Protein-fermenting gut bacteria.",
+      "high_means": "Indicates bacterial tyrosine metabolism.",
+      "low_means": "Not well characterised in isolation."
+    },
+    "HMDB0000895": {
+      "display_name": "Acetylcholine",
+      "family": "Neuroactive compound",
+      "what_it_is": "A neurotransmitter used throughout the nervous system, including the nerve network that controls gut movement.",
+      "why_it_matters": "Some bacteria can produce or influence it; it is relevant to how the gut's own nervous system coordinates motility.",
+      "made_by": "Host nervous tissue; some bacterial contribution.",
+      "high_means": "Not straightforwardly interpretable from stool.",
+      "low_means": "Not straightforwardly interpretable from stool."
+    },
+    "HMDB0000357": {
+      "display_name": "Beta-hydroxybutyrate",
+      "family": "Ketone body",
+      "what_it_is": "A ketone body produced mainly by the liver when carbohydrate availability is low, such as during fasting or a ketogenic diet.",
+      "why_it_matters": "Largely reflects host metabolic state rather than bacterial activity, which makes it a useful contrast to the bacterially-produced compounds in this list.",
+      "made_by": "Host liver, primarily.",
+      "high_means": "Associated with fasting, low-carbohydrate intake, or ketogenic states.",
+      "low_means": "Typical of regular carbohydrate intake."
+    }
+  }
+}
