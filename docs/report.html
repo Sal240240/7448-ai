@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>7448 AI — Technical Report</title>
+<style>
+/* ---------------------------------------------------------------------------
+   Print stylesheet for the 7448 AI technical report.
+   Rendered to PDF with headless Chrome; A4, generous margins, running footer.
+   Same scientific-editorial register as the web application.
+   ------------------------------------------------------------------------ */
+
+@page {
+  size: A4;
+  margin: 20mm 18mm 18mm 18mm;
+}
+@page :first { margin: 0; }
+
+:root {
+  --ink: #16150f;
+  --muted: #55504a;
+  --faint: #8a837a;
+  --rule: #ddd8cd;
+  --rule-strong: #b9b2a4;
+  --signal: #12605c;
+  --counter: #9c4028;
+  --emphasis: #8a5c12;
+  --paper-sunken: #f6f4ef;
+  --serif: "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  --mono: "Cascadia Mono", Consolas, "SF Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+/* This is a print document, not a themed page. Pinning the scheme and painting
+   an explicit white ground stops a dark-mode browser from compositing
+   near-black body text onto a dark canvas, which renders it invisible on
+   screen. */
+:root { color-scheme: light; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: var(--serif);
+  font-size: 10.2pt;
+  line-height: 1.5;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ------------------------------------------------------------ cover page --- */
+
+.cover {
+  height: 297mm;
+  padding: 40mm 24mm 22mm;
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  background: #16150f;
+  color: #f2eee4;
+}
+
+.cover__mark {
+  font-family: var(--mono);
+  font-size: 9pt;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #b5ad9c;
+}
+
+.cover__title {
+  font-family: var(--serif);
+  font-size: 34pt;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 14mm 0 0;
+  max-width: 15em;
+}
+
+.cover__sub {
+  font-family: var(--sans);
+  font-size: 12pt;
+  line-height: 1.45;
+  color: #c9c2b2;
+  margin-top: 8mm;
+  max-width: 30em;
+}
+
+.cover__rule {
+  height: 1px;
+  background: #4a453a;
+  margin: 14mm 0 8mm;
+}
+
+.cover__meta {
+  font-family: var(--mono);
+  font-size: 8.5pt;
+  line-height: 1.9;
+  color: #b5ad9c;
+}
+
+.cover__meta b { color: #f2eee4; font-weight: 600; }
+
+.cover__foot {
+  margin-top: auto;
+  font-family: var(--sans);
+  font-size: 8.5pt;
+  color: #8e8879;
+  border-top: 1px solid #4a453a;
+  padding-top: 5mm;
+}
+
+.cover__headline {
+  margin-top: 10mm;
+  border-left: 2px solid #8a5c12;
+  padding-left: 6mm;
+  font-family: var(--sans);
+  font-size: 10pt;
+  line-height: 1.55;
+  color: #ddd6c6;
+  max-width: 34em;
+}
+
+/* ------------------------------------------------------------- structure --- */
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; }
+
+h2 {
+  font-size: 16pt;
+  letter-spacing: -0.01em;
+  margin: 0 0 4mm;
+  padding-bottom: 2mm;
+  border-bottom: 1.5px solid var(--ink);
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 11.5pt;
+  margin: 7mm 0 2mm;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-family: var(--sans);
+  font-size: 9.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin: 5mm 0 1.5mm;
+  page-break-after: avoid;
+}
+
+section { page-break-before: always; }
+section.continuous { page-break-before: auto; }
+
+p { margin: 0 0 3mm; text-align: justify; hyphens: auto; }
+
+.sec-num {
+  font-family: var(--mono);
+  font-size: 9pt;
+  color: var(--faint);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 1mm;
+}
+
+.lede {
+  font-family: var(--sans);
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 5mm;
+}
+
+ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+li { margin-bottom: 1.5mm; }
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+.num, code { font-family: var(--mono); font-size: 0.92em; }
+code { background: var(--paper-sunken); padding: 0.5mm 1mm; border-radius: 1px; }
+
+/* ---------------------------------------------------------------- tables --- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 8.6pt;
+  margin: 3mm 0 4mm;
+  page-break-inside: avoid;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 8.2pt;
+  color: var(--faint);
+  padding-bottom: 1.5mm;
+  letter-spacing: 0.03em;
+}
+
+th {
+  text-align: left;
+  font-size: 7.6pt;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--ink);
+  padding: 1.5mm 2mm 1.5mm 0;
+}
+
+td {
+  padding: 1.5mm 2mm 1.5mm 0;
+  border-bottom: 0.5px solid var(--rule);
+  vertical-align: top;
+}
+
+td.n, th.n { text-align: right; font-family: var(--mono); }
+tr.highlight td { background: var(--paper-sunken); font-weight: 600; }
+
+/* -------------------------------------------------------------- callouts --- */
+
+.callout {
+  border: 1px solid var(--rule-strong);
+  border-left: 3px solid var(--emphasis);
+  padding: 4mm 5mm;
+  margin: 4mm 0;
+  font-family: var(--sans);
+  font-size: 9.2pt;
+  line-height: 1.5;
+  page-break-inside: avoid;
+  background: #fbf9f4;
+}
+
+.callout--finding { border-left-color: var(--counter); }
+.callout--ok { border-left-color: var(--signal); }
+
+.callout h4 { margin-top: 0; color: var(--ink); }
+
+.note {
+  font-family: var(--sans);
+  font-size: 8.6pt;
+  color: var(--muted);
+  border-left: 2px solid var(--rule-strong);
+  padding-left: 4mm;
+  margin: 3mm 0;
+}
+
+/* ----------------------------------------------------------------- stats --- */
+
+.statgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule-strong);
+  margin: 4mm 0 5mm;
+  page-break-inside: avoid;
+}
+
+.statgrid > div {
+  padding: 3mm;
+  border-right: 1px solid var(--rule);
+}
+.statgrid > div:last-child { border-right: 0; }
+
+.statgrid .v {
+  font-family: var(--mono);
+  font-size: 15pt;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.statgrid .k {
+  font-family: var(--sans);
+  font-size: 7.6pt;
+  color: var(--muted);
+  margin-top: 1.5mm;
+  line-height: 1.3;
+}
+
+/* ---------------------------------------------------------------- figure --- */
+
+figure { margin: 4mm 0 5mm; page-break-inside: avoid; }
+figcaption {
+  font-family: var(--sans);
+  font-size: 8.2pt;
+  color: var(--faint);
+  margin-top: 2mm;
+  line-height: 1.45;
+}
+svg { display: block; width: 100%; height: auto; }
+
+/* ------------------------------------------------------------------- toc --- */
+
+.toc { font-family: var(--sans); font-size: 9.5pt; }
+.toc ol { list-style: none; padding: 0; counter-reset: toc; }
+.toc li {
+  counter-increment: toc;
+  padding: 2mm 0;
+  border-bottom: 0.5px solid var(--rule);
+  display: flex;
+  gap: 4mm;
+}
+.toc li::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--mono);
+  color: var(--faint);
+  font-size: 8.5pt;
+}
+.toc .t { font-weight: 600; }
+.toc .d { color: var(--muted); font-size: 8.6pt; display: block; font-weight: 400; margin-top: 0.5mm; }
+
+/* ------------------------------------------------------------ references --- */
+
+.refs { font-family: var(--sans); font-size: 8.4pt; line-height: 1.45; }
+.refs li { margin-bottom: 2.5mm; }
+.refs .src { color: var(--faint); }
+</style>
+</head>
+<body>
+
+<!-- ======================================================= COVER ======= -->
+<div class="cover">
+  <div class="cover__mark">7448 AI · Technical Report</div>
+
+  <h1 class="cover__title">Predicting the chemical output of the human gut microbiome</h1>
+
+  <div class="cover__sub">
+    A machine-learning system that infers a gut metabolomic profile from bacterial
+    composition alone, evaluated honestly enough to say where it fails.
+  </div>
+
+  <div class="cover__rule"></div>
+
+  <div class="cover__meta">
+    Phase&nbsp;2 report &mdash; data expansion, outcome layer,<br>
+    adversarial backtesting, and public interface<br><br>
+    <b>Status</b> &nbsp;Research prototype &mdash; not a medical device<br>
+    <b>Data</b> &nbsp;&nbsp;&nbsp;2,900 paired samples · 1,759 subjects · 14 cohorts<br>
+    <b>Model</b> &nbsp;&nbsp;1,098 metabolites · 5,038 taxonomic features<br>
+    <b>Date</b> &nbsp;&nbsp;&nbsp;13 September 2026
+  </div>
+
+  <div class="cover__headline">
+    <strong>Principal finding.</strong> The model achieves a median held-out correlation of
+    r&nbsp;=&nbsp;0.458 on patients from cohorts it trained on, and approximately zero
+    (r&nbsp;=&nbsp;0.002) on cohorts it has never seen. Reported disease-classification
+    performance in this domain is shown to be largely an artefact of batch confounding.
+    Both results are reproducible from this repository.
+  </div>
+
+  <div class="cover__foot">
+    Built on public data from the Borenstein Lab curated collection, Disbiome, KEGG and PubMed.
+    All figures in this report are generated from committed experiment outputs.
+  </div>
+</div>
+
+<!-- ==================================================== SUMMARY ======= -->
+<section class="continuous">
+  <span class="sec-num">Executive summary</span>
+  <h2>What was built, and what it showed</h2>
+
+  <p class="lede">
+    7448 AI predicts which chemicals a gut bacterial community will produce, using only
+    a sequencing profile of that community. The motivation is an asymmetry in available
+    data: sequencing is cheap and ubiquitous, metabolomics is expensive and rare, so a
+    reliable mapping from one to the other would give a chemical readout to thousands of
+    existing datasets that never paid for one.
+  </p>
+
+  <p>
+    This phase extended an existing baseline in four directions: substantially more
+    reference data, a layer connecting predictions to documented health outcomes, a set
+    of adversarial backtests, and a public-facing application that exposes the model's
+    reasoning rather than concealing it. The engineering outcomes were successful. The
+    scientific outcome is more equivocal, and that equivocation is the most valuable
+    result reported here.
+  </p>
+
+  <div class="statgrid">
+    <div><div class="v">0.458</div><div class="k">median held-out correlation, within cohorts</div></div>
+    <div><div class="v">0.002</div><div class="k">median correlation on an unseen cohort</div></div>
+    <div><div class="v">0.643</div><div class="k">disease AUROC once batch is controlled</div></div>
+    <div><div class="v">7,163</div><div class="k">sourced microbe&ndash;disease associations added</div></div>
+  </div>
+
+  <h3>Three findings that matter</h3>
+
+  <p>
+    <strong>1. Within-cohort accuracy is real.</strong> A shuffled-label negative control
+    scored r&nbsp;=&nbsp;&minus;0.002 against r&nbsp;=&nbsp;0.599 on the same metabolites
+    with real labels. The pipeline does not leak its targets into its inputs, so the
+    signal it finds inside the training distribution is genuine.
+  </p>
+
+  <p>
+    <strong>2. The model does not transfer between laboratories.</strong> Holding out an
+    entire cohort and predicting it from the other thirteen produces a median correlation
+    of 0.002, with the best of fourteen cohorts reaching only 0.126. Because Pearson
+    correlation is invariant to rescaling, this cannot be dismissed as a units mismatch
+    between mass-spectrometry platforms. It is a genuine failure to rank samples correctly
+    in an unfamiliar dataset, and it is the project's central open problem.
+  </p>
+
+  <p>
+    <strong>3. Published-style disease classification is mostly batch effect.</strong> A
+    classifier pooling all cohorts reaches AUROC 0.958. A classifier given no biological
+    information at all &mdash; only which cohort produced a sample &mdash; reaches 0.915.
+    Restricting to case-versus-control within a single cohort, where laboratory and
+    platform are held constant, the honest figure is 0.643, and only 6 of 17
+    condition&times;cohort models exceed chance at a 95% confidence interval.
+  </p>
+
+  <div class="callout callout--finding">
+    <h4>Why this is reported prominently rather than buried</h4>
+    A tool that discusses human health earns trust by being falsifiable. The commercial
+    incentive in this field is to publish the 0.958 and omit the control that explains it;
+    doing so produces products that appear validated and are not. Every number above is
+    regenerated from committed experiment outputs by a single command, and the public
+    interface displays the unflattering ones on a dedicated page.
+  </div>
+</section>
+
+<!-- ======================================================= TOC ========= -->
+<section>
+  <span class="sec-num">Contents</span>
+  <h2>Contents</h2>
+  <div class="toc">
+    <ol>
+      <li><span><span class="t">Background</span><span class="d">The sequencing&ndash;metabolomics asymmetry, and why a predictive mapping is valuable</span></span></li>
+      <li><span><span class="t">Prior art and positioning</span><span class="d">MelonnPan, MIMOSA2, and what this project adds</span></span></li>
+      <li><span><span class="t">Data</span><span class="d">Training corpus, and the four public sources added in this phase</span></span></li>
+      <li><span><span class="t">Methods</span><span class="d">Model architecture, evaluation design, and the outcome layer</span></span></li>
+      <li><span><span class="t">Results</span><span class="d">Metabolite prediction and disease-association performance</span></span></li>
+      <li><span><span class="t">The generalisation failure</span><span class="d">Cross-cohort transfer, and the batch-confounding control</span></span></li>
+      <li><span><span class="t">The application</span><span class="d">Interface design, transparency, privacy and security posture</span></span></li>
+      <li><span><span class="t">Limitations</span><span class="d">What this system cannot currently do</span></span></li>
+      <li><span><span class="t">Roadmap</span><span class="d">Prioritised next steps, reordered by the Phase 2 findings</span></span></li>
+      <li><span><span class="t">Reproducibility</span><span class="d">How to regenerate every figure in this report</span></span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================================================= 1 BACKGROUND ====== -->
+<section>
+  <span class="sec-num">Section 01</span>
+  <h2>Background</h2>
+
+  <p class="lede">
+    The human large intestine hosts on the order of 10<sup>13</sup> bacteria. They are
+    metabolically active: they ferment dietary components the host cannot digest and, in
+    doing so, synthesise hundreds of small molecules that are absorbed into circulation and
+    act on host tissue.
+  </p>
+
+  <h3>1.1 Why the chemistry matters more than the census</h3>
+
+  <p>
+    Most microbiome research reports <em>who is present</em>. The more consequential
+    question is usually <em>what they are producing</em>. Butyrate, a short-chain fatty
+    acid generated by fermentation of dietary fibre, supplies the majority of the energy
+    used by colonocytes &mdash; the cells lining the colon take their fuel directly from
+    bacterial output rather than from circulating glucose. Trimethylamine-N-oxide (TMAO)
+    is produced in two steps, a bacterial conversion of dietary choline and carnitine
+    followed by hepatic oxidation, and circulating levels have been associated with
+    cardiovascular risk across multiple cohorts. Secondary bile acids exist only because a
+    restricted set of gut bacteria chemically modify host-synthesised primary bile acids.
+  </p>
+
+  <p>
+    In each case the biologically active quantity is a metabolite, not a taxon. Two
+    communities with similar membership can differ substantially in output, and community
+    composition is an imperfect proxy for function.
+  </p>
+
+  <h3>1.2 The data asymmetry</h3>
+
+  <p>
+    Both quantities are measurable. 16S rRNA and shotgun metagenomic sequencing are
+    inexpensive, standardised, and performed at scale; untargeted metabolomics by mass
+    spectrometry is costly, slower, and available in comparatively few laboratories. The
+    consequence is that the overwhelming majority of the world's microbiome data records
+    composition without chemistry.
+  </p>
+
+  <p>
+    If composition predicts chemistry with characterised accuracy, that accumulated data
+    acquires a chemical dimension retrospectively, at no additional experimental cost. That
+    is the premise of this project. The qualifier <em>with characterised accuracy</em> is
+    load-bearing, and most of this report concerns establishing what that accuracy actually
+    is.
+  </p>
+
+  <div class="callout">
+    <h4>Scope and intent</h4>
+    This is a research instrument for understanding relationships between microbial
+    composition and gut chemistry. It is not a diagnostic device, has no regulatory
+    clearance, and is not validated for clinical use on individual samples. The
+    accompanying application is explicit about this on every page that displays a
+    health-related output.
+  </div>
+</section>
+
+<!-- ================================================= 2 PRIOR ART ======= -->
+<section>
+  <span class="sec-num">Section 02</span>
+  <h2>Prior art and positioning</h2>
+
+  <p class="lede">
+    Predicting metabolites from microbiome composition is an established problem with
+    established baselines. The contribution of this phase is not a novel architecture &mdash;
+    it is the evaluation.
+  </p>
+
+  <h3>2.1 Existing approaches</h3>
+
+  <p>
+    <strong>MelonnPan</strong> (Mallick et&nbsp;al., 2019) fits an independent elastic-net
+    regression per metabolite from microbial feature abundances, and remains the standard
+    reference point. <strong>MIMOSA2</strong> takes a mechanistic rather than statistical
+    route, using genome-scale metabolic reconstruction to predict which reactions a
+    community can perform. Subsequent work has applied random forests, gradient boosting
+    and neural architectures to the same task.
+  </p>
+
+  <p>
+    The recurring methodological difficulty across this literature is sample size relative
+    to dimensionality. Paired microbiome&ndash;metabolome cohorts are small &mdash;
+    typically tens to a few hundred subjects &mdash; while feature spaces run to thousands
+    of taxa and outputs to hundreds or thousands of metabolites. This is an unfavourable
+    regime for high-capacity models, and the project's own results reproduce that
+    conclusion.
+  </p>
+
+  <h3>2.2 What this project adds</h3>
+
+  <ul>
+    <li><strong>An adversarial evaluation suite.</strong> A shuffled-label leakage control,
+      leave-one-cohort-out transfer testing, split-stability testing across seeds, and a
+      batch-identity control for the disease classifier. These are reported whether or not
+      they flatter the model.</li>
+    <li><strong>A sourced outcome layer.</strong> 7,163 curated microbe&ndash;disease
+      associations drawn from 1,179 publications, each retaining its citation, the number
+      of supporting reports, the consistency of their direction, and per-study
+      methodological quality flags.</li>
+    <li><strong>Exact interpretability.</strong> Because the deployed model is linear, each
+      prediction decomposes precisely into per-microbe contributions that sum to the
+      output. No post-hoc attribution method is used, because none is needed.</li>
+    <li><strong>A public interface built around uncertainty.</strong> Every predicted value
+      is displayed with the held-out accuracy achieved for that specific metabolite.</li>
+  </ul>
+</section>
+
+<!-- ====================================================== 3 DATA ======= -->
+<section>
+  <span class="sec-num">Section 03</span>
+  <h2>Data</h2>
+
+  <h3>3.1 Training corpus</h3>
+
+  <p>
+    The model trains on the Borenstein Lab curated microbiome&ndash;metabolome collection:
+    fourteen independent published cohorts in which the same stool samples were both
+    sequenced and analysed by mass spectrometry, harmonised by the original curators.
+  </p>
+
+  <table>
+    <caption>Table 1 — Training corpus after standardisation</caption>
+    <thead>
+      <tr><th>Property</th><th class="n">Value</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Paired samples</td><td class="n">2,900</td><td>Sequencing and metabolomics on the same sample</td></tr>
+      <tr><td>Distinct subjects</td><td class="n">1,759</td><td>Six cohorts sampled individuals repeatedly</td></tr>
+      <tr><td>Independent cohorts</td><td class="n">14</td><td>Separate studies, laboratories and platforms</td></tr>
+      <tr><td>Genus-level features</td><td class="n">12,263</td><td>5,038 retained after a 5% prevalence filter</td></tr>
+      <tr><td>Metabolite targets</td><td class="n">1,384</td><td>1,098 with sufficient coverage to model</td></tr>
+      <tr><td>Training samples</td><td class="n">2,468</td><td>Train + validation; test held out entirely</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    Two properties of this corpus shaped the pipeline. First, <strong>taxonomic resolution
+    varies</strong>: only six of fourteen cohorts provide species-level profiles, so genus
+    is the common feature space. Second, and more consequentially, <strong>a missing
+    metabolite value does not mean zero</strong> &mdash; cohorts ran different metabolomics
+    panels, so a blank usually means the compound was not on that panel. These are tracked
+    by an explicit boolean mask, and each metabolite trains only on samples where it was
+    genuinely measured. Treating blanks as zeros would teach the model to predict absence
+    for any compound that happened to be unfashionable to assay.
+  </p>
+
+  <h3>3.2 Sources added in this phase</h3>
+
+  <table>
+    <caption>Table 2 — External data acquired, all through documented public interfaces</caption>
+    <thead>
+      <tr><th>Source</th><th>Contribution</th><th class="n">Scale</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Disbiome</td>
+        <td>Curated observations of microbes reported elevated or reduced in a condition, with citations and per-study quality flags</td>
+        <td class="n">10,866 records<br>&rarr; 7,163 associations</td>
+      </tr>
+      <tr>
+        <td>KEGG</td>
+        <td>Compound pathway membership and BRITE chemical classification</td>
+        <td class="n">967 of 1,384<br>targets annotated</td>
+      </tr>
+      <tr>
+        <td>PubMed</td>
+        <td>Citation resolution for every association displayed</td>
+        <td class="n">1,179 papers<br>median year 2018</td>
+      </tr>
+      <tr>
+        <td>Cohort metadata</td>
+        <td>Longitudinal structure recovered from per-cohort time columns</td>
+        <td class="n">331 subjects<br>1,372 samples</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Of the 7,163 genus&ndash;disease associations, 5,610 fall on genera present in the
+    model's feature space and 3,958 are supported by at least one study of a gut or stool
+    sample specifically. The distinction matters: a genus reported elevated in saliva
+    during periodontitis carries no implication for a stool profile, so sample site is
+    tracked per record rather than pooled.
+  </p>
+
+  <div class="callout">
+    <h4>Two sources deliberately not used</h4>
+    <strong>HMDB</strong> holds disease annotations for exactly the identifiers this project
+    keys on, but hmdb.ca returns HTTP 403 to scripted requests. Rather than circumvent that
+    control, KEGG was used for equivalent enrichment through its documented API.
+    <strong>GMrepo</strong> would have supplied additional phenotype-labelled samples, but
+    every endpoint tested returned a server-side <code>RuntimeError</code>. Both outcomes
+    are recorded in the repository rather than worked around; data acquired by defeating a
+    publisher's access controls would also be data of unverifiable provenance.
+  </div>
+</section>
+
+<!-- =================================================== 4 METHODS ======= -->
+<section>
+  <span class="sec-num">Section 04</span>
+  <h2>Methods</h2>
+
+  <h3>4.1 Metabolite prediction</h3>
+
+  <p>
+    The deployed model is an elastic-net regression per metabolite &mdash; 1,098
+    independent models &mdash; following the MelonnPan formulation. Per-target
+    regularisation parameters were selected by cross-validated search on training data
+    only. Features are genus-level relative abundances under an arcsine-square-root
+    transform, the standard variance-stabilising choice for compositional data.
+  </p>
+
+  <p>
+    A deep alternative was evaluated on identical splits: a four-layer tapering
+    feed-forward network (3000&ndash;2000&ndash;1000&ndash;500) with batch normalisation and
+    dropout, predicting all metabolites jointly under a masked loss. It reached a median
+    held-out correlation of 0.376 against the elastic net's 0.458. With roughly 2,000
+    training samples against 5,038 features, the data volume does not support the
+    additional capacity, and the simpler model was deployed.
+  </p>
+
+  <div class="callout callout--ok">
+    <h4>A useful consequence of the linear model winning</h4>
+    For a linear model the contribution of feature <em>j</em> to prediction <em>i</em> is
+    exactly coefficient&nbsp;&times;&nbsp;input, and these contributions sum to the
+    prediction. The "which microbes produced this number" view in the application is
+    therefore not an approximation of the model's reasoning &mdash; it is the model's
+    reasoning, read directly from the weights. Attribution methods such as SHAP exist to
+    estimate this where it cannot be read off; using one here would add error to recover a
+    quantity already available exactly.
+  </div>
+
+  <h3>4.2 Evaluation design</h3>
+
+  <p>
+    <strong>Splits are by individual, not by sample.</strong> Six cohorts sampled the same
+    person repeatedly; a sample-level split would place one individual's samples on both
+    sides of the boundary and reward the model for recognising the person. All splits
+    assign whole subjects, stratified by cohort.
+  </p>
+
+  <p>
+    Four backtests were implemented beyond the standard held-out split:
+  </p>
+
+  <table>
+    <caption>Table 3 — Backtest suite</caption>
+    <thead><tr><th>Test</th><th>Question</th><th>Design</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Negative control</td>
+        <td>Does the pipeline leak targets into features?</td>
+        <td>Permute each metabolite's values across training subjects, refit unchanged. Correct pipelines score zero.</td>
+      </tr>
+      <tr>
+        <td>Cross-cohort</td>
+        <td>Does it transfer to an unseen laboratory?</td>
+        <td>Train on 13 cohorts, predict the 14th; repeat for all 14.</td>
+      </tr>
+      <tr>
+        <td>Split stability</td>
+        <td>Is the headline number an artefact of one split?</td>
+        <td>Redraw the subject-level split under multiple seeds and refit.</td>
+      </tr>
+      <tr>
+        <td>Chemical class</td>
+        <td>Is accuracy uniform across compound types?</td>
+        <td>Stratify held-out accuracy by KEGG BRITE classification.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>4.3 The outcome layer</h3>
+
+  <p>
+    Cohort disease labels were harmonised into a single vocabulary &mdash; six distinct
+    spellings of "healthy control" appear across the fourteen studies &mdash; producing
+    1,541 case and 887 control samples across 14 conditions. Twelve cohorts contain both
+    case and control arms and therefore support within-cohort comparison.
+  </p>
+
+  <p>
+    Three classifiers were trained per condition, deliberately, because only their
+    comparison is interpretable: a within-cohort model (cases versus controls from one
+    laboratory), a pooled model (all cohorts together), and a control model given
+    <em>only</em> a one-hot encoding of cohort identity and no biological features
+    whatsoever. Section 6 reports what that comparison revealed.
+  </p>
+
+  <h3>4.4 Forward outlook</h3>
+
+  <p>
+    Longitudinal structure was recovered from six cohorts, yielding 331 subjects with two
+    or more timepoints spanning up to 967 days. No forecasting model was fitted. With this
+    sample size, across six studies of different populations sampled on different
+    schedules, a projected trajectory would imply precision the data cannot support.
+    Instead the system performs an empirical analogue lookup: it identifies subjects whose
+    starting composition most resembles a query profile and reports the observed
+    distribution of what was subsequently measured in them, with sample size attached.
+  </p>
+</section>
+
+<!-- =================================================== 5 RESULTS ======= -->
+<section>
+  <span class="sec-num">Section 05</span>
+  <h2>Results</h2>
+
+  <h3>5.1 Metabolite prediction</h3>
+
+  <div class="statgrid">
+    <div><div class="v">0.458</div><div class="k">median held-out r</div></div>
+    <div><div class="v">418</div><div class="k">metabolites at r &ge; 0.5</div></div>
+    <div><div class="v">621</div><div class="k">metabolites at r &ge; 0.3</div></div>
+    <div><div class="v">185</div><div class="k">metabolites below r = 0.2</div></div>
+  </div>
+
+  <p>
+    Accuracy is strongly heterogeneous across metabolites, which is why the application
+    displays a per-metabolite accuracy figure beside every value rather than a single
+    headline number. Several compounds of established biological interest are predicted
+    well.
+  </p>
+
+  <table>
+    <caption>Table 4 — Selected well-predicted metabolites of biological interest</caption>
+    <thead><tr><th>Metabolite</th><th>Relevance</th><th class="n">Held-out r</th></tr></thead>
+    <tbody>
+      <tr><td>Glycochenodeoxycholate</td><td>Bile acid metabolism</td><td class="n">0.95</td></tr>
+      <tr><td>Imidazole propionate</td><td>Associated with insulin resistance</td><td class="n">0.91</td></tr>
+      <tr><td>Lithocholate</td><td>Bacterially-produced secondary bile acid</td><td class="n">0.92</td></tr>
+      <tr><td>5-Hydroxytryptophan</td><td>Serotonin precursor</td><td class="n">0.90</td></tr>
+      <tr><td>TMAO</td><td>Cardiovascular risk marker</td><td class="n">0.86</td></tr>
+      <tr><td>Indole-3-propionate</td><td>Gut barrier function</td><td class="n">0.84</td></tr>
+      <tr><td>Hippurate</td><td>Marker of microbial diversity</td><td class="n">0.83</td></tr>
+      <tr><td>Acetate</td><td>Most abundant short-chain fatty acid</td><td class="n">0.72</td></tr>
+      <tr><td>Butyrate</td><td>Primary colonocyte energy source</td><td class="n">0.69</td></tr>
+      <tr><td>Propionate</td><td>Hepatic glucose metabolism</td><td class="n">0.57</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5.2 Leakage control</h3>
+
+  <div class="callout callout--ok">
+    <h4>Result: pass</h4>
+    Across 60 densely-measured metabolites, models fitted on real data scored a median
+    r&nbsp;=&nbsp;<strong>0.599</strong>. The same models fitted on permuted labels scored
+    r&nbsp;=&nbsp;<strong>&minus;0.002</strong>. The within-distribution signal is real and
+    the pipeline does not leak its targets into its inputs.
+  </div>
+
+  <h3>5.3 Disease classification</h3>
+
+  <p>
+    Six of seventeen condition&times;cohort models exceed chance once a bootstrap 95%
+    confidence interval is applied to held-out patients. The remainder do not, and are
+    treated as unvalidated throughout the application.
+  </p>
+
+  <table>
+    <caption>Table 5 — Within-cohort models exceeding chance (bootstrap 95% CI excludes 0.5)</caption>
+    <thead><tr><th>Condition</th><th>Cohort</th><th class="n">AUROC</th><th class="n">95% CI</th><th class="n">n</th></tr></thead>
+    <tbody>
+      <tr><td>Crohn's disease</td><td>Franzosa 2019</td><td class="n">0.986</td><td class="n">0.94–1.00</td><td class="n">24</td></tr>
+      <tr><td>Neonatal sepsis</td><td>Wandro 2018</td><td class="n">0.958</td><td class="n">0.78–1.00</td><td class="n">11</td></tr>
+      <tr><td>End-stage renal disease</td><td>Wang 2020</td><td class="n">0.893</td><td class="n">0.73–1.00</td><td class="n">43</td></tr>
+      <tr><td>Ulcerative colitis</td><td>Franzosa 2019</td><td class="n">0.889</td><td class="n">0.70–1.00</td><td class="n">20</td></tr>
+      <tr><td>IBS (constipation)</td><td>Mars 2020</td><td class="n">0.871</td><td class="n">0.73–0.98</td><td class="n">32</td></tr>
+      <tr><td>IBS (diarrhoea)</td><td>Mars 2020</td><td class="n">0.730</td><td class="n">0.56–0.89</td><td class="n">61</td></tr>
+    </tbody>
+  </table>
+
+  <p class="note">
+    Test-set sizes are small, and the confidence intervals are correspondingly wide. Several
+    of these results rest on tens of patients. They are reported with intervals precisely
+    so that they are not mistaken for settled findings.
+  </p>
+
+  <h3>5.4 Association layer coverage</h3>
+
+  <p>
+    The literature layer reproduces well-established findings, which serves as a sanity
+    check on the ingestion pipeline: <em>Faecalibacterium</em> reduced in Crohn's disease
+    (30 reports, 100% directional agreement), <em>Fusobacterium</em> elevated in colorectal
+    cancer (33 reports, 94% agreement), and <em>Roseburia</em> reduced in Crohn's disease
+    (17 reports, 100% agreement). These are among the most replicated results in the field,
+    and their correct recovery indicates the association layer is functioning as intended.
+  </p>
+</section>
+
+<!-- ============================================ 6 GENERALISATION ======= -->
+<section>
+  <span class="sec-num">Section 06</span>
+  <h2>The generalisation failure</h2>
+
+  <p class="lede">
+    This section reports the most important result of the phase. It is a negative one, and
+    it qualifies every number in Section 5.
+  </p>
+
+  <h3>6.1 Cross-cohort transfer is absent</h3>
+
+  <p>
+    The standard evaluation &mdash; held-out patients drawn from the same fourteen cohorts
+    used for training &mdash; yields a median correlation of 0.458. Holding out an entire
+    cohort instead, and predicting it from the remaining thirteen, yields a median
+    correlation of <strong>0.002</strong>.
+  </p>
+
+  <figure id="fig-transfer">
+    <svg viewBox="0 0 720 210" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
+      <line x1="60" y1="170" x2="700" y2="170" stroke="#b9b2a4" stroke-width="1"/>
+      <line x1="60" y1="30" x2="60" y2="170" stroke="#b9b2a4" stroke-width="1"/>
+      <text x="52" y="174" font-size="10" fill="#8a837a" text-anchor="end">0.0</text>
+      <text x="52" y="104" font-size="10" fill="#8a837a" text-anchor="end">0.25</text>
+      <text x="52" y="36" font-size="10" fill="#8a837a" text-anchor="end">0.50</text>
+      <line x1="60" y1="100" x2="700" y2="100" stroke="#e8e3d8" stroke-width="1"/>
+      <line x1="60" y1="32" x2="700" y2="32" stroke="#e8e3d8" stroke-width="1"/>
+
+      <rect x="130" y="42" width="150" height="128" fill="#12605c"/>
+      <text x="205" y="35" font-size="13" fill="#12605c" text-anchor="middle" font-weight="bold">0.458</text>
+      <text x="205" y="188" font-size="10.5" fill="#55504a" text-anchor="middle">held-out patients</text>
+      <text x="205" y="201" font-size="9" fill="#8a837a" text-anchor="middle">same cohorts as training</text>
+
+      <rect x="450" y="169" width="150" height="1.5" fill="#9c4028"/>
+      <text x="525" y="162" font-size="13" fill="#9c4028" text-anchor="middle" font-weight="bold">0.002</text>
+      <text x="525" y="188" font-size="10.5" fill="#55504a" text-anchor="middle">held-out cohort</text>
+      <text x="525" y="201" font-size="9" fill="#8a837a" text-anchor="middle">a laboratory never seen</text>
+    </svg>
+    <figcaption>
+      Figure 1 — Median held-out Pearson correlation under the two evaluation regimes.
+      The left bar is the figure normally reported for models of this type. The right bar
+      is the same model evaluated on a cohort withheld entirely from training, across all
+      14 cohorts, on 60 densely-measured metabolites.
+    </figcaption>
+  </figure>
+
+  <p>
+    Across the fourteen held-out cohorts the best median correlation was 0.126 and the
+    worst was &minus;0.162. A natural objection is that different mass-spectrometry
+    platforms report different units, so cross-cohort prediction should fail on scale
+    alone. That objection does not hold: Pearson correlation is invariant under linear
+    rescaling, so a pure units mismatch would not reduce it. The model is failing to rank
+    samples correctly within the unseen cohort &mdash; a substantive failure, not a
+    calibration artefact.
+  </p>
+
+  <h3>6.2 The batch-confounding control</h3>
+
+  <p>
+    An analogous problem affects disease classification, and here a direct control
+    quantifies it. Each cohort in this collection studied one condition, on one sequencing
+    platform, in one laboratory. Disease status is therefore almost perfectly correlated
+    with cohort identity, and a classifier can score well by recognising a laboratory's
+    technical signature rather than any biology.
+  </p>
+
+  <p>
+    To measure how much of the apparent performance this accounts for, a third classifier
+    was trained on a one-hot encoding of cohort identity and nothing else &mdash; no
+    taxonomic features at all.
+  </p>
+
+  <table>
+    <caption>Table 6 — Disease classification under three designs</caption>
+    <thead><tr><th>Design</th><th>Information available to the model</th><th class="n">Median AUROC</th></tr></thead>
+    <tbody>
+      <tr><td>Pooled across cohorts</td><td>Taxonomy, plus cohort identity implicitly</td><td class="n">0.958</td></tr>
+      <tr><td>Cohort identity only</td><td>Which laboratory produced the sample. No biology.</td><td class="n">0.915</td></tr>
+      <tr class="highlight"><td>Within cohort</td><td>Taxonomy only; laboratory held constant</td><td class="n">0.643</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout callout--finding">
+    <h4>Interpretation</h4>
+    A model containing no biological information whatsoever reaches AUROC 0.915, against
+    0.958 for the model that also sees the microbiome. Nearly all of the apparent
+    predictive performance in the pooled design is attributable to batch signature. The
+    defensible estimate of biological signal is the within-cohort figure of 0.643, obtained
+    where laboratory and platform are constant by construction.
+  </div>
+
+  <h3>6.3 Consequences for the project</h3>
+
+  <p>
+    These two results are consistent with one another and point to the same conclusion: the
+    system has learned relationships that hold <em>within</em> this collection of datasets,
+    and has not demonstrated relationships that hold across laboratories. That is a
+    meaningful scientific object &mdash; the within-cohort signal survives a stringent
+    leakage control &mdash; but it is not yet a deployable instrument for an arbitrary new
+    sample.
+  </p>
+
+  <p>
+    Accordingly, the roadmap in Section 9 was reordered. Architectural refinement aimed at
+    incremental within-cohort accuracy has been deprioritised below work targeting transfer
+    directly, since improvements to a figure that does not generalise have limited value.
+  </p>
+</section>
+
+<!-- =============================================== 7 APPLICATION ======= -->
+<section>
+  <span class="sec-num">Section 07</span>
+  <h2>The application</h2>
+
+  <p class="lede">
+    A web interface makes the model usable by someone with no background in microbiology,
+    and &mdash; equally importantly &mdash; makes its reasoning and its limitations
+    inspectable.
+  </p>
+
+  <h3>7.1 Structure</h3>
+
+  <table>
+    <caption>Table 7 — Interface sections</caption>
+    <thead><tr><th>Section</th><th>Function</th></tr></thead>
+    <tbody>
+      <tr><td>Overview</td><td>Plain-language explanation of the microbiome, metabolites, and the premise, assuming no prior knowledge</td></tr>
+      <tr><td>Simulator</td><td>Adjust bacterial abundances and observe predicted chemical changes live, with sourced associations and a population map</td></tr>
+      <tr><td>Outlook</td><td>Empirical analogue lookup over longitudinal subjects</td></tr>
+      <tr><td>Inside the model</td><td>The batch-confounding control, the transfer failure, the leakage check, and the complete pipeline run log</td></tr>
+      <tr><td>Methodology</td><td>Data provenance, evaluation design, limitations, privacy posture</td></tr>
+    </tbody>
+  </table>
+
+  <h3>7.2 Design commitments</h3>
+
+  <ul>
+    <li><strong>No value without its uncertainty.</strong> Every predicted metabolite is
+      rendered with the held-out correlation achieved for that specific compound. A
+      metabolite at r&nbsp;=&nbsp;0.12 is visually distinguished from one at
+      r&nbsp;=&nbsp;0.69 rather than presented identically.</li>
+    <li><strong>Change is the headline, not level.</strong> The simulator leads with the
+      difference from a reference profile, because systematic model error largely cancels
+      in a difference while an absolute value carries it in full.</li>
+    <li><strong>Adjustments apply over a real population profile.</strong> A user adjusting
+      five taxa has said nothing about the other 5,033; zeroing them would submit a
+      composition no human gut has ever had.</li>
+    <li><strong>Associations carry citations.</strong> Each displayed association shows
+      supporting study count, directional consistency, study quality, recency, and links
+      to the papers.</li>
+    <li><strong>Unflattering results are a page, not a footnote.</strong> The transparency
+      section leads with the batch-effect control and the transfer failure, generated from
+      committed experiment outputs rather than written by hand.</li>
+  </ul>
+
+  <h3>7.3 Privacy and security posture</h3>
+
+  <p>
+    The service is stateless by design. It holds no database, sets no cookies, creates no
+    accounts, and does not log submitted compositions; each response is a pure function of
+    the request and a fixed model snapshot. For a tool discussing health-adjacent data,
+    storing nothing is the strongest available privacy guarantee, and it costs nothing
+    here. The model is fixed and does not learn from traffic, which is what makes the
+    transparency view meaningful: the model a visitor inspects is the model that answered
+    them.
+  </p>
+
+  <p>
+    Controls implemented: schema validation with explicit bounds on every input, request
+    body size limits, per-client rate limiting, a restrictive content security policy and
+    associated headers, environment-configured CORS with no wildcard, and containers
+    running unprivileged and excluding both the training data and the training code. The
+    application carries a visible non-diagnostic disclaimer on every page displaying
+    health-related output.
+  </p>
+</section>
+
+<!-- =============================================== 8 LIMITATIONS ======= -->
+<section>
+  <span class="sec-num">Section 08</span>
+  <h2>Limitations</h2>
+
+  <h3>8.1 Generalisation</h3>
+  <p>
+    The system has not demonstrated transfer to an unseen laboratory (Section 6). All
+    reported accuracy should be read as within-distribution. This is the binding constraint
+    on the project.
+  </p>
+
+  <h3>8.2 Batch confounding</h3>
+  <p>
+    Cohort identity is nearly collinear with disease status throughout this collection.
+    Within-cohort analysis mitigates but does not eliminate the problem, and it restricts
+    the usable sample size to one cohort at a time.
+  </p>
+
+  <h3>8.3 Composition without function</h3>
+  <p>
+    The model observes which bacteria are present, not which genes they express.
+    Gene- and pathway-level profiling (HUMAnN3) is reported in the literature to be more
+    predictive than taxonomy alone and is absent here; generating it requires raw sequence
+    reads and a Linux bioinformatics toolchain, making it infrastructure work rather than a
+    modelling change.
+  </p>
+
+  <h3>8.4 Taxonomic resolution</h3>
+  <p>
+    The common feature space stops at genus, because only six of fourteen cohorts provide
+    species-level profiles. Biologically important distinctions exist below that level;
+    <em>E.&nbsp;coli</em> strains range from commensal to pathogenic.
+  </p>
+
+  <h3>8.5 Association, not causation; group, not individual</h3>
+  <p>
+    The outcome layer reports statistical associations observed in populations. Direction
+    of causality is generally unestablished, and many associations are plausibly downstream
+    of diet or medication rather than upstream of disease. Nothing in this system supports
+    inference about an individual.
+  </p>
+
+  <h3>8.6 Representativeness</h3>
+  <p>
+    The source cohorts skew toward particular geographies, age ranges and dietary patterns.
+    A profile from an under-represented population is compared against a reference that
+    describes it poorly.
+  </p>
+
+  <h3>8.7 Statistical power</h3>
+  <p>
+    Several validated disease models rest on tens of held-out patients, with correspondingly
+    wide confidence intervals. The longitudinal analysis draws on 331 subjects across six
+    heterogeneous studies.
+  </p>
+</section>
+
+<!-- ================================================== 9 ROADMAP ======== -->
+<section>
+  <span class="sec-num">Section 09</span>
+  <h2>Roadmap</h2>
+
+  <p class="lede">
+    Reordered by the Phase 2 findings. There is limited value in improving a
+    within-cohort figure that does not transfer, so generalisation work is promoted above
+    architectural refinement.
+  </p>
+
+  <h3>Priority 1 — Close the generalisation gap</h3>
+  <p>
+    Four approaches are testable with the existing harness, in approximate order of
+    expected value:
+  </p>
+  <ul>
+    <li><strong>Per-cohort target normalisation.</strong> Rank-normalise metabolite values
+      within cohort before training, so the model learns ordering rather than
+      platform-specific scale.</li>
+    <li><strong>Explicit batch correction.</strong> ComBat or MMUPHin applied to features
+      prior to modelling.</li>
+    <li><strong>Domain-adversarial training.</strong> Penalise representations from which
+      cohort identity is recoverable, directly targeting the confound Section 6 quantifies.</li>
+    <li><strong>Leave-one-cohort-out model selection.</strong> Select hyperparameters
+      against transfer performance rather than random-split performance, so the selection
+      criterion matches the deployment condition.</li>
+  </ul>
+  <p class="note">
+    Success criterion: median cross-cohort correlation materially above zero. Until that is
+    achieved, other improvements are secondary.
+  </p>
+
+  <h3>Priority 2 — Functional profiling</h3>
+  <p>
+    Gene and pathway abundance via MetaPhlAn and HUMAnN3. Beyond the expected accuracy
+    gain, there is a specific reason to expect it to help with transfer: gene content is
+    plausibly less laboratory-specific than 16S composition, since it is less sensitive to
+    primer choice and amplification protocol. Requires raw FASTQ retrieval and a Linux or
+    WSL bioconda environment.
+  </p>
+
+  <h3>Priority 3 — Additional labelled cohorts</h3>
+  <p>
+    curatedMetagenomicData is the most substantial available source. GMrepo was attempted
+    and is currently returning server errors. Additional cohorts serve the generalisation
+    problem directly by increasing the diversity of laboratories represented.
+  </p>
+
+  <h3>Priority 4 — Architecture</h3>
+  <p>
+    Encoder&ndash;decoder bottleneck and multi-task formulations, which share statistical
+    strength across correlated metabolites more efficiently than a wide feed-forward
+    network. To be evaluated on cross-cohort transfer, not only on held-out patients.
+  </p>
+
+  <h3>Priority 5 — Strain resolution and mechanism</h3>
+  <p>
+    Species- or strain-level features where cohorts support them, and integration of
+    mechanistic constraints in the MIMOSA2 tradition &mdash; restricting predictions to
+    reactions the observed community plausibly encodes.
+  </p>
+</section>
+
+<!-- ========================================== 10 REPRODUCIBILITY ======= -->
+<section>
+  <span class="sec-num">Section 10</span>
+  <h2>Reproducibility</h2>
+
+  <p>
+    Every figure in this report regenerates from the repository. Each pipeline step appends
+    a structured record &mdash; parameters, metrics, output artefacts, duration, and
+    failures &mdash; to <code>experiments/run_log.jsonl</code>, which the application also
+    reads and displays. <code>python scripts/status.py</code> prints current pipeline state.
+  </p>
+
+  <table>
+    <caption>Table 8 — Regenerating the principal results</caption>
+    <thead><tr><th>Result</th><th>Command</th></tr></thead>
+    <tbody>
+      <tr><td>Median held-out r = 0.458</td><td><code>scripts/train_elastic_net.py</code></td></tr>
+      <tr><td>Elastic net vs. MLP</td><td><code>scripts/compare_baselines.py</code></td></tr>
+      <tr><td>Cross-cohort r = 0.002</td><td><code>scripts/backtest.py --test cross_cohort</code></td></tr>
+      <tr><td>Leakage control</td><td><code>scripts/backtest.py --test negative_control</code></td></tr>
+      <tr><td>Batch-identity control</td><td><code>scripts/train_outcome_model.py</code></td></tr>
+      <tr><td>Association layer</td><td><code>scripts/fetch_disbiome.py</code></td></tr>
+      <tr><td>Deployable model</td><td><code>scripts/train_production_model.py</code></td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    A test suite of 46 tests covers lineage parsing, inference and attribution correctness
+    &mdash; including an assertion that per-feature contributions sum to the prediction,
+    the property the interface's explanation view depends on &mdash; and API contract and
+    input validation.
+  </p>
+
+  <h3>References and data sources</h3>
+  <ol class="refs">
+    <li>Borenstein Lab. <em>Curated gut microbiome&ndash;metabolome data resource.</em>
+      <span class="src">github.com/borenstein-lab/microbiome-metabolome-curated-data</span></li>
+    <li>Mallick H. et&nbsp;al. <em>Predictive metabolomic profiling of microbial communities
+      using amplicon or metagenomic sequences</em> (MelonnPan). Nature Communications, 2019.</li>
+    <li>Janssens Y. et&nbsp;al. <em>Disbiome database: linking the microbiome to disease.</em>
+      BMC Microbiology, 2018. <span class="src">disbiome.ugent.be</span></li>
+    <li>Kanehisa M., Goto S. <em>KEGG: Kyoto Encyclopedia of Genes and Genomes.</em>
+      Nucleic Acids Research, 2000. <span class="src">genome.jp/kegg</span></li>
+    <li>Lloyd-Price J. et&nbsp;al. <em>Multi-omics of the gut microbial ecosystem in
+      inflammatory bowel diseases.</em> Nature, 2019. (iHMP/IBDMDB cohort)</li>
+    <li>Franzosa E. et&nbsp;al. <em>Gut microbiome structure and metabolic activity in
+      inflammatory bowel disease.</em> Nature Microbiology, 2019.</li>
+    <li>Yachida S. et&nbsp;al. <em>Metagenomic and metabolomic analyses reveal distinct
+      stage-specific phenotypes of the gut microbiota in colorectal cancer.</em>
+      Nature Medicine, 2019.</li>
+    <li>NCBI E-utilities. <span class="src">eutils.ncbi.nlm.nih.gov</span></li>
+  </ol>
+
+  <div class="callout">
+    <h4>Status declaration</h4>
+    7448 AI is a research prototype. It is not a medical device, has not been evaluated by
+    any regulatory body, and must not be used to diagnose, treat, or make decisions about
+    any individual's health. Its principal validated finding to date is a negative one: that
+    predictive performance of this class of model, evaluated conventionally, substantially
+    overstates what it achieves on data from an unfamiliar source.
+  </div>
+</section>
+
+</body>
+</html>

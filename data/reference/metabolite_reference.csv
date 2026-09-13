@@ -1,0 +1,1385 @@
+hmdb_id,name,kegg_id,class_hint,high_confidence,n_cohorts_annotated,in_model_targets
+C00860,histidinol,,,True,1,True
+C06306,"(1R)-2,6,6-Trimethylbicyclo[3.1.1]hept-2-ene",C09880,,True,1,True
+C19615,HEXADECANEDIOATE,,,True,1,True
+HMDB0000002,"C00986_1,3-Diaminopropane",C00986,,True,2,True
+HMDB0000005,C00109_2-Oxobutyrate,C00109,,True,2,True
+HMDB0000008,alpha-hydroxybutyrate,C05984,,True,5,True
+HMDB0000011,3-Hydroxybutyrate,C01089,,True,3,True
+HMDB0000012,2'-Deoxyuridine,C00526,"Pyrimidine Metabolism, Uracil containing",True,3,True
+HMDB0000014,C00881_2'-Deoxycytidine,C00881,"Pyrimidine Metabolism, Cytidine containing",True,5,True
+HMDB0000017,4-pyridoxate,C00847,Pyridines and derivatives,True,9,True
+HMDB0000019,C00141_2-Oxoisopentanoate,C00141,Keto acids and derivatives,True,5,True
+HMDB0000020,p-hydroxyphenylacetate,C00642,Phenols,True,9,True
+HMDB0000021,C02515_3-Iodotyrosine,C02515,,True,1,True
+HMDB0000022,C05587_3-Methoxytyramine,C05587,,True,3,True
+HMDB0000023,_3_HYDROXYISOBUTYRATE,C06001,,False,1,True
+HMDB0000026,N-carbamoyl-beta-alanine,C02642,"Pyrimidine Metabolism, Uracil containing",True,7,True
+HMDB0000030,C00120_Biotin,C00120,Biotin Metabolism,True,4,True
+HMDB0000033,carnosine,C00386,Peptidomimetics,True,5,True
+HMDB0000034,adenine,C00147,"Purine Metabolism, Adenine containing",True,8,True
+HMDB0000036,Taurocholic acid,C05122,,True,6,True
+HMDB0000038,"C02953_7,8-Dihydrobiopterin",C02953,,True,2,True
+HMDB0000039,Butyrate,C00246,,True,8,True
+HMDB0000042,Acetate,C00033,,True,4,True
+HMDB0000043,betaine,C00719,"Amino acids, peptides, and analogues",True,8,True
+HMDB0000044,ascorbate,C00072,Furanones,True,4,True
+HMDB0000045,C00020_AMP,C00020,,True,3,True
+HMDB0000050,adenosine,C00212,"Purine Metabolism, Adenine containing",True,8,True
+HMDB0000052,C03406_Argininosuccinate,C03406,,True,2,True
+HMDB0000053,Androstenedione,C00280,,True,1,True
+HMDB0000054,bilirubin,C00486,Hemoglobin and Porphyrin Metabolism,True,5,True
+HMDB0000055,cellobiose,C00185,,True,2,True
+HMDB0000056,beta-alanine,C00099,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000058,C00575_cAMP,C00575,,True,2,True
+HMDB0000060,ACETOACETATE,C00164,,True,1,True
+HMDB0000061,"C00054_Adenosine 3',5'-diphosphate",C00054,,True,2,True
+HMDB0000062,carnitine,C00318,Carnitine Metabolism,True,9,True
+HMDB0000063,Cortisol,C00735,,True,2,True
+HMDB0000064,creatine,C00300,Alpha amino acids and derivatives,True,8,True
+HMDB0000067,cholesterol,C00187,Sterol,True,5,True
+HMDB0000068,C00788_Epinephrine,C00788,,True,2,True
+HMDB0000070,pipecolic acid,C00408,L-alpha-amino acids,True,8,True
+HMDB0000071,deoxyinosine,C05512,Purine nucleosides,True,6,True
+HMDB0000072,C00417_cis-Aconitate,C00417,,True,3,True
+HMDB0000073,C03758_Dopamine,C03758,,True,2,True
+HMDB0000076,C00429_Dihydrouracil,C00429,,True,5,True
+HMDB0000078,C01419_Cys-Gly,C01419,Glutathione Metabolism,True,3,True
+HMDB0000082,C00063_CTP,C00063,,True,1,True
+HMDB0000085,C00330_2'-Deoxyguanosine,C00330,"Purine Metabolism, Guanine containing",True,4,True
+HMDB0000086,C00670_Glycerophosphorylcholine,C00670,Phospholipid Metabolism,True,5,True
+HMDB0000087,Dimethylamine,C00543,,True,1,True
+HMDB0000089,cytidine,C00475,"Pyrimidine Metabolism, Cytidine containing",True,7,True
+HMDB0000092,dimethylglycine,C01026,"Glycine, Serine and Threonine Metabolism",True,8,True
+HMDB0000094,citrate,C00158,TCA Cycle,True,7,True
+HMDB0000095,C00055_CMP,C00055,,True,2,True
+HMDB0000097,choline,C00114,Phospholipid Metabolism,True,10,True
+HMDB0000098,xylose,C00181,Pentose Metabolism,True,7,True
+HMDB0000099,C02291_Cystathionine,C02291,,True,3,True
+HMDB0000101,2-deoxyadenosine,C00559,"Purine Metabolism, Adenine containing",True,5,True
+HMDB0000107,hexitol,C01697,,False,1,True
+HMDB0000108,Ethanol,C00469,,True,3,True
+HMDB0000112,C00334_GABA,C00334,,True,6,True
+HMDB0000114,glycerophosphoethanolamine,C01233,Phospholipid Metabolism,True,1,True
+HMDB0000115,glycolic acid,C00160,,False,1,True
+HMDB0000118,homovanillate,C05582,Phenols,True,6,True
+HMDB0000119,C00048_Glyoxylate,C00048,,True,2,True
+HMDB0000121,C00504_Folate,C00504,,True,1,True
+HMDB0000122,Glucose,C00031,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",True,7,True
+HMDB0000123,Glycine,C00037,"Glycine, Serine and Threonine Metabolism",True,11,True
+HMDB0000124,C00085_F6P,C00085,,True,3,True
+HMDB0000125,C00051_Glutathione(red),C00051,,True,2,True
+HMDB0000126,C00093_Glycerophosphate,C00093,Glycerolipid Metabolism,True,5,True
+HMDB0000127,glucuronate,C00191,Aminosugar Metabolism,True,6,True
+HMDB0000128,C00581_Guanidinoacetate,C00581,,True,4,True
+HMDB0000130,homogentisate,C00544,,True,1,True
+HMDB0000131,Glycerol,C00116,Glycerolipid Metabolism,True,6,True
+HMDB0000132,guanine,C00242,Imidazopyrimidines,True,8,True
+HMDB0000133,guanosine,C00387,"Purine Metabolism, Guanine containing",True,10,True
+HMDB0000134,Fumarate,C00122,TCA Cycle,True,7,True
+HMDB0000138,glycocholate,C01921,Primary Bile Acid Metabolism,True,9,True
+HMDB0000139,glycerate,C00258,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",True,8,True
+HMDB0000143,Galactose,C00124,,True,2,True
+HMDB0000148,glutamate,C00302,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000149,Ethanolamine,C00189,,True,3,True
+HMDB0000150,gluconic acid lactone,C00198,,True,1,True
+HMDB0000151,Estradiol,C00951,,True,1,True
+HMDB0000152,gentisate,C00628,Tyrosine Metabolism,True,6,True
+HMDB0000156,malate,C00149,TCA Cycle,True,10,True
+HMDB0000157,hypoxanthine,C00262,Purines and purine derivatives,True,10,True
+HMDB0000158,tyrosine,C00082,"Amino acids, peptides, and analogues",True,13,True
+HMDB0000159,phenylalanine,C00079,Phenylalanine Metabolism,True,12,True
+HMDB0000161,alanine,C01401,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000162,proline,C00148,"Amino acids, peptides, and analogues",True,12,True
+HMDB0000163,maltose,C00208,Glycogen Metabolism,True,2,True
+HMDB0000164,Methylamine,C00218,,True,2,True
+HMDB0000167,threonine,C00188,L-alpha-amino acids,True,11,True
+HMDB0000168,asparagine,C00152,Asparagine and derivatives,True,11,True
+HMDB0000169,mannose,C00159,"Fructose, Mannose and Galactose Metabolism",True,3,True
+HMDB0000172,isoleucine,C00407,Isoleucine and derivatives,True,12,True
+HMDB0000174,fucose,C01019,Hexoses,True,5,True
+HMDB0000175,C00130_IMP,C00130,,True,2,True
+HMDB0000176,maleate,C01384,"Fatty Acid, Dicarboxylate",True,2,True
+HMDB0000177,histidine,C00135,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000181,C00355_DOPA,C00355,,True,3,True
+HMDB0000182,lysine,C00047,"Amino acids, peptides, and analogues",True,12,True
+HMDB0000186,lactose,C00243,O-glycosyl compounds,True,4,True
+HMDB0000187,serine,C00065,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000189,C00081_ITP,C00081,,True,1,True
+HMDB0000190,lactate,C00186,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",True,12,True
+HMDB0000191,aspartate,C00049,Alanine and Aspartate Metabolism,True,11,True
+HMDB0000192,cystine,C00491,,True,3,True
+HMDB0000193,C00311_Isocitrate,C00311,,True,4,True
+HMDB0000194,anserine,C01262,Dipeptide Derivative,True,7,True
+HMDB0000195,inosine,C00294,Purine nucleosides,True,8,True
+HMDB0000197,C00954_Indole-3-acetate,C00954,,True,8,True
+HMDB0000201,C2 carnitine,C02571,,True,7,True
+HMDB0000205,C00166_Phenylpyruvate,C00166,,True,2,True
+HMDB0000206,N6-acetyllysine,C02727,Lysine Metabolism,True,5,True
+HMDB0000207,oleic acid,C00712,,True,5,True
+HMDB0000208,alpha-ketoglutarate,C00026,Gamma-keto acids and derivatives,True,9,True
+HMDB0000209,phenylacetate,C07086,Phenylalanine Metabolism,True,8,True
+HMDB0000210,pantothenate,C00864,"Amino acids, peptides, and analogues",True,8,True
+HMDB0000211,inositol,C00137,Inositol Metabolism,True,4,True
+HMDB0000212,N-Acetylgalactosamine,C01074,,True,2,True
+HMDB0000214,ornithine,C00077,"Amino acids, peptides, and analogues",True,10,True
+HMDB0000215,C00140_N-Acetylglucosamine,C00140,,True,4,True
+HMDB0000216,C00547_Noradrenaline,C00547,,True,4,True
+HMDB0000218,C01103_Orotidine 5'-monophosphate,C01103,,True,1,True
+HMDB0000220,palmitic acid,C00249,Fatty acids and conjugates,True,5,True
+HMDB0000221,C00005_NADPH,C00005,,True,1,True
+HMDB0000222,C16 carnitine,C02990,Acyl carnitines,True,4,True
+HMDB0000224,C00346_Ethanolamine phosphate,C00346,,True,3,True
+HMDB0000225,C00322_2-Oxoadipate,C00322,,True,2,True
+HMDB0000226,orotate,C00295,"Pyrimidine Metabolism, Orotate containing",True,8,True
+HMDB0000227,mevalonate,C00418,Mevalonate Metabolism,True,2,True
+HMDB0000228,Phenol,C00146,,True,3,True
+HMDB0000229,C00455_NMN,C00455,,True,1,True
+HMDB0000230,N-Acetylneuraminate,C00270,,True,2,True
+HMDB0000232,quinolinate,C03722,,True,4,True
+HMDB0000235,thiamine,C00378,Pyrimidines and pyrimidine derivatives,True,6,True
+HMDB0000237,Propionate,C00163,Carboxylic acids,True,9,True
+HMDB0000238,C00835_Sepiapterin,C00835,,True,2,True
+HMDB0000239,C00314_Pyridoxine,C00314,,True,3,True
+HMDB0000243,pyruvate,C00022,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",True,9,True
+HMDB0000244,riboflavin,C00255,Alloxazines and isoalloxazines,True,6,True
+HMDB0000245,C00931_Porphobilinogen,C00931,,True,4,True
+HMDB0000247,sorbitol,C00794,Sugar alcohols,True,4,True
+HMDB0000250,pyrophosphate,C00013,,True,1,True
+HMDB0000251,taurine,C00245,Organosulfonic acids and derivatives,True,12,True
+HMDB0000252,sphingosine,C00319,Organonitrogen compounds,True,5,True
+HMDB0000254,Succinate,C00042,Dicarboxylic acids and derivatives,True,12,True
+HMDB0000256,SQUALENE,C00751,,True,2,True
+HMDB0000259,serotonin,C00780,Tryptophan Metabolism,True,7,True
+HMDB0000262,thymine,C00178,Diazines,True,11,True
+HMDB0000263,C00074_PEP,C00074,,True,2,True
+HMDB0000265,"C02465_3,3',5-Triiodothyronine",C02465,,True,2,True
+HMDB0000267,pyroglutamic acid,C01879,Alpha amino acids and derivatives,True,9,True
+HMDB0000269,sphinganine,C00836,Organonitrogen compounds,True,5,True
+HMDB0000271,C00213_Sarcosine,C00213,,True,4,True
+HMDB0000272,C01005_O-Phosphoserine,C01005,,True,2,True
+HMDB0000273,thymidine,C00214,"Pyrimidine Metabolism, Thymine containing",True,8,True
+HMDB0000277,Sphingosine 1-Phosphate,C06124,,True,1,True
+HMDB0000279,C00449_Saccharopine,C00449,Lysine Metabolism,True,4,True
+HMDB0000280,C00119_PRPP,C00119,,True,1,True
+HMDB0000283,Ribose,C00121,,True,3,True
+HMDB0000285,C00075_UTP,C00075,,True,2,True
+HMDB0000286,C00029_UDP-glucose,C00029,,True,2,True
+HMDB0000288,C00105_UMP,C00105,,True,3,True
+HMDB0000289,urate,C00366,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",True,9,True
+HMDB0000290,C00043_UDP-N-acetylglucosamine,C00043,,True,2,True
+HMDB0000291,C05584_4-Hydroxy-3-methoxymandelate,C05584,,True,3,True
+HMDB0000292,xanthine,C00385,Imidazopyrimidines,True,11,True
+HMDB0000293,C00700_XTP,C00700,,True,1,True
+HMDB0000294,Urea,C00086,,True,6,True
+HMDB0000295,C00015_UDP,C00015,,True,2,True
+HMDB0000296,uridine,C00299,"Pyrimidine Metabolism, Uracil containing",True,10,True
+HMDB0000299,xanthosine,C01762,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",True,5,True
+HMDB0000300,uracil,C00106,"Pyrimidine Metabolism, Uracil containing",True,12,True
+HMDB0000301,urocanic acid,C00785,Imidazoles,True,6,True
+HMDB0000303,tryptamine,C00398,Tryptophan Metabolism,True,4,True
+HMDB0000306,tyramine,C00483,Tyrosine Metabolism,True,8,True
+HMDB0000308,3b-hydroxy-5-cholenoic acid,,Secondary Bile Acid Metabolism,True,1,True
+HMDB0000317,2-hydroxy-3-methylvalerate,,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000318,3-4-dihydroxyphenylglycol,C05576,,True,2,True
+HMDB0000337,2-deoxytetronic acid,,,True,1,True
+HMDB0000355,C03761_3-Hydroxy-3-methylglutarate,C03761,Mevalonate Metabolism,True,5,True
+HMDB0000357,beta-hydroxybutyrate,C01089,Ketone Bodies,True,2,True
+HMDB0000365,Epiandrosterone,C07635,,True,1,True
+HMDB0000370,C05672_2-Amino-3-phosphonopropionate,C05672,,True,1,True
+HMDB0000375,3-(3-hydroxyphenyl)propionate,C11457,Benzoate Metabolism,True,1,True
+HMDB0000387,3-hydroxylaurate,,"Fatty Acid, Monohydroxy",True,1,True
+HMDB0000391,7-Ketodeoxycholic acid,C04643,Secondary Bile Acid Metabolism,True,4,True
+HMDB0000402,C02504_2-Isopropylmalate,C02504,Food Component/Plant,True,3,True
+HMDB0000407,2-Hydroxyisovalerate,,"Leucine, Isoleucine and Valine Metabolism",True,3,True
+HMDB0000422,2-methylglutaric acid,C02930,Methyl-branched fatty acids,True,1,True
+HMDB0000426,C02614_Citramalate,C02614,,True,3,True
+HMDB0000439,2-furoylglycine,,,True,2,True
+HMDB0000446,N2-acetyllysine,C12989,Lysine Metabolism,True,2,True
+HMDB0000448,adipate,C06104,"Fatty Acid, Dicarboxylate",True,8,True
+HMDB0000450,C16741_5-Hydroxylysine,C16741,Lysine Metabolism,True,3,True
+HMDB0000451,cis-4-hydroxycyclohexylacetic acid,,Tyrosine Metabolism,True,1,True
+HMDB0000452,C02356_2AB,C02356,L-alpha-amino acids,True,7,True
+HMDB0000453,5-hydroxyhexanoate,C01880,"Fatty Acid, Monohydroxy",True,2,True
+HMDB0000462,C01551_Allantoin,C01551,,True,3,True
+HMDB0000466,3-methylindole (relative; raw peak area only),C08313,,True,1,True
+HMDB0000472,5-hydroxytryptophan,C00643,,True,5,True
+HMDB0000474,2-Butanone,C02845,,True,1,True
+HMDB0000476,"3-Oxo-4,6-choladienoic acid",,,True,1,True
+HMDB0000479,3-methylhistidine,C01152,Histidine Metabolism,True,6,True
+HMDB0000482,caprylate,C06423,Medium-chain fatty acids,True,3,True
+HMDB0000489,N-acetylglucosaminylasparagine,C04540,Aminosugar Metabolism,True,1,True
+HMDB0000491,3-methyl-2-oxovalerate,C00671,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000500,C00156_p-Hydroxybenzoate,C00156,,True,4,True
+HMDB0000506,alpha-muricholate,C17647,,True,3,True
+HMDB0000508,ribitol,C00474,Sugar alcohols,True,1,True
+HMDB0000510,2-aminoadipate,C00956,Lysine Metabolism,True,4,True
+HMDB0000511,C01571_Decanoate,C01571,,True,6,True
+HMDB0000512,C03519_N-Acetylphenylalanine,C03519,Phenylalanine Metabolism,True,5,True
+HMDB0000517,arginine,C00062,"Amino acids, peptides, and analogues",True,11,True
+HMDB0000518,chenodeoxycholate,C02528,"Bile acids, alcohols and derivatives",True,5,True
+HMDB0000522,3-methylglutaconate,,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000528,C00337_Dihydroorotate,C00337,,True,2,True
+HMDB0000529,5Z-Dodecenoic acid,,Medium Chain Fatty Acid,True,2,True
+HMDB0000532,N-Acetylglycine,,"Glycine, Serine and Threonine Metabolism",True,3,True
+HMDB0000535,caproate,C01585,Medium Chain Fatty Acid,True,7,True
+HMDB0000536,C03794_Adenylosuccinate,C03794,,True,1,True
+HMDB0000538,C00002_ATP,C00002,,True,2,True
+HMDB0000539,ARABONATE,C00878,,True,1,True
+HMDB0000555,3-methyladipate,,"Fatty Acid, Dicarboxylate",True,3,True
+HMDB0000557,L-Alloisoleucine,,,True,1,True
+HMDB0000562,creatinine,C00791,"Amino acids, peptides, and analogues",True,10,True
+HMDB0000564,"1,2-dipalmitoyl-GPC (16:0/16:0)",,Phosphatidylcholine (PC),True,1,True
+HMDB0000573,elaidic acid,C01712,,True,1,True
+HMDB0000574,cysteine,C00097,"Methionine, Cysteine, SAM and Taurine Metabolism",True,5,True
+HMDB0000575,C01817_Homocystine,C01817,,True,3,True
+HMDB0000577,coprostanol,C12978,Sterol,True,2,True
+HMDB0000594,gamma-glutamylphenylalanine,,Gamma-glutamyl Amino Acid,True,2,True
+HMDB0000607,C02823_Cyanocobalamin,C02823,,True,1,True
+HMDB0000610,CE(18:2),C15441,,False,1,True
+HMDB0000613,erythronate,,,True,4,True
+HMDB0000617,C01546_2-Furoate,C01546,,True,1,True
+HMDB0000618,C00199_Ru5P,C00199,,True,2,True
+HMDB0000619,cholate,C00695,"Bile acids, alcohols and derivatives",True,10,True
+HMDB0000622,ethylmalonate,,"Leucine, Isoleucine and Valine Metabolism",True,1,True
+HMDB0000623,dodecanedioate,C02678,"Fatty Acid, Dicarboxylate",True,7,True
+HMDB0000624,alpha-hydroxyisocaproate,C03264,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000625,C00257_Gluconate,C00257,Food Component/Plant,True,4,True
+HMDB0000626,deoxycholate,C04483,"Bile acids, alcohols and derivatives",True,7,True
+HMDB0000630,cytosine,C00380,"Pyrimidine Metabolism, Cytidine containing",True,10,True
+HMDB0000631,glycodeoxycholate,C05464,Secondary Bile Acid Metabolism,True,6,True
+HMDB0000634,C02226_Citraconate,C02226,,True,2,True
+HMDB0000637,glycochenodeoxycholate,C05466,Primary Bile Acid Metabolism,True,4,True
+HMDB0000638,C02679_Dodecanoate,C02679,,True,5,True
+HMDB0000639,C00879_Mucate,C00879,,True,3,True
+HMDB0000640,levoglucosan,,,True,2,True
+HMDB0000641,glutamine,C00064,L-alpha-amino acids,True,11,True
+HMDB0000646,Arabinose,C00259,Pentose Metabolism,True,3,True
+HMDB0000651,Decanoylcarnitine,C03299,,True,1,True
+HMDB0000658,CE(16:1),C02530,,False,1,True
+HMDB0000660,fructose,C00095,"Fructose, Mannose and Galactose Metabolism",True,3,True
+HMDB0000661,C00489_Glutarate,C00489,,True,4,True
+HMDB0000663,C00818_Saccharate,C00818,,True,3,True
+HMDB0000665,C03264_2-Hydroxy-4-methylpentanoate,C03264,,True,2,True
+HMDB0000666,Heptanoic acid,C17714,,True,3,True
+HMDB0000669,C05852_2-Hydroxyphenylacetate,C05852,,True,3,True
+HMDB0000670,Homo-L-arginine,C01924,,False,1,True
+HMDB0000671,indolelactate,C02043,Tryptophan Metabolism,True,7,True
+HMDB0000672,hexadecanedioic acid,C19615,Long-chain fatty acids,True,2,True
+HMDB0000673,linoleic acid,C01595,,True,5,True
+HMDB0000678,isovalerylglycine,,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000679,Homocitrulline,C02427,Urea cycle; Arginine and Proline Metabolism,True,3,True
+HMDB0000682,indoxylsulfate,,,True,4,True
+HMDB0000684,C00328_Kynurenine,C00328,,True,3,True
+HMDB0000686,isoursodeoxycholate,C17662,Secondary Bile Acid Metabolism,True,1,True
+HMDB0000687,leucine,C00123,"Amino acids, peptides, and analogues",True,13,True
+HMDB0000688,Isovalerylcarnitine,C20826,,True,1,True
+HMDB0000689,isocaproate,,"Fatty Acid, Branched",True,2,True
+HMDB0000691,malonate,C00383,Dicarboxylic acids and derivatives,True,8,True
+HMDB0000695,C00233_4-Methyl-2-oxopentanoate,C00233,"Leucine, Isoleucine and Valine Metabolism",True,5,True
+HMDB0000696,methionine,C00073,Methionine and derivatives,True,11,True
+HMDB0000698,glycolithocholic acid,C15557,,True,3,True
+HMDB0000699,1-methylnicotinamide,C02918,Nicotinate and Nicotinamide Metabolism,True,7,True
+HMDB0000700,C01013_3-Hydroxypropionate,C01013,,True,4,True
+HMDB0000703,mandelate,C01984,,True,3,True
+HMDB0000706,ASPARTYLPHENYLALANINE,,,True,1,True
+HMDB0000708,Glycoursodeoxycholic acid,,,True,4,True
+HMDB0000711,2-hydroxyoctanoate,,,True,4,True
+HMDB0000714,C01586_Hippurate,C01586,,True,3,True
+HMDB0000715,kynurenic acid,C01717,Quinolines and derivatives,True,7,True
+HMDB0000716,L-Pipecolic acid,C00408,,True,1,True
+HMDB0000717,lithocholate,C17658,Secondary Bile Acid Metabolism,True,3,True
+HMDB0000718,Isovalerate,C08262,"Leucine, Isoleucine and Valine Metabolism",True,9,True
+HMDB0000719,homoserine,C00263,,True,5,True
+HMDB0000720,levulinate,,,True,3,True
+HMDB0000721,GLYCYLPROLINE,,,True,1,True
+HMDB0000722,taurolithocholate,C02592,,True,4,True
+HMDB0000725,hydroxyproline,C01157,Urea cycle; Arginine and Proline Metabolism,True,6,True
+HMDB0000729,_2_HYDROXYISOBUTYRATE,,,True,1,True
+HMDB0000731,C05824_Cysteine S-sulfate,C05824,,True,2,True
+HMDB0000732,C02794_3-Hydroxykynurenine,C02794,,True,3,True
+HMDB0000733,Hyodeoxycholic acid,C15517,,True,2,True
+HMDB0000738,indole,C00463,,True,2,True
+HMDB0000742,HOMOCYSTEINE,C00155,,True,2,True
+HMDB0000745,C00884_Homocarnosine,C00884,,True,2,True
+HMDB0000748,L-phenyllactic acid,C05607,Phenylpropanoic acids,False,1,True
+HMDB0000751,xylulose NIST,C00312,,True,1,True
+HMDB0000754,beta-hydroxyisovalerate,C20827,"Leucine, Isoleucine and Valine Metabolism",True,2,True
+HMDB0000755,4-Hydroxyphenyllactate,C03672,Tyrosine Metabolism,True,2,True
+HMDB0000756,C6 carnitine,,,True,2,True
+HMDB0000759,C02155_Gly-Leu,C02155,Dipeptide,True,4,True
+HMDB0000760,hyocholate,C17649,Secondary Bile Acid Metabolism,True,1,True
+HMDB0000761,Lithocholic acid,C03990,,True,4,True
+HMDB0000763,5-HIAA,C05635,,True,5,True
+HMDB0000764,hydrocinnamate,C05629,,True,7,True
+HMDB0000765,mannitol,C00392,,True,1,True
+HMDB0000766,N-acetylalanine,C01073,Alanine and Aspartate Metabolism,True,5,True
+HMDB0000767,pseudouridine,C02067,Nucleoside and nucleotide analogues,True,6,True
+HMDB0000772,nonadecanoate,C16535,Long Chain Fatty Acid,True,4,True
+HMDB0000774,pregnenolone sulfate,,,True,1,True
+HMDB0000779,phenyllactate,C05607,Phenylalanine Metabolism,True,8,True
+HMDB0000782,octadecanedioate,,"Fatty Acid, Dicarboxylate",True,1,True
+HMDB0000784,azelaic acid,C08261,Fatty acids and conjugates,True,8,True
+HMDB0000786,Oxypurinol,C07599,,True,2,True
+HMDB0000791,Octanoylcarnitine,C02838,,True,1,True
+HMDB0000792,sebacate,C08277,Fatty acids and conjugates,True,6,True
+HMDB0000801,phytanate,C01607,,True,2,True
+HMDB0000802,pterin,C00715,Pterin Metabolism,True,6,True
+HMDB0000806,myristic acid,C06424,Long-chain fatty acids,True,5,True
+HMDB0000807,C00661_G3P,C00661,,False,2,True
+HMDB0000812,C01042_N-Acetylaspartate,C01042,Alanine and Aspartate Metabolism,True,5,True
+HMDB0000820,1-Propanol,C05979,,True,1,True
+HMDB0000821,C05598_Phenaceturate,C05598,,True,2,True
+HMDB0000822,C11527_4-Hydroxymandelate,C11527,,True,3,True
+HMDB0000824,Propionylcarnitine,C03017,,True,1,True
+HMDB0000825,3'-sialyllactose,,,True,1,True
+HMDB0000826,pentadecanoate,C16537,Long-chain fatty acids,True,4,True
+HMDB0000827,stearic acid,C01530,Fatty acids and conjugates,True,5,True
+HMDB0000828,C00438_Carbamoylaspartate,C00438,,True,2,True
+HMDB0000840,salicylate,C07588,Benzoic acids and derivatives,True,5,True
+HMDB0000842,C06325_2-Quinolinecarboxylate,C06325,,True,2,True
+HMDB0000847,C01601_Pelargonate,C01601,,True,2,True
+HMDB0000848,Stearoylcarnitine,,,True,1,True
+HMDB0000849,RHAMNOSE,C00507,,True,1,True
+HMDB0000852,beta-sitosterol,C01753,Sterol,True,3,True
+HMDB0000854,formiminoglutamate,C00439,Histidine Metabolism,True,1,True
+HMDB0000855,nicotinamide riboside,C03150,Nicotinate and Nicotinamide Metabolism,True,1,True
+HMDB0000856,N-acetylcitrulline,,Urea cycle; Arginine and Proline Metabolism,False,1,True
+HMDB0000857,C02656_Pimelate,C02656,"Fatty Acid, Dicarboxylate",True,3,True
+HMDB0000863,Isopropanol,C01845,,True,3,True
+HMDB0000866,acetytyrosine,C01657,"Amino acids, peptides, and analogues",True,4,True
+HMDB0000867,ribonic acid,C01685,,True,1,True
+HMDB0000870,histamine,C00388,,True,7,True
+HMDB0000872,tetradecanedioate,C11002,Long-chain fatty acids,True,4,True
+HMDB0000873,4-methylcatechol,C06730,Phenols,True,2,True
+HMDB0000874,Tauroursodeoxycholic acid,,,False,1,True
+HMDB0000875,C01004_Trigonelline,C01004,Nicotinate and Nicotinamide Metabolism,True,5,True
+HMDB0000881,C02470_Xanthurenate,C02470,,True,4,True
+HMDB0000883,valine,C00183,"Amino acids, peptides, and analogues",True,13,True
+HMDB0000884,Ribothymidine,,,True,1,True
+HMDB0000885,CE(16:0),C11251,,True,1,True
+HMDB0000888,undecanedionate,,"Fatty Acid, Dicarboxylate",True,5,True
+HMDB0000892,Valerate,C00803,Short Chain Fatty Acid,True,7,True
+HMDB0000893,suberate,C08278,,True,4,True
+HMDB0000895,acetylcholine,C01996,Quaternary ammonium salts,True,6,True
+HMDB0000896,Taurodeoxycholic acid,C05463,,True,5,True
+HMDB0000897,7-methylguanine,C02242,Imidazopyrimidines,True,7,True
+HMDB0000898,1-methylhistamine,C05127,,True,5,True
+HMDB0000902,C00003_NAD+,C00003,,True,2,True
+HMDB0000904,citrulline,C00327,L-alpha-amino acids,True,9,True
+HMDB0000905,C00360_dAMP,C00360,"Purine Metabolism, Adenine containing",True,3,True
+HMDB0000906,Trimethylamine,C00565,,True,4,True
+HMDB0000908,5alpha-cholestanol,,,True,1,True
+HMDB0000917,ursocholate,C17644,Secondary Bile Acid Metabolism,True,1,True
+HMDB0000918,CE(18:1),C14641,,False,1,True
+HMDB0000921,cholestenone,C00599,Cholesterols and derivatives,True,2,True
+HMDB0000925,trimethylamine-N-oxide,C01104,Phospholipid Metabolism,True,6,True
+HMDB0000929,tryptophan,C00078,Indoles and derivatives,True,13,True
+HMDB0000932,Tauro-b-muricholic acid,,,False,1,True
+HMDB0000935,C00167_UDP-glucuronate,C00167,,True,3,True
+HMDB0000937,stigmasterol,C05442,,True,1,True
+HMDB0000939,C00021_SAH,C00021,,True,2,True
+HMDB0000943,C01620_Threonate,C01620,Ascorbate and Aldarate Metabolism,True,5,True
+HMDB0000944,behenic acid,C08281,,True,1,True
+HMDB0000946,Ursodeoxycholic acid,C07880,Secondary Bile Acid Metabolism,True,3,True
+HMDB0000947,C17715_Undecanoate,C17715,,True,2,True
+HMDB0000951,Taurochenodeoxycholate,C05465,"Bile acids, alcohols and derivatives",True,6,True
+HMDB0000954,C01494_trans-4-Hydroxy-3-methoxycinnamate,C01494,Food Component/Plant,True,4,True
+HMDB0000956,C00898_Tartrate,C00898,,True,5,True
+HMDB0000957,pyrocatechol,C00090,Benzenediols,True,2,True
+HMDB0000958,C02341_trans-Aconitate,C02341,,True,2,True
+HMDB0000965,C00519_Hypotaurine,C00519,,True,2,True
+HMDB0000975,trehalose,C01083,,True,1,True
+HMDB0000982,5-methylcytidine,,,True,1,True
+HMDB0000996,C00606_Cysteine sulfinate,C00606,"Methionine, Cysteine, SAM and Taurine Metabolism",True,3,True
+HMDB0000998,C00458_dCTP,C00458,,True,1,True
+HMDB0001000,C01346_dUDP,C01346,,True,2,True
+HMDB0001003,C00224_Adenosine 5'-phosphosulfate,C00224,,True,2,True
+HMDB0001008,Biliverdin,C00500,Hemoglobin and Porphyrin Metabolism,True,3,True
+HMDB0001015,C03145_N-Formylmethionine,C03145,"Methionine, Cysteine, SAM and Taurine Metabolism",True,5,True
+HMDB0001022,C00091_Succinyl CoA,C00091,,True,1,True
+HMDB0001032,DHEA_S,C04555,,True,1,True
+HMDB0001043,arachidonic acid,C00219,,True,5,True
+HMDB0001046,cotinine,,,True,3,True
+HMDB0001049,C00669_gamma-Glu-cys,C00669,,True,1,True
+HMDB0001058,"C00354_F1,6P",C00354,,True,2,True
+HMDB0001065,C02735_Phenylethanolamine,C02735,Organonitrogen compounds,True,3,True
+HMDB0001066,C03451_S-Lactoylglutathione,C03451,,True,2,True
+HMDB0001068,C05382_S7P,C05382,,True,2,True
+HMDB0001096,C00169_Carbamoylphosphate,C00169,,True,1,True
+HMDB0001104,C01239_N-Acetylglucosylamine,C01239,Aminosugar Metabolism,True,3,True
+HMDB0001123,anthranilic acid,C00108,,True,6,True
+HMDB0001124,C00689_Trehalose 6-phosphate,C00689,,True,2,True
+HMDB0001126,C06524_Nornicotine,C06524,,True,2,True
+HMDB0001129,N-acetyl-D-mannosamine,C00645,,True,1,True
+HMDB0001138,N-acetylglutamate,C00624,Glutamic acid and derivatives,True,8,True
+HMDB0001139,C00639_Prostaglandin F2alpha,C00639,,True,2,True
+HMDB0001140,Octanal,C01545,,True,1,True
+HMDB0001147,aminomalonate,C00872,,True,1,True
+HMDB0001149,C00430_5-Aminolevulinate,C00430,,True,4,True
+HMDB0001161,butyrobetaine,C01181,Carnitine Metabolism,True,8,True
+HMDB0001163,C00096_GDP-mannose,C00096,,True,1,True
+HMDB0001169,4-Aminophenol,C02372,,True,1,True
+HMDB0001170,LATHOSTEROL,C01189,,True,1,True
+HMDB0001173,C00170_5-Methylthioadenosine,C00170,,True,3,True
+HMDB0001175,C00083_Malonyl CoA,C00083,,True,2,True
+HMDB0001176,C00128_CMP-N-acetylneuraminate,C00128,,True,2,True
+HMDB0001178,C00301_ADP-ribose,C00301,,True,2,True
+HMDB0001179,C00857_Deamido-NAD+,C00857,,True,1,True
+HMDB0001182,"6,8-dihydroxypurine",,,True,1,True
+HMDB0001185,C00019_SAM+,C00019,,True,4,True
+HMDB0001186,C02567_N1-Acetylspermine,C02567,,True,4,True
+HMDB0001190,C00637_Indole-3-acetaldehyde,C00637,,True,2,True
+HMDB0001191,C00460_dUTP,C00460,,True,1,True
+HMDB0001201,C00035_GDP,C00035,,True,2,True
+HMDB0001202,dCMP,C00239,"Pyrimidine Metabolism, Cytidine containing",True,4,True
+HMDB0001206,C00024_Acetyl CoA,C00024,,True,1,True
+HMDB0001209,C00499_Allantoate,C00499,,True,3,True
+HMDB0001220,C00584_Prostaglandin E2,C00584,,True,3,True
+HMDB0001227,C00364_dTMP,C00364,,True,3,True
+HMDB0001232,4-nitrophenol,C00870,Nitrophenols,True,2,True
+HMDB0001243,C00630_Isobutyryl CoA,C00630,,True,2,True
+HMDB0001245,C00705_dCDP,C00705,,True,1,True
+HMDB0001248,C00016_FAD,C00016,,True,2,True
+HMDB0001251,lanosterol,C01724,Sterol,True,2,True
+HMDB0001252,C00576_Betaine aldehyde,C00576,,True,2,True
+HMDB0001254,C00352_Glucosamine 6-phosphate,C00352,,True,2,True
+HMDB0001256,C00750_Spermine,C00750,,True,2,True
+HMDB0001257,spermidine,C00315,Polyamine Metabolism,True,7,True
+HMDB0001262,maltotriose,C01835,,True,1,True
+HMDB0001273,C00044_GTP,C00044,,True,2,True
+HMDB0001274,C00363_dTDP,C00363,,True,2,True
+HMDB0001276,C00612_N1-Acetylspermidine,C00612,Carboximidic acids and derivatives,True,6,True
+HMDB0001294,"C01159_2,3-DPG",C01159,,True,1,True
+HMDB0001313,inositol-4-monophosphate,C03546,,True,1,True
+HMDB0001314,C00942_cGMP,C00942,,True,2,True
+HMDB0001316,C00345_6-Phosphogluconate,C00345,,True,1,True
+HMDB0001325,"C03793_N6,N6,N6-Trimethyllysine",C03793,L-alpha-amino acids,True,5,True
+HMDB0001328,C00842_TDP-glucose,C00842,,True,1,True
+HMDB0001336,"3,4-dihydroxyphenylacetic acid",C01161,,True,1,True
+HMDB0001341,C00008_ADP,C00008,,True,2,True
+HMDB0001342,C00459_dTTP,C00459,,True,1,True
+HMDB0001348,SM(d18:1/18:0),C00550,,False,1,True
+HMDB0001351,C00672_2-Deoxyribose 1-phosphate,C00672,,True,1,True
+HMDB0001353,2-keto-3-deoxy-gluconate,,Food Component/Plant,True,1,True
+HMDB0001366,C15587_Purine,C15587,,True,1,True
+HMDB0001367,C04501_N-Acetylglucosamine 1-phosphate,C04501,,False,2,True
+HMDB0001370,diaminopimelate,C00666,Food Component/Plant,True,2,True
+HMDB0001388,alpha-linolenate,C06427,Lineolic acids and derivatives,True,3,True
+HMDB0001389,C01598_Melatonin,C01598,,True,3,True
+HMDB0001390,Hydroxycotinine,,,True,1,True
+HMDB0001392,C00568_p-Aminobenzoate,C00568,,True,2,True
+HMDB0001396,C00440_5-Methyltetrahydrofolate,C00440,,True,2,True
+HMDB0001397,C00144_GMP,C00144,,True,2,True
+HMDB0001401,C00092_G6P,C00092,,True,3,True
+HMDB0001406,niacinamide,C00153,Nicotinate and Nicotinamide Metabolism,True,8,True
+HMDB0001409,C00365_dUMP,C00365,,True,1,True
+HMDB0001413,C00307_CDP-choline,C00307,,True,2,True
+HMDB0001414,putrescine,C00134,Amines,True,9,True
+HMDB0001423,C00010_CoA,C00010,,True,1,True
+HMDB0001429,phosphate,C00009,Oxidative Phosphorylation,True,2,True
+HMDB0001431,pyridoxamine,C00534,Pyridoxamines,True,5,True
+HMDB0001432,C00179_Agmatine,C00179,,True,3,True
+HMDB0001440,C00286_dGTP,C00286,,True,2,True
+HMDB0001448,sulfuric acid,C00059,,True,1,True
+HMDB0001470,C08279_Tiglate,C08279,,True,1,True
+HMDB0001473,C00111_DHAP,C00111,,True,1,True
+HMDB0001476,3-hydroxyanthranilic acid,C00632,,True,4,True
+HMDB0001480,3-ketosphinganine,C02934,Sphingolipid Metabolism,True,1,True
+HMDB0001485,Octane,C01387,,True,1,True
+HMDB0001487,C00004_NADH,C00004,,True,1,True
+HMDB0001488,nicotinate,C00253,Pyridinecarboxylic acids and derivatives,True,11,True
+HMDB0001492,GAMMA_TOCOPHEROL,C02483,,True,2,True
+HMDB0001505,Benzene,C01407,,True,1,True
+HMDB0001508,C00206_dADP,C00206,,True,1,True
+HMDB0001514,C00329_Glucosamine,C00329,,True,2,True
+HMDB0001517,C04677_AICAR,C04677,,True,2,True
+HMDB0001518,alpha-CEHC,,,True,2,True
+HMDB0001522,C02294_Methylguanidine,C02294,Guanidino and Acetamido Metabolism,True,3,True
+HMDB0001532,C00131_dATP,C00131,,True,1,True
+HMDB0001539,ADMA,C03626,Arginine and derivatives,True,7,True
+HMDB0001545,C00250_Pyridoxal,C00250,Vitamin B6 Metabolism,True,4,True
+HMDB0001546,C00112_CDP,C00112,,True,2,True
+HMDB0001547,Corticosterone,C02140,,True,2,True
+HMDB0001548,C00117_R5P,C00117,,True,1,True
+HMDB0001551,Hexadecanal,C00517,,True,1,True
+HMDB0001553,C01180_4-Methylthio-2-oxobutyrate,C01180,,True,2,True
+HMDB0001554,C00655_XMP,C00655,,True,2,True
+HMDB0001555,C00647_Pyridoxamine 5'-phosphate,C00647,,True,2,True
+HMDB0001563,1-Methylguanosine,C04545,,True,1,True
+HMDB0001565,C00588_Phosphorylcholine,C00588,Phospholipid Metabolism,True,5,True
+HMDB0001566,C02230_3-Methylguanine,C02230,,True,2,True
+HMDB0001586,C00103_G1P,C00103,,True,2,True
+HMDB0001587,C02137_Benzoylformate,C02137,,True,2,True
+HMDB0001624,2-hydroxyhexanoic acid,,,True,1,True
+HMDB0001659,Acetone,C00207,,True,1,True
+HMDB0001713,m-coumaric acid,C12621,,True,1,True
+HMDB0001844,Methylsuccinate,C08645,"Leucine, Isoleucine and Valine Metabolism",True,3,True
+HMDB0001847,caffeine,C07481,Purines and purine derivatives,True,5,True
+HMDB0001851,lyxitol,C00532,,False,1,True
+HMDB0001856,_3_4_DIHYDROXYBENZOATE,C00230,,True,1,True
+HMDB0001857,"1,3-dimethylurate",,Xanthine Metabolism,True,1,True
+HMDB0001858,p-Cresol,C01468,Benzoate Metabolism,True,4,True
+HMDB0001859,Acetaminophen,C06804,,True,4,True
+HMDB0001863,2-Hydroxypentanoate,,,True,3,True
+HMDB0001870,benzoic acid,C00180,,True,1,True
+HMDB0001873,Isobutyrate,C02632,,True,3,True
+HMDB0001875,Methanol,C00132,,True,3,True
+HMDB0001881,Propylene glycol,C00583,,True,2,True
+HMDB0001882,dihydroxyacetone,C00184,,True,2,True
+HMDB0001886,3-methylxanthine,C16357,Imidazopyrimidines,True,2,True
+HMDB0001889,theophylline,C07130,,True,2,True
+HMDB0001890,N-acetylcysteine,C06809,"Methionine, Cysteine, SAM and Taurine Metabolism",True,1,True
+HMDB0001893,alpha-tocopherol,C02477,Tocopherol Metabolism,True,3,True
+HMDB0001895,Salicylic acid,C00805,,True,3,True
+HMDB0001898,Mesobilirubinogen,C05790,,True,1,True
+HMDB0001901,C02378_6-Aminohexanoate,C02378,,True,2,True
+HMDB0001906,2-Aminoisobutyric acid,C03665,,False,1,True
+HMDB0001921,C07151_Metformin,C07151,,True,3,True
+HMDB0001924,atenolol,C13235,Phenylacetamides,True,3,True
+HMDB0001928,Hydrochlorothiazide,C07041,,False,1,True
+HMDB0001933,Furosemide,C07017,,True,1,True
+HMDB0001934,C00745_Nicotine,C00745,,True,2,True
+HMDB0001954,_3_HYDROXYOCTANOATE,,,True,2,True
+HMDB0001967,Carbon dioxide,C00011,,True,1,True
+HMDB0001976,docosapentaenoic acid,C16513,Very long-chain fatty acids,True,5,True
+HMDB0001982,_3_7_DIMETHYLURATE,C16360,,True,1,True
+HMDB0001983,C05198_5'-Deoxyadenosine,C05198,,True,2,True
+HMDB0001991,7-Methylxanthine,C16353,,True,1,True
+HMDB0001999,Eicosapentaenoic acid,C06428,Fatty acids and conjugates,True,5,True
+HMDB0002000,Myristoleic acid,C08322,,True,3,True
+HMDB0002001,dimethylmalonic acid,,"Fatty Acid, Dicarboxylate",True,1,True
+HMDB0002003,lignoceric acid,C08320,,True,1,True
+HMDB0002004,"C08309_5-Methoxy-N,N-dimethyltryptamine",C08309,,True,1,True
+HMDB0002005,methionine sulfoxide,C02989,Alpha amino acids,True,9,True
+HMDB0002006,"C06393_2,3-Diaminopropionate",C06393,,False,2,True
+HMDB0002013,Butyrylcarnitine,C02862,,True,1,True
+HMDB0002014,cis-5-Tetradecenoylcarnitine,,,True,1,True
+HMDB0002017,C02455_alpha-Methylbenzylamine,C02455,,True,2,True
+HMDB0002019,PHYTOL,C01389,,True,2,True
+HMDB0002024,C02835_Imidazole-4-acetate,C02835,Histidine Metabolism,True,5,True
+HMDB0002032,8-hydroxyguanine,C20155,"Purine Metabolism, Guanine containing",True,1,True
+HMDB0002035,C00811_p-Coumarate,C00811,,True,3,True
+HMDB0002039,C11118_1-Methyl-2-pyrrolidinone,C11118,,True,3,True
+HMDB0002055,o-Cresol,C01542,,True,1,True
+HMDB0002064,N-acetylputrescine,C02714,Carboximidic acids and derivatives,True,8,True
+HMDB0002068,13-docosenoate,C08316,Very long-chain fatty acids,True,3,True
+HMDB0002085,C10833_Syringate,C10833,,True,3,True
+HMDB0002088,oleoyl ethanolamide,,Endocannabinoid,True,3,True
+HMDB0002092,C00490_Itaconate,C00490,,True,2,True
+HMDB0002094,3' fucosyl lactose,,,True,1,True
+HMDB0002096,C11284_3-Indolebutyrate,C11284,,True,2,True
+HMDB0002098,2' fucosyl lactose,,,True,1,True
+HMDB0002099,C08434_6-Methylaminopurine,C08434,,True,2,True
+HMDB0002100,palmitoylethanolamide,C16512,Carboximidic acids and derivatives,True,5,True
+HMDB0002107,C01606_Phthalate,C01606,,True,2,True
+HMDB0002121,carnosol,C09069,Diterpene lactones,True,3,True
+HMDB0002123,1-3-7-trimethylurate,C16361,Imidazopyrimidines,True,4,True
+HMDB0002172,"N1,N12-Diacetylspermine",C03413,Acetamides,True,4,True
+HMDB0002176,2-Methylbutyrate,C18319,,True,2,True
+HMDB0002183,docosahexaenoic acid,C06429,,True,6,True
+HMDB0002189,C01029_N8-Acetylspermidine,C01029,,True,2,True
+HMDB0002199,C01744_3-(4-Hydroxyphenyl)propionate,C01744,Benzoate Metabolism,True,4,True
+HMDB0002201,carboxyethyl-GABA,,Glutamate Metabolism,True,1,True
+HMDB0002203,3-hydroxydecanoate,,"Fatty Acid, Monohydroxy",True,4,True
+HMDB0002212,arachidate,C06425,Long Chain Fatty Acid,True,4,True
+HMDB0002224,C03592_5-Methyl-2'-deoxycytidine,C03592,,True,2,True
+HMDB0002226,Adrenic acid,C16527,Very long-chain fatty acids,True,5,True
+HMDB0002231,eicosenoate,C16526,Long-chain fatty acids,True,3,True
+HMDB0002243,2-picolinic acid,C10164,,True,1,True
+HMDB0002250,C12 carnitine,,,True,2,True
+HMDB0002259,heptadecanoate,,Long-chain fatty acids,True,4,True
+HMDB0002261,_2_HYDROXYMYRISTATE,,Long-chain fatty acids,True,3,True
+HMDB0002271,imidazole propionate,C20522,Azoles,True,4,True
+HMDB0002275,"C04874_7,8-Dihydroneopterin",C04874,,True,2,True
+HMDB0002284,N-Acetylcadaverine,,,False,1,True
+HMDB0002302,indole-3-propionate,,Tryptophan Metabolism,True,6,True
+HMDB0002320,imidazolelactate,C05132,Azoles,True,2,True
+HMDB0002322,Cadaverine,C01672,,True,6,True
+HMDB0002327,_1_11_UNDECANEDICARBOXYLATE,,,True,1,True
+HMDB0002329,oxalate,C00209,Dicarboxylic acids and derivatives,True,4,True
+HMDB0002350,Octadecanol,D01924,,True,2,True
+HMDB0002356,cerotinic aci,C21931,,False,1,True
+HMDB0002362,"C03283_2,4-Diaminobutyrate",C03283,,True,2,True
+HMDB0002364,oleanolic acid,C17148,,True,3,True
+HMDB0002368,nervonic acid,C08323,Very long-chain fatty acids,True,2,True
+HMDB0002392,maslinic acid,C16939,,True,3,True
+HMDB0002421,7-Sulfocholic acid,,,True,1,True
+HMDB0002428,C06337_Terephthalate,C06337,,True,2,True
+HMDB0002432,5-hydroxymethyl-2-furoic acid NIST,C20448,,True,1,True
+HMDB0002466,C00587_m-Hydroxybenzoate,C00587,,True,3,True
+HMDB0002504,3-Sulfodeoxycholic acid,,,True,1,True
+HMDB0002522,Chenodeoxycholic acid sulfate,,,False,1,True
+HMDB0002545,galacturonate,C08348,Food Component/Plant,True,3,True
+HMDB0002641,C01772_o-Coumarate,C01772,,True,2,True
+HMDB0002649,erythrose,C01796,,True,1,True
+HMDB0002658,C01020_6-Hydroxynicotinate,C01020,Nicotinate and Nicotinamide Metabolism,True,5,True
+HMDB0002666,C01081_Thiamine monophosphate,C01081,,True,2,True
+HMDB0002706,C00308_Canavanine,C00308,,True,1,True
+HMDB0002757,C00506_Cysteate,C00506,,True,2,True
+HMDB0002802,cortisone,C00762,,True,1,True
+HMDB0002815,LysoPC(18:1/0:0),C04230,,True,2,True
+HMDB0002817,C00357_N-Acetylglucosamine 6-phosphate,C00357,,True,2,True
+HMDB0002820,Methylimidazoleacetic acid,C05828,,True,1,True
+HMDB0002823,DOCOSATRIENOATE,,,True,1,True
+HMDB0002869,campesterol,C01789,Sterol,True,2,True
+HMDB0002894,C02376_5-Methylcytosine,C02376,,True,3,True
+HMDB0002902,delta-tocopherol,C14151,Tocopherol Metabolism,True,3,True
+HMDB0002925,eicosatrienoic acid,C03242,Long-chain fatty acids,True,4,True
+HMDB0002931,N-acetylserine,,"Glycine, Serine and Threonine Metabolism",True,1,True
+HMDB0002991,C01678_Cysteamine,C01678,,True,1,True
+HMDB0002994,ERYTHRITOL,C00503,,True,2,True
+HMDB0003011,C00979_O-Acetylserine,C00979,,True,3,True
+HMDB0003012,C00292_Aniline,C00292,,True,1,True
+HMDB0003070,C00493_Shikimate,C00493,,True,5,True
+HMDB0003072,quinate,C00296,Food Component/Plant,True,5,True
+HMDB0003073,gamma-linolenate,C06426,,True,2,True
+HMDB0003119,Benzyl alcohol,C00556,,True,1,True
+HMDB0003148,argininate*,,Urea cycle; Arginine and Proline Metabolism,False,1,True
+HMDB0003157,C03139_Guanidinosuccinate,C03139,,True,2,True
+HMDB0003213,raffinose,C00492,,True,1,True
+HMDB0003219,sedoheptulose,C02076,Pentose Metabolism,True,1,True
+HMDB0003227,Methanethiol,C00409,,True,1,True
+HMDB0003229,Palmitoleic acid,C08362,Long-chain fatty acids,True,4,True
+HMDB0003236,solanidine,C06543,Food Component/Plant,True,1,True
+HMDB0003243,Acetoin,C00466,,True,2,True
+HMDB0003254,C06470_Muramate,C06470,,True,2,True
+HMDB0003269,Nicotinuric acid,C05380,,True,1,True
+HMDB0003282,1-methylguanine,C04152,Imidazopyrimidines,True,2,True
+HMDB0003312,DAIDZEIN,C10208,,True,1,True
+HMDB0003320,indole-3-carboxylic acid,C19837,Tryptophan Metabolism,True,1,True
+HMDB0003331,C02494_1-Methyladenosine,C02494,,True,4,True
+HMDB0003333,8-hydroxy-deoxyguanosine,,Purine nucleosides,True,2,True
+HMDB0003334,SDMA,,,True,4,True
+HMDB0003335,C00104_IDP,C00104,,True,2,True
+HMDB0003337,C00127_Glutathione(ox),C00127,,True,2,True
+HMDB0003338,hydroxylamine,C00192,,True,1,True
+HMDB0003339,D-Glutamic acid,C00217,,True,1,True
+HMDB0003349,L-Dihydroorotic acid,C00337,,True,1,True
+HMDB0003355,C00431_5-Aminovalerate,C00431,Lysine Metabolism,True,6,True
+HMDB0003357,N-acetylornithine,C00437,Urea cycle; Arginine and Proline Metabolism,True,7,True
+HMDB0003391,C00631_2PG,C00631,,True,2,True
+HMDB0003402,lyxose,C00476,,False,1,True
+HMDB0003407,"2,3-Butanedione",C00741,,True,1,True
+HMDB0003418,tagatose,C00795,,False,1,True
+HMDB0003422,"Androsta-1,4-diene-3,17-dione",C20144,,True,1,True
+HMDB0003424,1-Hexadecanol,C00823,,True,2,True
+HMDB0003431,L-Histidinol,C00860,,True,2,True
+HMDB0003447,C00955_Indole-3-ethanol,C00955,,True,2,True
+HMDB0003459,C00993_Ala-Ala,C00993,,True,3,True
+HMDB0003464,4-guanidinobutanoic acid,C01035,Gamma amino acids and derivatives,True,7,True
+HMDB0003502,C01204_Phytate,C01204,,True,1,True
+HMDB0003537,C01345_dITP,C01345,,True,1,True
+HMDB0003540,C01367_3'-AMP,C01367,,True,2,True
+HMDB0003551,Carbamic acid,C01563,,True,1,True
+HMDB0003581,C01909_Desthiobiotin,C01909,,True,2,True
+HMDB0003584,C01959_Taurocyamine,C01959,,True,2,True
+HMDB0003640,C02486_beta-Leucine,C02486,,True,1,True
+HMDB0003646,N-Methylhydantoin,C02565,,True,2,True
+HMDB0003671,2-Heptanone,C08380,,True,1,True
+HMDB0003681,4-acetamidobutanoate,C02946,Polyamine Metabolism,True,2,True
+HMDB0003701,"C03114_5,6-Dimethylbenzimidazole",C03114,,True,2,True
+HMDB0003869,gamma-glutamyl-epsilon-lysine,,Gamma-glutamyl Amino Acid,True,1,True
+HMDB0003876,15-HETE,C04742,,True,1,True
+HMDB0003896,7-Dehydrodesmosterol,C05107,,True,1,True
+HMDB0003903,C05123_Isethionate,C05123,,True,2,True
+HMDB0003911,C05145_3-Aminoisobutyrate,C05145,"Pyrimidine Metabolism, Thymine containing",True,4,True
+HMDB0004030,21-Deoxycortisol,C05497,,True,1,True
+HMDB0004041,ALLO_THREONINE,C05519,,True,1,True
+HMDB0004063,metanephrine,C05588,,True,1,True
+HMDB0004072,4-hydroxystyrene,C05627,Styrenes,True,3,True
+HMDB0004089,N-formylanthranilic acid,C05653,Tryptophan Metabolism,True,1,True
+HMDB0004095,C05659_5-Methoxytryptamine,C05659,,True,2,True
+HMDB0004096,C05660_5-Methoxyindoleacetate,C05660,,True,2,True
+HMDB0004101,C05670_3-Aminopropionitrile,C05670,,True,1,True
+HMDB0004110,C05682_Phosphonoacetate,C05682,,True,2,True
+HMDB0004160,Urobilin,C05794,Tetrapyrroles and derivatives,True,4,True
+HMDB0004193,Nudifloramide,C05842,,True,1,True
+HMDB0004225,2-oxoarginine*,C03771,Urea cycle; Arginine and Proline Metabolism,False,1,True
+HMDB0004230,pyrrole-2-carboxylic acid,C05942,,True,2,True
+HMDB0004284,tyrosol,C06044,Food Component/Plant,True,3,True
+HMDB0004326,2'-O-Methyladenosine,C04779,,True,1,True
+HMDB0004327,1-Butanol,C06142,,True,1,True
+HMDB0004366,Hordenine,C06199,,True,1,True
+HMDB0004370,C06213_N-omega-Methyltryptamine,C06213,,True,2,True
+HMDB0004400,5-acetylamino-6-amino-3-methyluracil,C16366,Organonitrogen compounds,True,3,True
+HMDB0004437,C06772_Diethanolamine,C06772,,True,2,True
+HMDB0004461,C09815_Benzamide,C09815,,True,2,True
+HMDB0004472,Eucalyptol,C09844,,True,1,True
+HMDB0004610,phytosphingosine,C12144,Organonitrogen compounds,True,4,True
+HMDB0004620,N-acetylarginine,,N-acyl-L-alpha-amino acids,True,5,True
+HMDB0004667,13-HODE,C14762,,True,1,True
+HMDB0004704,"9,10-DHOME",C14828,"Fatty Acid, Dihydroxy",True,4,True
+HMDB0004705,"12,13-DHOME",C14829,"Fatty Acid, Dihydroxy",True,4,True
+HMDB0004824,"N2,N2-Dimethylguanosine",,,True,1,True
+HMDB0004826,C04548_Synephrine,C04548,,True,2,True
+HMDB0004827,proline betaine,C10172,Food Component/Plant,True,7,True
+HMDB0004949,Cer(d18:1/16:0),C00195,,False,1,True
+HMDB0004952,Cer(d18:1/22:0),C00195,,False,1,True
+HMDB0004953,Cer(d18:1/24:1),C00195,,False,1,True
+HMDB0004956,Cer(d18:1/24:0),C00195,,False,1,True
+HMDB0004983,Dimethyl sulfone,C11142,,True,1,True
+HMDB0004989,m-tyramine,,Tyrosine Metabolism,True,1,True
+HMDB0005015,Gabapentin,,,False,1,True
+HMDB0005032,Cetirizine,C07778,,True,1,True
+HMDB0005060,eicosadienoate,C16525,,True,2,True
+HMDB0005065,Oleoylcarnitine,,,True,1,True
+HMDB0005066,C14 carnitine,,Acyl carnitines,True,4,True
+HMDB0005199,(R)-salsolinol,C09642,Tyrosine Metabolism,True,1,True
+HMDB0005356,TG(16:0_32:0),,,False,1,True
+HMDB0005357,TG(16:0_34:0),C00422,,False,1,True
+HMDB0005359,TG(16:0_32:1),C00422,,False,1,True
+HMDB0005360,TG(16:0_34:1),C00422,,False,1,True
+HMDB0005362,TG(16:0_34:2),C00422,,False,1,True
+HMDB0005363,TG(16:0_36:4),C00422,,False,1,True
+HMDB0005365,TG(16:0/18:0/18:0),C00422,,False,1,True
+HMDB0005367,TG(16:0/18:0/18:1(9Z)),C00422,,False,1,True
+HMDB0005369,TG(16:0_36:2),C00422,,False,1,True
+HMDB0005370,TG(16:0_38:4),C00422,,False,1,True
+HMDB0005376,TG(16:0_32:2),C00422,,False,1,True
+HMDB0005377,TG(16:0/16:1(9Z)/18:1(9Z)),C00422,,False,1,True
+HMDB0005380,TG(16:0_36:5),C00422,,False,1,True
+HMDB0005384,TG(16:0_36:3),C00422,,False,1,True
+HMDB0005385,TG(16:0_38:5),C00422,,False,1,True
+HMDB0005391,TG(16:0_38:6),C00422,,False,1,True
+HMDB0005395,TG(18:0_36:1),C00422,,False,1,True
+HMDB0005396,TG(18:0/18:0/20:1(11Z)),C00422,,False,1,True
+HMDB0005398,"TG(18:0/18:0/20:4(5Z,8Z,11Z,14Z))",C00422,,False,1,True
+HMDB0005403,TG(18:0/18:1(9Z)/18:1(9Z)),C00422,,False,1,True
+HMDB0005404,TG(18:0/18:1(9Z)/20:1(11Z)),C00422,,False,1,True
+HMDB0005405,TG(18:0_36:3),C00422,,False,1,True
+HMDB0005410,"TG(18:0/18:2(9Z,12Z)/20:1(11Z))",C00422,,False,1,True
+HMDB0005432,TG(16:1(9Z)/16:1(9Z)/16:1(9Z)),,,False,1,True
+HMDB0005433,TG(16:1(9Z)/16:1(9Z)/18:1(9Z)),C00422,,False,1,True
+HMDB0005435,"TG(16:1(9Z)/16:1(9Z)/18:2(9Z,12Z))",C00422,,False,1,True
+HMDB0005436,"TG(16:1(9Z)/16:1(9Z)/20:4(5Z,8Z,11Z,14Z))",C00422,,False,1,True
+HMDB0005456,"TG(18:1(9Z)/18:1(9Z)/20:4(5Z,8Z,11Z,14Z))",C00422,,False,1,True
+HMDB0005462,"TG(18:1(9Z)/18:2(9Z,12Z)/20:4(5Z,8Z,11Z,14Z))",C00422,,False,1,True
+HMDB0005476,"TG(18:2(9Z,12Z)/20:4(5Z,8Z,11Z,14Z)/20:4(5Z,8Z,11Z,14Z))",C00422,,False,1,True
+HMDB0005765,Ophthalmate,C21016,,True,2,True
+HMDB0005794,quercetin,C00389,,True,1,True
+HMDB0005806,Terpinene,C09900,,True,1,True
+HMDB0005826,galactinol,C01235,,True,1,True
+HMDB0005831,C01096_Sorbitol 6-phosphate,C01096,,True,2,True
+HMDB0005842,2-Oxohexane,,,True,1,True
+HMDB0005846,"3-Pentanone, 2-methyl-",,,True,1,True
+HMDB0005994,Hexanal,C02373,,True,1,True
+HMDB0006006,"1-Propanol, 2-methyl-",C14710,,True,1,True
+HMDB0006007,Isopentanol,C07328,,True,1,True
+HMDB0006023,3'-O-Methyladenosine,,,True,1,True
+HMDB0006028,N-acetylasparagine,,Alanine and Aspartate Metabolism,True,1,True
+HMDB0006029,N-acetylglutamine,,Glutamate Metabolism,True,4,True
+HMDB0006101,enterolactone,C18165,Food Component/Plant,True,2,True
+HMDB0006111,12-HETE,C14777,,True,1,True
+HMDB0006115,Benzaldehyde,C00261,,True,1,True
+HMDB0006119,_7_BETA_HYDROXYCHOLESTEROL,,,True,1,True
+HMDB0006219,13-cis-Retinoic acid,C07058,,True,1,True
+HMDB0006236,Phenylacetaldehyde,C00601,,True,1,True
+HMDB0006271,zymosterol,C05437,,True,1,True
+HMDB0006335,tocopherol beta NIST,C14152,,True,1,True
+HMDB0006344,Phenylacetylglutamine,C04148,,True,1,True
+HMDB0006409,tyramine O-sulfate,,Tyrosine Metabolism,True,1,True
+HMDB0006460,Arachidyl carnitine,,Fatty Acid Metabolism(Acyl Carnitine),True,2,True
+HMDB0006469,C18:2 carnitine,,Acyl carnitines,True,4,True
+HMDB0006478,"Butanal, 3-methyl-",C07329,,True,1,True
+HMDB0006557,C00498_ADP-glucose,C00498,,True,2,True
+HMDB0006569,6' sialyllactose,,,True,1,True
+HMDB0006576,Lacto-N-fucopentaose III,,,True,1,True
+HMDB0006587,Lactodifucotetraose,,,True,1,True
+HMDB0006705,Lacto-N-fucopentaose I,,,True,1,True
+HMDB0006725,CE(14:0),,,True,1,True
+HMDB0006726,CE(20:4),C02530,,False,1,True
+HMDB0006729,"CE(22:4(7Z,10Z,13Z,16Z))",C02530,,False,1,True
+HMDB0006731,CE(20:5),C02530,,False,1,True
+HMDB0006733,"CE(22:6(4Z,7Z,10Z,13Z,16Z,19Z))",C02530,,False,1,True
+HMDB0006736,CE(20:3),C02530,,False,1,True
+HMDB0006750,lactosyl-N-palmitoyl-sphingosine (d18:1/16:0),C01290,Sphingolipid Metabolism,True,1,True
+HMDB0006790,glycerol-3-galactoside,C05401,,True,1,True
+HMDB0006809,nicotinate ribonucleoside,C05841,Nicotinate and Nicotinamide Metabolism,True,2,True
+HMDB0007011,DG(14:0/16:0/0:0),,,False,1,True
+HMDB0007098,DG(16:0/16:0),C00165,,False,1,True
+HMDB0007099,DG(16:0/16:1),C00165,,False,1,True
+HMDB0007100,DG(16:0/18:0/0:0),C00165,,False,1,True
+HMDB0007102,DG(16:0/18:1(9Z)/0:0),C13861,,False,1,True
+HMDB0007103,DG(16:0/18:2),C00165,,False,1,True
+HMDB0007128,DG(16:1(9Z)/16:1(9Z)/0:0),C00165,,False,1,True
+HMDB0007132,DG(16:1/18:2),C00165,,False,1,True
+HMDB0007158,DG(18:0/18:0/0:0),C00165,,False,1,True
+HMDB0007199,DG(18:1/20:4),,,False,1,True
+HMDB0007216,DG(18:1(9Z)/18:0/0:0),,,False,1,True
+HMDB0007218,DG(18:1(9Z)/18:1(9Z)/0:0),C00165,,False,1,True
+HMDB0007219,"DG(18:1(9Z)/18:2(9Z,12Z)/0:0)",C00165,,False,1,True
+HMDB0007248,DG(18:2/18:2),C00165,,False,1,True
+HMDB0007869,PC(30:0),C00157,,False,1,True
+HMDB0007871,PC(14:0/18:0),C00157,,False,1,True
+HMDB0007873,PC(14:0/18:1(9Z)),C00157,,False,1,True
+HMDB0007970,PC(16:0/18:0),C00157,,False,1,True
+HMDB0007972,PC(16:0/18:1(9Z)),C00157,Phosphatidylcholine (PC),False,2,True
+HMDB0007973,"PC(16:0/18:2(9Z,12Z))",C00157,Phosphatidylcholine (PC),False,2,True
+HMDB0007983,"PC(16:0/20:4(8Z,11Z,14Z,17Z))",C00157,,False,1,True
+HMDB0007991,PC(38:6),C00157,,False,1,True
+HMDB0008006,"PC(16:1(9Z)/18:2(9Z,12Z))",C00157,,False,1,True
+HMDB0008038,PC(18:0/18:1(9Z)),C00157,Phosphatidylcholine (PC),False,2,True
+HMDB0008039,"PC(18:0/18:2(9Z,12Z))",C00157,,False,1,True
+HMDB0008047,"PC(18:0/20:3(8Z,11Z,14Z))",C00157,,False,1,True
+HMDB0008048,"PC(18:0/20:4(5Z,8Z,11Z,14Z))",C00157,,False,1,True
+HMDB0008105,"PC(18:1(9Z)/18:2(9Z,12Z))",C00157,Phosphatidylcholine (PC),False,2,True
+HMDB0008138,"PC(18:2(9Z,12Z)/18:2(9Z,12Z))",C00157,Phosphatidylcholine (PC),True,2,True
+HMDB0008270,"PC(20:0/18:2(9Z,12Z))",C00157,,False,1,True
+HMDB0008923,PE(16:0/16:0),C00350,,False,1,True
+HMDB0008925,PE(16:0/18:0),C00350,,False,1,True
+HMDB0008928,1-palmitoyl-2-linoleoyl-GPE (16:0/18:2),C00350,Phosphatidylethanolamine (PE),True,1,True
+HMDB0010169,SM(d18:1/16:0),C00550,Sphingolipid Metabolism,True,2,True
+HMDB0010203,_13_HOTE__6Z_9Z_11E_OR_9Z_11E,,,True,1,True
+HMDB0010222,9-HETE,,,True,1,True
+HMDB0010224,9-HOTrE,,"Fatty Acid, Monohydroxy",False,1,True
+HMDB0010325,ethyl glucuronide,,O-glucuronides,True,3,True
+HMDB0010338,11-Oxo-androsterone [glucuronide],,,True,1,True
+HMDB0010368,CE(18:0),C02530,,False,1,True
+HMDB0010370,"CE(18:3(9Z,12Z,15Z))",C02530,,False,1,True
+HMDB0010375,"CE(22:5(7Z,10Z,13Z,16Z,19Z))",C04230,,False,1,True
+HMDB0010379,LysoPC(14:0/0:0),C04230,,False,1,True
+HMDB0010382,LysoPC(16:0/0:0),C04230,Lysophospholipid,True,2,True
+HMDB0010383,LysoPC(16:1/0:0),C04230,,False,1,True
+HMDB0010384,LysoPC(18:0/0:0),C04230,Lysophospholipid,True,2,True
+HMDB0010386,LysoPC(18:2/0:0),C04230,,False,1,True
+HMDB0010387,"LysoPC(18:3(6Z,9Z,12Z)/0:0)",C04230,,False,1,True
+HMDB0010391,LysoPC(20:1(11Z)/0:0),C04230,,False,1,True
+HMDB0010393,LysoPC(20:3/0:0),C04230,,False,1,True
+HMDB0010395,LysoPC(20:4/0:0),C04230,,False,1,True
+HMDB0010397,"LysoPC(20:5(5Z,8Z,11Z,14Z,17Z)/0:0)",C04230,,False,1,True
+HMDB0010404,"LysoPC(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/0:0)",C04230,,False,1,True
+HMDB0010407,LysoPC(P-16:0/0:0),C04230,,False,1,True
+HMDB0010411,TG(16:0/14:0/16:0),,,False,1,True
+HMDB0010412,TG(16:0/14:0/16:1(9Z)),,,False,1,True
+HMDB0010419,TG(16:1(9Z)/14:0/16:1(9Z)),,,False,1,True
+HMDB0010471,"TG(18:2(9Z,12Z)/14:0/18:3(9Z,12Z,15Z))",,,False,1,True
+HMDB0010517,"TG(20:4(5Z,8Z,11Z,14Z)/14:0/18:3(9Z,12Z,15Z))",,,False,1,True
+HMDB0010720,C01771_Crotonate,C01771,,True,2,True
+HMDB0010730,3-Oxotetradecanoic acid,,,True,1,True
+HMDB0010738,_1_METHYLXANTHINE,,,True,1,True
+HMDB0011103,"1,7-dimethylurate",C16356,Xanthine Metabolism,True,1,True
+HMDB0011105,5-acetylamino-6-formylamino-3-methyluracil,C16365,Xanthine Metabolism,True,1,True
+HMDB0011130,LysoPE(18:0/0:0),C21484,Lysophospholipid,True,2,True
+HMDB0011131,1-monostearin,D01947,,True,2,True
+HMDB0011133,_1_STEAROYLGLYCERO,C03805,,True,1,True
+HMDB0011134,5-HETE,C04805,,True,1,True
+HMDB0011170,Gamma-Glu-isoLeu,C18135,Gamma-glutamyl Amino Acid,True,3,True
+HMDB0011171,gamma-glutamylleucine,,Gamma-glutamyl Amino Acid,True,2,True
+HMDB0011172,GAMMA_GLUTAMYLVALINE,,,True,1,True
+HMDB0011179,PROLYLPHENYLALANINE,,,True,1,True
+HMDB0011208,PC(P-16:0/18:0),,,False,1,True
+HMDB0011210,PC(P-16:0/18:1(9Z)),,,False,1,True
+HMDB0011212,"PC(P-16:0/18:3(6Z,9Z,12Z))",,,False,1,True
+HMDB0011220,"PC(P-16:0/20:4(5Z,8Z,11Z,14Z))",,,False,1,True
+HMDB0011241,PC(P-18:0/18:0),,,False,1,True
+HMDB0011243,PC(P-18:0/18:1(9Z)),,,False,1,True
+HMDB0011252,"PC(P-18:0/20:3(8Z,11Z,14Z))",,,False,1,True
+HMDB0011310,"PC(P-18:1(9Z)/18:2(9Z,12Z))",,,False,1,True
+HMDB0011503,LysoPE(16:0/0:0),,Lysophospholipid,True,2,True
+HMDB0011504,LysoPE(16:1(9Z)/0:0),,,False,1,True
+HMDB0011506,1-oleoyl-GPE (18:1),,Lysophospholipid,True,2,True
+HMDB0011507,1-linoleoyl-GPE (18:2)*,,Lysophospholipid,False,2,True
+HMDB0011511,LysoPE(20:0/0:0),,,True,1,True
+HMDB0011517,"LysoPE(20:4(5Z,8Z,11Z,14Z)/0:0)",,,True,1,True
+HMDB0011520,LysoPE(22:0/0:0),,,True,1,True
+HMDB0011526,"LysoPE(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/0:0)",,,True,1,True
+HMDB0011533,2-monopalmitin,,,True,1,True
+HMDB0011537,2-monoolein,,,True,1,True
+HMDB0011538,2-linoleoylglycerol (18:2),,Monoacylglycerol,True,1,True
+HMDB0011564,1-monopalmitin,C01885,2-monoacylglycerols,True,2,True
+HMDB0011565,MG(16:1(9Z)/0:0/0:0),,,False,1,True
+HMDB0011567,1-monoolein,,Monoacylglycerol,True,2,True
+HMDB0011582,MG(22:1(13Z)/0:0/0:0),,,False,1,True
+HMDB0011599,1-methyladenine,C02216,"Purine Metabolism, Adenine containing",True,1,True
+HMDB0011600,C00913_3-Methyladenine,C00913,,True,2,True
+HMDB0011621,Cinnamoylglycine,,,True,1,True
+HMDB0011624,1-Decanol,C01633,,True,1,True
+HMDB0011626,dodecanol,C02277,,True,1,True
+HMDB0011634,C03375_Bis(3-aminopropyl)amine,C03375,,True,2,True
+HMDB0011635,p-cresol sulfate,,Benzoate Metabolism,True,2,True
+HMDB0011638,1-Tetradecanol,,,True,1,True
+HMDB0011676,xylonolactone NIST,C02266,,True,1,True
+HMDB0011691,"C02354_2',3'-cCMP",C02354,,True,2,True
+HMDB0011697,SM(d18:1/24:0),,,True,1,True
+HMDB0011701,"TG(15:0/16:0/20:3(8Z,11Z,14Z))",,,False,1,True
+HMDB0011718,4-hydroxybenzaldehyde,C00633,Hydroxybenzaldehydes,True,6,True
+HMDB0011724,_4_HYDROXYBENZYL_ALCOHOL,C17467,,True,1,True
+HMDB0011733,C02037_Gly-Gly,C02037,,True,3,True
+HMDB0011737,GAMMA_GLUTAMYLGLUTAMATE,C05282,,True,1,True
+HMDB0011741,gamma-glutamyltyrosine,,Gamma-glutamyl Amino Acid,True,1,True
+HMDB0011745,C02712_N-Acetylmethionine,C02712,"Methionine, Cysteine, SAM and Taurine Metabolism",True,4,True
+HMDB0011747,C03557_2-Aminoethylphosphonate,C03557,,True,2,True
+HMDB0011749,2-piperidinone,,Food Component/Plant,True,2,True
+HMDB0011756,N-acetylleucine,C02710,"Leucine, Isoleucine and Valine Metabolism",True,5,True
+HMDB0011757,N-acetylvaline,,"Leucine, Isoleucine and Valine Metabolism",True,4,True
+HMDB0011760,N-palmitoyl-sphinganine (d18:0/16:0),,Sphingolipid Metabolism,True,1,True
+HMDB0012097,SM(d18:1/14:0),,,True,1,True
+HMDB0012101,SM(d18:1/18:1(9Z)),C00550,,False,1,True
+HMDB0012102,SM(d18:1/20:0),C00550,,False,1,True
+HMDB0012103,SM(d18:1/22:0),C00550,,False,1,True
+HMDB0012104,SM(d18:1/22:1(13Z)),C00550,,False,1,True
+HMDB0012107,SM(d18:1/24:1),C00550,,False,1,True
+HMDB0012136,C05771_Isopropanolamine,C05771,,True,2,True
+HMDB0012152,beta-mannosylglycerate,C16699,,True,1,True
+HMDB0012153,3-4-dihydroxybenzylamine,,,True,1,True
+HMDB0012154,_3_DEHYDROCARNITINE,C02636,,True,1,True
+HMDB0012204,C00371_trans-Zeatin,C00371,,True,2,True
+HMDB0012252,linoleoyl ethanolamide,,Organonitrogen compounds,True,4,True
+HMDB0012265,N-carbamoylsarcosine,C01043,Creatine Metabolism,True,1,True
+HMDB0012273,PALMITIC_AMIDE,,,True,1,True
+HMDB0012275,C05332_Phenethylamine,C05332,Phenylalanine Metabolism,True,5,True
+HMDB0012295,C01008_Trimethylsulfonium,C01008,,True,2,True
+HMDB0012843,C06103_6-Hydroxyhexanoate,C06103,,True,2,True
+HMDB0012884,adrenochrome,,,True,1,True
+HMDB0012958,gamma-tocotrienol,C14155,Tocopherol Metabolism,True,1,True
+HMDB0012971,1-Hexanol,C00854,,True,1,True
+HMDB0013078,stearoyl ethanolamide,,Endocannabinoid,True,3,True
+HMDB0013122,LysoPC(P-18:0/0:0),C04230,,False,1,True
+HMDB0013133,Methylmalonylcarnitine,,,True,1,True
+HMDB0013209,ALANYLTRYPTOPHAN,C00806,,True,1,True
+HMDB0013211,2-Oxooctanoate,,,True,2,True
+HMDB0013222,Guanidinopropionic acid,C03065,,True,2,True
+HMDB0013243,LEUCYLPHENYLALANINE,C11221,,True,1,True
+HMDB0013253,C05135_4-(beta-Acetylaminoethyl)imidazole,C05135,Histidine Metabolism,True,4,True
+HMDB0013287,dimethyllysine,C05545,Alpha amino acids,True,2,True
+HMDB0013288,Nonanoylcarnitine,,,True,1,True
+HMDB0013299,n-Pentadecanol,,,True,1,True
+HMDB0013302,Phe-Phe,,,True,3,True
+HMDB0013325,"2-trans,4-cis-Decadienoylcarnitine",,,True,1,True
+HMDB0013326,trans-2-Dodecenoylcarnitine,,,True,1,True
+HMDB0013331,"3, 5-Tetradecadiencarnitine",,,True,1,True
+HMDB0013337,2-Hydroxyhexadecanoylcarnitine,,,True,1,True
+HMDB0013339,3-Hydroxy-11Z-octadecenoylcarnitine,,,True,1,True
+HMDB0013622,10-nonadecenoate,C00174,Long Chain Fatty Acid,True,3,True
+HMDB0013713,N-acetyltryptophan,,Tryptophan Metabolism,True,3,True
+HMDB0013716,Norvaline,C01799,Urea cycle; Arginine and Proline Metabolism,True,2,True
+HMDB0013733,"1,2,4-Trimethylbenzene",C14533,,True,2,True
+HMDB0013780,Dimethyl trisulfide,C08372,,True,1,True
+HMDB0013809,"2-Octenal, (E)-",C21138,,True,1,True
+HMDB0013821,2-Methyl-4-heptanone,,,True,1,True
+HMDB0013824,"Furan, 2-pentyl-",,,True,1,True
+HMDB0013835,"1,2-Benzenedicarboxylic acid, bis(2-methylpropyl) ester",C15205,,True,1,True
+HMDB0014378,C02518_4-Aminosalicylate,C02518,,True,1,True
+HMDB0014389,5-aminosalicylic acid,C07138,,False,1,True
+HMDB0014420,Olmesartan,,,True,1,True
+HMDB0014426,LIDOCAINE,C07073,,True,1,True
+HMDB0014611,Quinine,C06526,,True,1,True
+HMDB0015028,Sulfapyridine,,,True,1,True
+HMDB0015051,C06818_Amantadine,C06818,,True,2,True
+HMDB0015052,Metronidazole,C07203,,True,1,True
+HMDB0015070,Oxymetazoline,C07363,,True,1,True
+HMDB0015140,C07044_Hydroxyurea,C07044,,True,2,True
+HMDB0015168,cerulenin,C12058,,True,1,True
+HMDB0015251,_Diazoxide,C06949,,True,2,True
+HMDB0015371,Gemfibrozil,C07020,,True,1,True
+HMDB0015673,C05829_N-Carbamylglutamate,C05829,,True,2,True
+HMDB0028680,alanyalanine,C00993,,True,2,True
+HMDB0028686,ALANYLGLUTAMATE,,,True,1,True
+HMDB0028690,ALANYLISOLEUCINE,,,True,1,True
+HMDB0028691,alanylleucine,,Dipeptide,True,2,True
+HMDB0028694,ALANYLPHENYLALANINE,,,True,1,True
+HMDB0028695,ALANYLPROLINE,,,True,1,True
+HMDB0028699,ALANYLTYROSINE,,,True,1,True
+HMDB0028700,ALANYLVALINE,,,True,1,True
+HMDB0028712,ARGINYLISOLEUCINE,,,True,1,True
+HMDB0028713,ARGINYLLEUCINE,,,True,1,True
+HMDB0028716,ARGINYLPHENYLALANINE,,,True,1,True
+HMDB0028722,ARGINYLVALINE,,,True,1,True
+HMDB0028735,ASPARAGYLLEUCINE,,,True,1,True
+HMDB0028744,ASPARAGYLVALINE,,,True,1,True
+HMDB0028757,ASPARTYLLEUCINE,,,True,1,True
+HMDB0028795,GLUTAMINE_GLUTAMINE,,,True,1,True
+HMDB0028800,GLUTAMINE_ISOLEUCINE,,,True,1,True
+HMDB0028818,C01425_Glu-Glu,C01425,,True,3,True
+HMDB0028830,ALPHA_GLUTAMYLTRYPTOPHAN,,,True,1,True
+HMDB0028831,ALPHA_GLUTAMYLTYROSINE,,,True,1,True
+HMDB0028832,ALPHA_GLUTAMYLVALINE,,,True,1,True
+HMDB0028844,glycylisoleucine,,Dipeptide,True,2,True
+HMDB0028848,GLYCYLPHENYLALANINE,,,True,1,True
+HMDB0028851,GLYCYLTHREONINE,,,True,1,True
+HMDB0028852,GLYCYLTRYPTOPHAN,,,True,1,True
+HMDB0028853,GLYCYLTYROSINE,,,True,1,True
+HMDB0028854,glycylvaline,,Dipeptide,True,2,True
+HMDB0028888,HISTIDYLISOLEUCINE,,,True,1,True
+HMDB0028889,HISTIDYLLEUCINE,C05010,,True,1,True
+HMDB0028892,HISTIDYLPHENYLALANINE,,,True,1,True
+HMDB0028893,HISTIDYLPROLINE,,,True,1,True
+HMDB0028898,HISTIDYLVALINE,,,True,1,True
+HMDB0028900,ISOLEUCYLALANINE,,,True,1,True
+HMDB0028902,ISOLEUCYLASPARAGINE,,,True,1,True
+HMDB0028903,ISOLEUCYLASPARTATE,,,True,1,True
+HMDB0028906,ISOLEUCYLGLUTAMATE,,,True,1,True
+HMDB0028907,isoleucylglycine,,Dipeptide,True,2,True
+HMDB0028910,ISOLEUCYLISOLEUCINE,,,True,1,True
+HMDB0028911,ISOLEUCYLLEUCINE,,,True,1,True
+HMDB0028914,ISOLEUCYLPHENYLALANINE,,,True,1,True
+HMDB0028916,ISOLEUCYLSERINE,,,True,1,True
+HMDB0028917,ISOLEUCYLTHREONINE,,,True,1,True
+HMDB0028918,ISOLEUCYLTRYPTOPHAN,,,True,1,True
+HMDB0028920,ISOLEUCYLVALINE,,,True,1,True
+HMDB0028922,leucylalanine,,Dipeptide,True,2,True
+HMDB0028924,LEUCYLASPARAGINE,,,True,1,True
+HMDB0028927,leucylglutamine*,,Dipeptide,False,1,True
+HMDB0028928,LEUCYLGLUTAMATE,,,True,1,True
+HMDB0028929,LEUCYLGLYCINE,,,True,1,True
+HMDB0028933,LEUCYLLEUCINE,C11332,,True,1,True
+HMDB0028938,LEUCYLSERINE,,,True,1,True
+HMDB0028939,LEUCYLTHREONINE,,,True,1,True
+HMDB0028940,LEUCYLTRYPTOPHAN,,,True,1,True
+HMDB0028941,LEUCYLTYROSINE,,,True,1,True
+HMDB0028942,LEUCYLVALINE,,,True,1,True
+HMDB0028954,LYSYLISOLEUCINE,,,True,1,True
+HMDB0028955,lysylleucine,,Dipeptide,True,2,True
+HMDB0028958,LYSYLPHENYLALANINE,,,True,1,True
+HMDB0028959,LYSYLPROLINE,,,True,1,True
+HMDB0028963,LYSYLTYROSINE,,,True,1,True
+HMDB0028964,LYSYLVALINE,,,True,1,True
+HMDB0028988,phenylalanylalanine,,Dipeptide,True,2,True
+HMDB0028991,PHENYLALANYLASPARTATE,,,True,1,True
+HMDB0028995,phenylalanylglycine,,Dipeptide,True,2,True
+HMDB0028998,PHENYLALANYLISOLEUCINE,,,True,1,True
+HMDB0029004,PHENYLALANYLSERINE,,,True,1,True
+HMDB0029007,PHENYLALANYLTYROSINE,,,True,1,True
+HMDB0029008,PHENYLALANYLVALINE,,,True,1,True
+HMDB0029010,PROLYLALANINE,,,True,1,True
+HMDB0029042,SERYLISOLEUCINE,,,True,1,True
+HMDB0029043,SERYLLEUCINE,,,True,1,True
+HMDB0029046,SERYLPHENYALANINE,,,True,1,True
+HMDB0029047,SERYLPROLINE,,,True,1,True
+HMDB0029050,Serinyl tryptophan,,,False,1,True
+HMDB0029052,SERYLVALINE,,,True,1,True
+HMDB0029054,THREONYLALANINE,,,True,1,True
+HMDB0029060,THREONYLGLUTAMATE,,,True,1,True
+HMDB0029064,THREONYLISOLEUCINE,,,True,1,True
+HMDB0029065,THREONYLLEUCINE,,,True,1,True
+HMDB0029068,threonylphenylalanine,,Dipeptide,True,2,True
+HMDB0029070,THREONYLSERINE,,,True,1,True
+HMDB0029074,THREONYLVALINE,,,True,1,True
+HMDB0029076,TRYPTOPHYLALANINE,,,True,1,True
+HMDB0029082,TRYPTOPHYLGLUTAMATE,,,True,1,True
+HMDB0029083,tryptophylglycine,,Dipeptide,True,2,True
+HMDB0029086,TRYPTOPHYLISOLEUCINE,,,True,1,True
+HMDB0029091,TRYPTOPHYLPROLINE,,,True,1,True
+HMDB0029096,TRYPTOPHYLVALINE,,,True,1,True
+HMDB0029098,TYROSYLALANINE,,,True,1,True
+HMDB0029103,TYROSYLGLUTAMINE,,,True,1,True
+HMDB0029104,TYROSYLGLUTAMATE,,,True,1,True
+HMDB0029105,tyrosylglycine,,Dipeptide,True,1,True
+HMDB0029108,TYROSYLISOLEUCINE,,,True,1,True
+HMDB0029109,TYROSYLLEUCINE,,,True,1,True
+HMDB0029112,TYROSYLPHENYLALANINE,,,True,1,True
+HMDB0029117,TYROSYLTYROSINE,,,True,1,True
+HMDB0029118,TYROSYLVALINE,,,True,1,True
+HMDB0029120,VALYLALANINE,,,True,1,True
+HMDB0029123,VALYLASPARTATE,,,True,1,True
+HMDB0029125,valylglutamine,,Dipeptide,True,2,True
+HMDB0029126,VALYLGLUTAMATE,,,True,1,True
+HMDB0029127,valylglycine,,Dipeptide,True,2,True
+HMDB0029130,VALYLISOLEUCINE,,,True,1,True
+HMDB0029131,valylleucine,,Dipeptide,True,2,True
+HMDB0029132,VALYLLYSINE,,,True,1,True
+HMDB0029133,VALYLMETHIONINE,,,True,1,True
+HMDB0029134,VALYLPHENYLALANINE,,,True,1,True
+HMDB0029136,VALYLSERINE,,,True,1,True
+HMDB0029138,VALYLTRYPTOPHAN,,,True,1,True
+HMDB0029139,VALYLTYROSINE,,,True,1,True
+HMDB0029140,VALYLVALINE,,,True,1,True
+HMDB0029159,gamma-glutamylthreonine,,Gamma-glutamyl Amino Acid,True,1,True
+HMDB0029217,C03404_Tyrosine methyl ester,C03404,,True,1,True
+HMDB0029224,N-methylphenylalanine,,Phenylalanine Metabolism,True,2,True
+HMDB0029306,"Phenol, 4-ethyl-",C13637,,True,1,True
+HMDB0029377,piperine,C03882,Food Component/Plant,True,4,True
+HMDB0029412,C08269_Betonicine,C08269,,True,2,True
+HMDB0029416,NMMA,C03884,,True,3,True
+HMDB0029430,C03510_Methionine sulfoximine,C03510,,True,1,True
+HMDB0029600,n-Hexane,C11271,,True,1,True
+HMDB0029696,Mequinol,,,True,1,True
+HMDB0029718,C02595_2-Thiopheneacetate,C02595,,True,2,True
+HMDB0029723,saccharin,C12283,Benzothiazoles,True,3,True
+HMDB0029739,C02693_Indole-3-acetamide,C02693,,True,2,True
+HMDB0029757,4-Hydroxybenzeneacetonitrile,C03766,,True,2,True
+HMDB0029956,C01736_Purine riboside,C01736,,True,2,True
+HMDB0029980,"Acetic acid, hexyl ester",,,True,1,True
+HMDB0030021,FUCOSTEROL,C08817,,True,1,True
+HMDB0030029,"Butanoic acid, 3-methyl-, 3-methylbutyl ester",C12289,,True,1,True
+HMDB0030052,"Propanoic acid, butyl ester",,,True,1,True
+HMDB0030058,Ethyl propionate,,,True,1,True
+HMDB0030059,"Propanoic acid, propyl ester",,,True,1,True
+HMDB0030060,Methyl 3-phenylpropanoate,,,True,1,True
+HMDB0030062,Methyl propionate,,,True,1,True
+HMDB0030070,3-Octanol,C17144,,True,1,True
+HMDB0030180,Crustecdysone,C02633,,True,2,True
+HMDB0030469,Methyl tetradecanoate,,,True,1,True
+HMDB0030837,Anethole,C10428,,True,1,True
+HMDB0030924,2-Tetradecanone,,,True,1,True
+HMDB0031019,2-Dodecanone,C14996,,True,1,True
+HMDB0031057,2-hydroxyhexadecanoate,,"Fatty Acid, Monohydroxy",True,4,True
+HMDB0031068,ISOPALMITIC_ACID,,,True,1,True
+HMDB0031072,_12_METHYLTRIDECANOIC_ACID,,,True,1,True
+HMDB0031074,_1_PALMITOYLGLYCEROL,,,True,1,True
+HMDB0031078,Pentadecanal,C01948,,True,1,True
+HMDB0031081,2-Pentadecanone,,,True,1,True
+HMDB0031106,Glycerol triheptadecanoate,,,False,1,True
+HMDB0031193,tricarballylate,C19806,TCA Cycle,True,2,True
+HMDB0031207,Methyl valerate,,,True,1,True
+HMDB0031213,"Ethanol, 2-ethoxy-",C14687,,True,1,True
+HMDB0031217,Ethyl Acetate,C00849,,True,1,True
+HMDB0031230,_2_ETHYLHEXANOATE,,,True,1,True
+HMDB0031249,Methyl isobutyrate,,,True,1,True
+HMDB0031265,1-Nonanol,C14696,,True,1,True
+HMDB0031266,2-Nonanone,,,True,1,True
+HMDB0031294,2-Octanone,,,True,1,True
+HMDB0031299,1-Octen-3-ol,C14272,,True,1,True
+HMDB0031342,Cyclohexanecarboxylic acid,C09822,,True,1,True
+HMDB0031343,"Cyclohexanecarboxylic acid, methyl ester",,,True,1,True
+HMDB0031404,C00571_Cyclohexylamine,C00571,,True,3,True
+HMDB0031409,2-Decanone,,,True,1,True
+HMDB0031444,Dodecane,C08374,,True,1,True
+HMDB0031475,Heptanal,C14390,,True,1,True
+HMDB0031492,"3,4-Hexanedione",,,True,1,True
+HMDB0031523,Methyl acetate,C17530,,True,1,True
+HMDB0031526,"Butanal, 2-methyl-",C02223,,True,1,True
+HMDB0031598,"2,3-Pentanedione",,,True,1,True
+HMDB0031659,C02640_Isoamylamine,C02640,,True,2,True
+HMDB0031667,nor-psi-tropine,,,True,1,True
+HMDB0031846,"5,9-Undecadien-2-one, 6,10-dimethyl-",C13297,,True,1,True
+HMDB0032047,"Butanoic acid, 3-methyl-, propyl ester",,,True,1,True
+HMDB0032055,N-acetylhistidine,C02997,Histidine Metabolism,True,6,True
+HMDB0032102,"1,2,3,4-tetrahydro-b-carboline-1,3-dicarboxylic acid",,,True,1,True
+HMDB0032323,C08306_Hexylamine,C08306,,True,2,True
+HMDB0032402,2-Methyl-3-heptanone,,,True,1,True
+HMDB0032538,triethanolamine,C06771,Alkanolamines,True,1,True
+HMDB0032562,C11016_Diphenylamine,C11016,,True,1,True
+HMDB0032572,METHYL_4_HYDROXYBENZOATE,,,True,1,True
+HMDB0032616,C00482_Sinapate,C00482,,True,2,True
+HMDB0032630,"Ethanone, 1-(2-aminophenyl)-",,,True,1,True
+HMDB0032912,Ethyl methyl disulfide,,,True,1,True
+HMDB0032985,C04294_4-Methyl-5-thiazoleethanol,C04294,Thiamine Metabolism,True,3,True
+HMDB0033143,pyrraline,,Food Component/Plant,True,1,True
+HMDB0033167,"Cyclohexanecarboxylic acid, ethyl ester",,,True,1,True
+HMDB0033376,C09816_Benzylsuccinate,C09816,,True,2,True
+HMDB0033433,HOMOSTACHYDRINE,C08283,,True,1,True
+HMDB0033532,"Disiloxane, hexamethyl-",,,True,1,True
+HMDB0033585,acesulfame,,Organic sulfuric acids and derivatives,False,2,True
+HMDB0033713,2-Undecanone,C01875,,True,1,True
+HMDB0033721,Octadecane,,,True,1,True
+HMDB0033731,Quinoline,C06413,,True,1,True
+HMDB0033752,C01198_3-(2-Hydroxyphenyl)propionate,C01198,,True,2,True
+HMDB0033792,Hexadecane,C14499,,True,1,True
+HMDB0033794,"Cyclohexanone, 2,2,6-trimethyl-",,,True,1,True
+HMDB0033844,beta-cryptoxanthin,C08591,Food Component/Plant,True,1,True
+HMDB0033867,"1-Butene, 4-isothiocyanato-",,,True,1,True
+HMDB0033890,Methyl butyrate,,,True,1,True
+HMDB0033910,acetophenone NIST,C07113,,True,1,True
+HMDB0033916,2-Nonanol,,,True,1,True
+HMDB0033944,Phenylethyl Alcohol,C05853,,True,1,True
+HMDB0033962,3-Phenylpropanol,,,True,1,True
+HMDB0034146,STEARAMIDE,C13846,,True,1,True
+HMDB0034148,2-Tridecanone,,,True,1,True
+HMDB0034161,2-Methylpropyl butanoate,,,True,1,True
+HMDB0034168,Toluene,C01455,,True,1,True
+HMDB0034172,Methyl salicylate,C12305,,True,1,True
+HMDB0034198,C02787_Isobutylamine,C02787,,True,2,True
+HMDB0034240,Styrene,C07083,,True,1,True
+HMDB0034283,Tetradecanal,,,True,1,True
+HMDB0034301,piperidine,C01746,Food Component/Plant,True,1,True
+HMDB0034365,C01047_N-gamma-Ethylglutamine,C01047,Food Component/Plant,True,3,True
+HMDB0034367,gamma-glutamylmethionine,,Gamma-glutamyl Amino Acid,True,1,True
+HMDB0034451,"9-Octadecenoic acid, ethyl ester",,,True,1,True
+HMDB0034497,"Pentadecane, 2,6,10,14-tetramethyl-",,,True,1,True
+HMDB0034580,C10865_Pseudopelletierine,C10865,,True,2,True
+HMDB0034976,(-)-Borneol,C01411,,True,1,True
+HMDB0035162,(-)-Menthone,C00843,,True,1,True
+HMDB0035196,C09209_Harman,C09209,Food Component/Plant,True,3,True
+HMDB0035238,"Hexanoic acid, methyl ester",,,True,1,True
+HMDB0035289,"2,5-Dimethylpyrazine",,,True,1,True
+HMDB0035514,2-oxindole-3-acetate,,Food Component/Plant,True,1,True
+HMDB0035646,C03173_(Methylthio)acetate,C03173,,True,2,True
+HMDB0035665,"L-1,2,3,4-Tetrahydro-beta-carboline-3-carboxylic acid",,Pyridoindoles,True,2,True
+HMDB0035762,C08304_Gramine,C08304,,True,2,True
+HMDB0035915,Sulcatone,C07287,,True,1,True
+HMDB0036100,Linalool,C03985,,True,1,True
+HMDB0036163,"Cyclohexene, 3-(1,5-dimethyl-4-hexenyl)-6-methylene-, [S-(R*,S*)]-",C16776,,True,1,True
+HMDB0036209,Propyl 2-methylpropanoate,,,True,1,True
+HMDB0036458,C01234_1-Aminocyclopropane-1-carboxylate,C01234,,True,2,True
+HMDB0036574,Carbon disulfide,C19033,,True,1,True
+HMDB0036994,"Cyclohexene, 1-methyl-4-(1-methylethylidene)-",C06075,,True,1,True
+HMDB0037050,o-Cymene,,,True,1,True
+HMDB0037396,10-hydroxystearate,,"Fatty Acid, Monohydroxy",True,1,True
+HMDB0037397,17-methylstearate,,"Fatty Acid, Branched",True,3,True
+HMDB0037942,tetrahydro-1-methyl-beta-carboline-3-carboxylate,,Harmala alkaloids,True,3,True
+HMDB0038040,Isobutyl isovalerate,,,True,1,True
+HMDB0038169,Myrcene,C06074,,True,1,True
+HMDB0038256,geranyl acetoacetate*,,Fatty alcohol esters,False,1,True
+HMDB0038311,"2(3H)-Furanone, 5-heptyldihydro-",,,True,1,True
+HMDB0038445,"Benzene, (2-isothiocyanatoethyl)-",,,True,1,True
+HMDB0038556,"3(2H)-Thiophenone, dihydro-2-methyl-",,,True,1,True
+HMDB0038670,C03172_S-Methylmethionine,C03172,,True,2,True
+HMDB0039216,Butyl 2-methylbutanoate,,,True,1,True
+HMDB0039522,Linalyl acetate,C09863,,True,1,True
+HMDB0039618,"Butanoic acid, propyl ester",,,True,1,True
+HMDB0039620,"Butanoic acid, butyl ester",,,True,1,True
+HMDB0039721,C02273_Digalacturonate,C02273,,True,3,True
+HMDB0039843,S-Methyl 3-methylbutanethioate,,,True,1,True
+HMDB0040211,"Hexanoic acid, butyl ester",,,True,1,True
+HMDB0040221,"Butanoic acid, 3-methylbutyl ester",,,True,1,True
+HMDB0040240,"Thiophene, 2-pentyl-",,,True,1,True
+HMDB0040937,lactitol,C13542,,True,1,True
+HMDB0041389,"Disulfide, methyl 2-propenyl",C08383,,True,1,True
+HMDB0041833,C00813_Barbiturate,C00813,,True,1,True
+HMDB0041922,C08737_Melamine,C08737,,True,2,True
+HMDB0041924,Mesitylene,C14508,,True,1,True
+HMDB0041947,"N1,N8-Diacetylspermidine",,,True,2,True
+HMDB0042063,TG(14:0/14:0/16:0),,,False,1,True
+HMDB0042093,TG(14:0/15:0/16:0),,,False,1,True
+HMDB0042104,TG(14:0/15:0/22:1(13Z)),,,False,1,True
+HMDB0042226,"TG(14:0/22:0/18:2(9Z,12Z))",,,False,1,True
+HMDB0042466,"TG(14:0/22:1(13Z)/18:2(9Z,12Z))",,,False,1,True
+HMDB0043058,"TG(15:0/18:0/20:3(5Z,8Z,11Z))",,,False,1,True
+HMDB0059655,2-hydroxyglutarate,C02630,"Fatty Acid, Dicarboxylate",True,10,True
+HMDB0059777,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",,,True,1,True
+HMDB0059824,4-hydroxy-3-methylacetophenone,,Alkyl-phenylketones,True,2,True
+HMDB0059835,Nonanal,,,True,1,True
+HMDB0059838,(+)-2-Bornanone,C00808,,True,1,True
+HMDB0059839,Camphene,C06076,,True,1,True
+HMDB0059871,ethyl 9-hexadecenoate,,Fatty acid esters,True,1,True
+HMDB0059886,Pentadecane,C08388,,True,1,True
+HMDB0059905,Ethylbenzene,C07111,,True,1,True
+HMDB0060038,10-heptadecenoate,,,True,2,True
+HMDB0060080,C03958_TRH,C03958,,True,2,True
+HMDB0060245,C02512_beta-Cyanoalanine,C02512,,True,1,True
+HMDB0060256,xylonic acid,C05411,,False,1,True
+HMDB0060442,C05341_beta-Ala-Lys,C05341,,True,2,True
+HMDB0060461,C07091_3-Acetylacrylate,C07091,,True,1,True
+HMDB0060493,C02713_N-Acetylmuramate,C02713,Aminosugar Metabolism,True,4,True
+HMDB0060495,C01044_N-Formylaspartate,C01044,,True,2,True
+HMDB0060564,carboxyibuprofen,,,True,1,True
+HMDB0060920,2-hydroxyibuprofen,,,True,1,True
+HMDB0061384,acisoga,,Polyamine Metabolism,True,1,True
+HMDB0061658,3-hydroxypalmitate,,"Fatty Acid, Monohydroxy",True,1,True
+HMDB0061684,N-acetylisoleucine,,"Leucine, Isoleucine and Valine Metabolism",True,1,True
+HMDB0061705,6-oxopiperidine-2-carboxylate,,Lysine Metabolism,True,2,True
+HMDB0061707,13-methylmyristate,,"Fatty Acid, Branched",True,2,True
+HMDB0061709,15-methylpalmitate,,"Fatty Acid, Branched",True,2,True
+HMDB0061711,methylphosphate,,Purine and Pyrimidine Metabolism,True,2,True
+HMDB0061712,PALMITOYL_SPHINGOMYELIN,C00550,,True,1,True
+HMDB0061714,docosadienoate (22:2n6),C16533,Polyunsaturated Fatty Acid (n3 and n6),True,1,True
+HMDB0061715,"glutamate, gamma-methyl ester",,Glutamate Metabolism,True,1,True
+HMDB0061717,succinylcarnitine (C4-DC),,TCA Cycle,False,1,True
+HMDB0061822,HEXAETHYLENE_GLYCOL,,,True,1,True
+HMDB0061834,1-Tetradecene,,,True,1,True
+HMDB0061835,HEPTAETHYLENE_GLYCOL,,,True,1,True
+HMDB0061851,Copaene,C09639,,True,1,True
+HMDB0061858,7-hexadecenoic acid methyl ester,,Fatty acid methyl esters,True,1,True
+HMDB0061859,Methyl hexadecanoic acid,C16995,,True,1,True
+HMDB0061864,dihomo-linoleate (20:2n6),,Polyunsaturated Fatty Acid (n3 and n6),True,1,True
+HMDB0061869,Acetonitrile,,,True,1,True
+HMDB0061877,C03678_4-Amino-3-hydroxybutyrate,C03678,,True,2,True
+HMDB0061880,C01073_N-Acetyl-beta-alanine,C01073,,True,2,True
+HMDB0061881,C02129_4-Acetylbutyrate,C02129,,True,2,True
+HMDB0061886,2-Hexanol,,,True,1,True
+HMDB0061914,8-hydroxyoctanoate,,"Fatty Acid, Monohydroxy",True,2,True
+HMDB0061918,indolin-2-one,C12312,Food Component/Plant,True,1,True
+HMDB0062121,dihydroferulic acid,,Food Component/Plant,True,2,True
+HMDB0062164,thioproline,,Chemical,True,1,True
+HMDB0062225,C03969_1-Amino-1-cyclopentanecarboxylate,C03969,,True,2,True
+HMDB0062549,2-hydroxystearate,C03045,"Fatty Acid, Monohydroxy",False,1,True
+HMDB0062558,pyroglutamine*,,Glutamate Metabolism,False,1,True
+HMDB0062562,trans-urocanate,,Histidine Metabolism,True,1,True
+HMDB0062660,C01046_N-Methylglutamate,C01046,Glutamate Metabolism,True,3,True
+HMDB0062769,epsilon-caprolactam,C06593,,True,1,True
+HMDB0062788,"Propanoic acid, 2-methyl-, anhydride",,,True,1,True
+HMDB0062802,parabanic acid NIST,C00802,,True,1,True
+HMDB0094651,PYROGLUTAMYLVALINE,,,True,1,True
+HMDB0094656,2-hydroxydecanoate,,"Fatty Acid, Monohydroxy",True,1,True
+HMDB0094657,_2_OXINDOLE_3_ACETATE,,,True,1,True
+HMDB0094676,VAL_VAL_VAL,,,True,1,True
+HMDB0094680,OCTAETHYLENE_GLYCOL,,,True,1,True
+HMDB0094692,N-methylalanine,C02721,Alanine and Aspartate Metabolism,True,4,True
+HMDB0094696,N-methylproline,,Urea cycle; Arginine and Proline Metabolism,True,2,True
+HMDB0094701,N-acetylproline,,Urea cycle; Arginine and Proline Metabolism,True,2,True
+HMDB0094704,N-propionylmethionine,,Chemical,True,1,True
+HMDB0240212,DMGV,,,True,1,True
+HMDB0240251,C01015_Hydroxyproline,C01015,,False,1,True
+HMDB0240259,Stercobilin,,,True,1,True
+HMDB0240280,C11145_Methanesulfonate,C11145,,True,2,True
+HMDB0240316,glycerophosphoglycerol,,Glycerolipid Metabolism,True,1,True
+HMDB0240317,N-formylphenylalanine,,Tyrosine Metabolism,True,1,True
+HMDB0240341,N-acetyl-3-methylhistidine*,,Histidine Metabolism,False,1,True
+HMDB0240343,N-acetylmethionine sulfoxide,,"Methionine, Cysteine, SAM and Taurine Metabolism",True,1,True
+HMDB0240347,N6-carboxymethyllysine,,Advanced Glycation End-product,True,1,True
+HMDB0240589,N-delta-acetylornithine,,Urea cycle; Arginine and Proline Metabolism,True,1,True
+HMDB0240598,1-(1-enyl-stearoyl)-GPE (P-18:0)*,,Lysoplasmalogen,False,1,True
+HMDB0240599,1-(1-enyl-oleoyl)-GPE (P-18:1)*,,Lysoplasmalogen,False,1,True
+HMDB0240601,1-palmitoyl-GPG (16:0)*,,Lysophospholipid,False,1,True
+HMDB0240602,1-oleoyl-GPC (18:1),,Lysophospholipid,True,1,True
+HMDB0240650,ectoine,C06231,Chemical,True,4,True
+HMDB0240653,succinimide,C07273,Chemical,True,1,True
+HMDB0242141,eicosanedioate,,,True,1,True
+HMDB0242149,xylitol,C00379,,True,1,True
+HMDB0242161,2-Hydroxyisobutyrate,C21297,,True,4,True
+HMDB0243713,C02635_3-Chloroalanine,C02635,,True,1,True
+HMDB0243751,cis-11-Hexadecenal,,,True,1,True
+HMDB0243915,"2-Propanol, 1-methoxy-",,,True,1,True
+HMDB0244272,C02774_10-Hydroxydecanoate,C02774,,True,2,True
+HMDB0244966,N-acetyltyrosine,,Tyrosine Metabolism,True,1,True
+HMDB0245008,C10901_2-Aminobenzimidazole,C10901,,True,2,True
+HMDB0245101,C02627_2-Deoxystreptamine,C02627,,True,2,True
+HMDB0245405,"2,3-dimethylsuccinate",,"Leucine, Isoleucine and Valine Metabolism",True,1,True
+HMDB0247130,C03782_1-Aminoethylphosphonate,C03782,,True,1,True
+HMDB0247281,conduritol-beta-epoxide,,,True,1,True
+HMDB0247926,C00024_Acetyl CoA,C00024,,True,1,True
+HMDB0247961,aconitic acid,C00417,,True,1,True
+HMDB0248970,C01784_Benzamidine,C01784,,True,1,True
+HMDB0248993,C02009_Benzimidazole,C02009,,True,1,True
+HMDB0249700,C02256_Castanospermine,C02256,,True,2,True
+HMDB0250705,cysteine sulfinic acid,,"Methionine, Cysteine, SAM and Taurine Metabolism",True,1,True
+HMDB0250707,-_Cysteine-glutathione disulphide,,,True,1,True
+HMDB0250712,cystine,C00491,L-cysteine-S-conjugates,True,2,True
+HMDB0252850,glycerophosphoserine*,,Phospholipid Metabolism,False,1,True
+HMDB0253025,PHENYLALANYLLEUCINE,,,True,1,True
+HMDB0253185,C00860_Histidinol,C00860,,True,1,True
+HMDB0253330,C10600_Ibotenate,C10600,,True,1,True
+HMDB0253663,C02421_Isonicotinamide,C02421,,True,2,True
+HMDB0253945,lactobionic acid,C04247,,True,1,True
+HMDB0254312,maleimide,C07272,,True,1,True
+HMDB0254614,C02704_Methyl sulfate,C02704,,True,2,True
+HMDB0254955,C08311_Muscimol,C08311,,True,2,True
+HMDB0255025,nicotianamine,C05324,Food Component/Plant,True,1,True
+HMDB0255185,C02299_N-Methylaniline,C02299,,True,2,True
+HMDB0255300,C03795_N6-Methyl-2'-deoxyadenosine,C03795,,True,2,True
+HMDB0255912,C04137_Octopine,C04137,,True,2,True
+HMDB0255916,C01740_Octylamine,C01740,,True,1,True
+HMDB0256533,C01950_Picolinamide,C01950,,True,1,True
+HMDB0256947,C00481_Pyrazole,C00481,,True,1,True
+HMDB0258317,SITOSTANOL,,,True,1,True
+HMDB0259164,Tributyl phosphate,C14439,,True,1,True
+HMDB0259196,C07166_Trientine,C07166,,True,1,True
+HMDB0259297,C00729_Tropine,C00729,,True,2,True
+HMDB0259923,Xanthopterin,,,True,2,True
+HMDB0301759,C08265_Alliin,C08265,,True,2,True
+HMDB0302068,Heptacosane,,,True,1,True
+HMDB0302599,"1,4-p-Menthadien-7-al",,,True,1,True
+HMDB0302638,"2-Hexene, 3,5,5-trimethyl-",,,True,1,True
+HMDB0302754,C00956_alpha-Aminoadipate,C00956,,True,2,True
+HMDB0303831,3-Pentanol,,,True,1,True
+HMDB0303903,trans-2-Dodecen-1-ol,,,True,1,True
+HMDB0303991,3-sulfo-L-alanine,C00506,"Methionine, Cysteine, SAM and Taurine Metabolism",True,1,True
+HMDB0304180,4-hydroxybenzoate,C00156,,True,1,True
+HMDB0304270,benzoate,C00180,Benzoate Metabolism,True,4,True
+HMDB0304356,Formate,C00058,,True,2,True
+HMDB0304376,heptanoate,C17714,,True,2,True
+HMDB0304377,hexadecanedioate,C19615,"Fatty Acid, Dicarboxylate",True,2,True
+HMDB0304435,C00006_NADP+,C00006,,True,2,True
+HMDB0304443,C06423_Octanoate,C06423,,True,2,True
+HMDB0304521,C00783_Tropinone,C00783,,True,2,True
+HMDB0304804,C11331_Leu-Leu-Tyr,C11331,,True,2,True
+HMDB0304951,monomyristin,,,True,1,True
+HMDB0341292,beta-gentiobiose,C08240,,True,1,True
+HMDB0341410,2-hydroxybutanoic acid,C05984,,True,1,True
+METPA0236,C01987_2-Aminophenol,C01987,Tryptophan Metabolism,True,3,True
+METPA0292,"1,3-propanediol",C02457,Chemical,True,1,True
+METPA0433,C03752_Glucosaminate,C03752,,True,2,True
+METPA0616,imidazole lactate,C05568,Histidine Metabolism,True,1,True
+METPA1634,pheophorbide A,C18021,Food Component/Plant,True,1,True

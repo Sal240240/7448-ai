@@ -1,6 +1,32 @@
+# Full pipeline: data acquisition, training, backtesting, and serving.
+# The backend container installs only webapp/backend/requirements.txt, which is
+# a much smaller subset -- serving a sparse linear model needs neither
+# scikit-learn nor torch.
+
+# Data acquisition and processing
 requests
 pandas
 numpy
 scipy
 pyarrow
 tqdm
+
+# Modeling
+scikit-learn
+joblib
+# Torch is only needed to reproduce the MLP baseline (scripts/train_mlp.py).
+# The shipped model is the elastic net, which beat it -- see the README.
+torch
+
+# Interpretability / app data
+umap-learn
+matplotlib
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Tests
+pytest
+httpx

@@ -5,3 +5,12 @@ data/raw/
 data/processed/
 data/external/
 *.RData
+
+# webapp
+node_modules/
+dist/
+.vite/
+.pytest_cache/
+.env
+.env.*
+!.env.example
