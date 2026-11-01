@@ -13,14 +13,26 @@ ended — see the flag on it.
 
 ## 1. The prior-art finding that reframes the project
 
-**Claim (NEEDS VERIFICATION — fetch was cut off mid-check):** Muller, Algavi &
-Borenstein (2021), *Microbiome*, PMC8507343 — the same lab whose data this
-project trains on — ran essentially our cross-cohort experiment across 10
-datasets. Reported: within-dataset, 418 of 1,255 metabolite models were
-"well-predicted" (Spearman rho > 0.3, FDR < 0.1), 29.1% on real data vs 0.3%
-shuffled. Across datasets, **97 metabolites robustly well-predicted against
-87.7 ± 5.5 expected by chance, P = 0.053** — described by the authors as only
-"somewhat higher than expected by chance."
+**VERIFIED 2026-10-27** (fetched PMC8507343 directly; an earlier session left
+this flagged as unconfirmed). Muller, Algavi & Borenstein (2021),
+"A meta-analysis study of the robustness and universality of gut
+microbiome-metabolome associations", *Microbiome* 9:203 — the same lab whose
+data this project trains on — ran essentially our cross-cohort experiment
+across 10 datasets (1,733 samples). Confirmed figures: within-dataset, 418 of
+1,255 metabolite models were "well-predicted" (Spearman rho > 0.3, FDR < 0.1),
+29.1% on real data vs 0.3% shuffled. Across datasets, **97 metabolites robustly
+well-predicted against 87.7 ± 5.5 expected by chance, P = 0.053** — the authors
+describe this as only "somewhat higher than expected by chance," and it does not
+clear the conventional 0.05 threshold.
+
+One further detail, not in the original note and directly useful: their
+cross-predictability analysis is **metabolite-specific**, not uniformly
+negative. Beta-alanine, sebacic acid and taurine transferred well between
+dataset pairs; l-tyrosine and xanthine transferred between *no* pair. That is
+the published form of the result we independently reproduced in
+`transfer_chemistry.py` — sebacate at rho 0.537, taurine 0.368, and the
+nucleotide family (xanthine's) second-lowest at 0.117. Note they used random
+forest at genus level, so the agreement is across method as well as data.
 
 **Why this matters more than any other line in this document:** if it holds, our
 median cross-cohort r = 0.002 is not a bug in our pipeline. It is a cleaner
@@ -35,9 +47,13 @@ net beats a 24M-parameter MLP reproduces the field's standing architecture
 choice rather than advancing past it. **Do not position the model as a
 methodological advance.**
 
-**Verify before use:** fetch PMC8507343, confirm the 97 / 87.7 ± 5.5 / P = 0.053
-figures and the quoted characterization. If the numbers differ, the strategic
-read below still mostly holds, but the specific figures must not be repeated.
+**Status: confirmed, safe to cite.** The figures above were checked against the
+paper itself and may be quoted. The one framing correction: this is not a flat
+negative result for the field, it is a *metabolite-specific* one — a minority of
+compounds transfer and most do not, which is exactly what our own tier analysis
+found. Describing it as "the field got chance-level transfer" overstates it;
+"cross-study robustness is confined to a small, chemically coherent subset" is
+accurate.
 
 ---
 
