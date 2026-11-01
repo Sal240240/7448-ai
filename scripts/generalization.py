@@ -320,12 +320,12 @@ def _median_rho(rows: list[dict]) -> float:
 
 # -------------------------------------------------------------- experiments ---
 
-def run_loco_variants(panel: Panel, n_jobs: int, variants: list[str]) -> pd.DataFrame:
+def run_loco_variants(panel: Panel, n_jobs: int, variants: list[str], alpha: float) -> pd.DataFrame:
     """The head-to-head: each rung of the normalization ladder, same folds, same targets."""
     folds = loco_folds(panel)
     rows: list[dict] = []
     for variant in variants:
-        found = run_variant(panel, folds, variant, DEFAULT_ALPHA, n_jobs)
+        found = run_variant(panel, folds, variant, alpha, n_jobs)
         rows += [{"variant": variant, "held_out_cohort": r.pop("fold"), **r} for r in found]
         print(f"  {variant:24s} median rho = {_median_rho(found):6.3f}  ({len(found)} cohort-target fits)")
     return pd.DataFrame(rows)
@@ -438,6 +438,8 @@ def main() -> None:
     parser.add_argument("--variant", default="target_rank",
                         help="Normalization used by transfer_matrix/n_cohorts/regularization")
     parser.add_argument("--alphas", type=float, nargs="*", default=[0.001, 0.01, 0.05, 0.2, 1.0])
+    parser.add_argument("--alpha", type=float, default=DEFAULT_ALPHA,
+                        help="Penalty for every experiment except regularization, which sweeps --alphas")
     parser.add_argument("--k-values", type=int, nargs="*", default=[1, 2, 4, 8, 13])
     parser.add_argument("--n-draws", type=int, default=2)
     parser.add_argument("--seed", type=int, default=0)
@@ -460,10 +462,10 @@ def main() -> None:
 
     for experiment in wanted:
         print(f"=== {experiment} ===")
-        params = {"n_targets": len(targets), "variant": args.variant, "alpha": DEFAULT_ALPHA}
+        params = {"n_targets": len(targets), "variant": args.variant, "alpha": args.alpha}
         with log_run(f"generalization_{experiment}", params=params) as run:
             if experiment == "loco_variants":
-                df = run_loco_variants(panel, args.n_jobs, args.variants)
+                df = run_loco_variants(panel, args.n_jobs, args.variants, args.alpha)
                 summary = df.groupby("variant")["spearman"].median().sort_values(ascending=False)
                 baseline = float(summary.get("raw", np.nan))
                 run.record(median_rho_by_variant=summary.round(4).to_dict(),
