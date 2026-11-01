@@ -1,0 +1,16 @@
+family,n_metabolites,median_cross_cohort_rho,median_within_cohort_r,frac_rho_above_0_2,expected_microbial
+polyamine,6,0.444,0.809,0.833,yes
+bile_pigment,2,0.42,0.858,1.0,yes
+bile_acid,10,0.37,0.777,0.7,yes
+lipid_complex,1,0.275,0.934,1.0,no
+fatty_acid_long,11,0.216,0.809,0.545,no
+scfa,15,0.213,0.788,0.6,yes
+sugar_carbohydrate,3,0.183,0.838,0.333,no
+unassigned,71,0.169,0.81,0.366,-
+tma_tmao,9,0.163,0.836,0.444,yes
+amino_acid,41,0.158,0.649,0.366,-
+vitamin,8,0.144,0.841,0.25,-
+nucleotide,14,0.117,0.777,0.071,-
+indole_tryptophan,5,0.097,0.771,0.4,yes
+phenolic,1,0.095,0.831,0.0,yes
+xenobiotic_drug,3,0.074,0.895,0.0,no

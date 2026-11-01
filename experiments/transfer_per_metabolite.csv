@@ -1,0 +1,401 @@
+variant,target,cross_cohort_rho,cross_cohort_pearson,n_folds,hmdb_id,name,family,brite_classes,within_cohort_r
+raw,HMDB0000303,0.5110333657414995,0.6042937215875845,4,HMDB0000303,tryptamine,indole_tryptophan,Phytochemical compounds,0.6906061881942812
+raw,HMDB0002064,0.30699153257516465,0.3127582389189548,8,HMDB0002064,N-acetylputrescine,polyamine,,0.8450843193496637
+raw,HMDB0012252,0.30209130829380576,0.2443773622675965,4,HMDB0012252,linoleoyl ethanolamide,fatty_acid_long,,0.8689361087832765
+raw,HMDB0004610,0.29509929101514976,0.23804696141248738,4,HMDB0004610,phytosphingosine,unassigned,Lipids,0.8863660231932682
+raw,HMDB0000112,0.2788046900986675,0.270066482819726,6,HMDB0000112,C00334_GABA,unassigned,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs,
+raw,HMDB0000619,0.27771636942514316,0.2838166226283088,10,HMDB0000619,cholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs,0.7864669191364694
+raw,HMDB0004160,0.246238720233176,0.24145036060834862,4,HMDB0004160,Urobilin,bile_pigment,,0.8455294828728667
+raw,HMDB0002199,0.24332128707364348,0.2597673874391348,4,HMDB0002199,C01744_3-(4-Hydroxyphenyl)propionate,scfa,,0.5381060544456964
+raw,HMDB0000064,0.22728040549429218,0.21575198423273884,8,HMDB0000064,creatine,unassigned,,0.316102055849381
+raw,HMDB0000251,0.2237788800042557,0.21449889820329265,12,HMDB0000251,taurine,amino_acid,Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.523455990425743
+raw,HMDB0001414,0.2121527440707358,0.2442005967679785,9,HMDB0001414,putrescine,polyamine,Compounds with biological roles,0.7614020707654614
+raw,HMDB0002024,0.211584214040814,0.103747384791902,5,HMDB0002024,C02835_Imidazole-4-acetate,scfa,,0.8965732427379562
+raw,HMDB0000699,0.2070478634700079,0.179354829393102,7,HMDB0000699,1-methylnicotinamide,unassigned,,0.8098686169558804
+raw,HMDB0000391,0.19776119637846168,0.23845990383390092,4,HMDB0000391,7-Ketodeoxycholic acid,bile_acid,Lipids,0.8945100726169253
+raw,HMDB0000956,0.1946349719889739,0.1594838060504724,5,HMDB0000956,C00898_Tartrate,unassigned,Therapeutic category of drugs in Japan; Drugs listed in the Japanese Pharmacopoeia,0.8153127115065703
+raw,HMDB0000792,0.19438439284231157,0.18792661331682545,6,HMDB0000792,sebacate,unassigned,Lipids,0.8696286056278799
+raw,HMDB0003464,0.1938912444541079,0.1607042676708542,7,HMDB0003464,4-guanidinobutanoic acid,unassigned,,0.8530260488356536
+raw,HMDB0001161,0.1933719230658075,0.17650682251862426,8,HMDB0001161,butyrobetaine,tma_tmao,,0.8792492691054419
+raw,HMDB0000138,0.1929302253616753,0.1989324474423676,9,HMDB0000138,glycocholate,bile_acid,Compounds with biological roles; Lipids,0.7911436782533422
+raw,HMDB0000725,0.1903591676671669,0.20982475807893725,6,HMDB0000725,hydroxyproline,amino_acid,Compounds with biological roles,0.8798398311660489
+raw,HMDB0003355,0.1771104286347828,0.14288521895290515,6,HMDB0003355,C00431_5-Aminovalerate,scfa,Lipids,0.8650077298283786
+raw,HMDB0000026,0.1727458295962651,0.1449597828223496,7,HMDB0000026,N-carbamoyl-beta-alanine,amino_acid,,0.5126022438829434
+raw,HMDB0000054,0.1717293182240805,0.1037516280176631,5,HMDB0000054,bilirubin,bile_pigment,,0.8714233179060497
+raw,HMDB0000056,0.1703359514373472,0.1973458494091328,11,HMDB0000056,beta-alanine,amino_acid,Compounds with biological roles,0.5241221121718271
+raw,HMDB0000194,0.1697287465688544,0.129189457863264,7,HMDB0000194,anserine,amino_acid,Compounds with biological roles,0.8273737316186736
+raw,HMDB0000951,0.1672740083497706,0.19985264286312346,6,HMDB0000951,Taurochenodeoxycholate,bile_acid,Lipids,0.7802369448229207
+raw,HMDB0002172,0.166120890578594,0.16251013773084988,4,HMDB0002172,"N1,N12-Diacetylspermine",polyamine,,0.8567770292081938
+raw,HMDB0001043,0.1653336188388565,0.1469622908092144,5,HMDB0001043,arachidonic acid,fatty_acid_long,Compounds with biological roles; Lipids,0.7834151211983263
+raw,HMDB0013253,0.163275105504123,0.17117056788268037,4,HMDB0013253,C05135_4-(beta-Acetylaminoethyl)imidazole,unassigned,,0.9103131942206149
+raw,HMDB0000517,0.16167684400123,0.1537681824237738,11,HMDB0000517,arginine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6196082199547526
+raw,HMDB0004705,0.160128812521696,0.14002591805620015,4,HMDB0004705,"12,13-DHOME",unassigned,Lipids,0.8915223645041339
+raw,HMDB0000892,0.155461592670895,0.0555398858205288,7,HMDB0000892,Valerate,scfa,Compounds with biological roles; Lipids,0.9339990821556388
+raw,HMDB0000306,0.1537143857929117,0.18177211159764325,8,HMDB0000306,tyramine,unassigned,Compounds with biological roles; Phytochemical compounds,
+raw,HMDB0000094,0.1531855746518617,0.1160633423077858,7,HMDB0000094,citrate,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8268571434682065
+raw,HMDB0001976,0.1519825075930277,0.1259858711272024,5,HMDB0001976,docosapentaenoic acid,fatty_acid_long,Lipids,0.8296404833661085
+raw,HMDB0000764,0.1505659301479367,0.1581681973399648,7,HMDB0000764,hydrocinnamate,unassigned,,0.7897749705667199
+raw,HMDB0002183,0.14402089395984885,0.12785826858648955,6,HMDB0002183,docosahexaenoic acid,fatty_acid_long,Compounds with biological roles; Lipids,0.8702403828490297
+raw,HMDB0000043,0.1429347368174123,0.0984805765423464,8,HMDB0000043,betaine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs,0.3319363493169967
+raw,HMDB0000872,0.14290000314970214,0.11806595734768215,4,HMDB0000872,tetradecanedioate,unassigned,Pesticides,0.9148892691191536
+raw,HMDB0004704,0.1404014730039822,0.11414730970036095,4,HMDB0004704,"9,10-DHOME",unassigned,Lipids,0.8864435943177745
+raw,HMDB0000152,0.1399275019142299,0.11587644078683175,6,HMDB0000152,gentisate,unassigned,,0.6224087812256407
+raw,HMDB0000123,0.1394405317384392,0.1447980095450237,11,HMDB0000123,Glycine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6570682058382199
+raw,HMDB0000254,0.13926048906908806,0.18015750207503978,12,HMDB0000254,Succinate,unassigned,Compounds with biological roles; Lipids,0.5764599284172836
+raw,HMDB0000479,0.13894584053611284,0.1272518930193643,6,HMDB0000479,3-methylhistidine,amino_acid,,0.8313388642443332
+raw,HMDB0000269,0.1377144178580659,0.1116677235524184,5,HMDB0000269,sphinganine,unassigned,Lipids,0.9071341685957924
+raw,HMDB0002100,0.1352724109355099,0.101861449355086,5,HMDB0002100,palmitoylethanolamide,fatty_acid_long,Lipids,0.873753681337528
+raw,HMDB0001276,0.1331197324168296,0.1268007081454524,6,HMDB0001276,C00612_N1-Acetylspermidine,polyamine,,0.2100426522214484
+raw,HMDB0000870,0.1326517423761135,0.1497303810538597,7,HMDB0000870,histamine,unassigned,Compounds with biological roles; Target-based classification of drugs,0.8393431773425339
+raw,HMDB0000122,0.1289900426742531,0.1118689920679869,7,HMDB0000122,Glucose,sugar_carbohydrate,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.9092127276037528
+raw,HMDB0000034,0.12890111721893155,0.1350177033859254,8,HMDB0000034,adenine,unassigned,Compounds with biological roles; Therapeutic category of drugs in Japan,0.7708989733010754
+raw,HMDB0000050,0.12610120707750538,0.09706001138081705,8,HMDB0000050,adenosine,nucleotide,Compounds with biological roles; Glycosides; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Target-based classification of drugs,0.7767218927202447
+raw,HMDB0000715,0.1241344394697987,0.1150546260664027,7,HMDB0000715,kynurenic acid,indole_tryptophan,,0.852328923984856
+raw,HMDB0001539,0.1231650943469311,0.1065861501805357,7,HMDB0001539,ADMA,unassigned,,0.8690788774628928
+raw,HMDB0000691,0.11245166118134281,0.12062179783651725,8,HMDB0000691,malonate,unassigned,Compounds with biological roles; Lipids,0.1433888586107834
+raw,HMDB0002302,0.11222075209863266,0.1024960693341593,6,HMDB0002302,indole-3-propionate,scfa,,0.8385150552661277
+raw,HMDB0000086,0.1121436394154093,0.1043190276756226,5,HMDB0000086,C00670_Glycerophosphorylcholine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; Drug groups; Target-based classification of drugs,0.8359018136166418
+raw,HMDB0000177,0.1079120718121524,0.1261778315224356,11,HMDB0000177,histidine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4890253067067345
+raw,HMDB0000161,0.1067281606077048,0.0809353345489388,11,HMDB0000161,alanine,amino_acid,Risk category of Japanese OTC drugs,0.694007894054126
+raw,HMDB0000167,0.1010444926749864,0.0853048198425691,11,HMDB0000167,threonine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5965880407129572
+raw,HMDB0000671,0.1007662146855112,0.1164805315140758,7,HMDB0000671,indolelactate,indole_tryptophan,,
+raw,HMDB0000118,0.1003931819180248,0.0499921006660142,6,HMDB0000118,homovanillate,unassigned,,0.7624354961425354
+raw,HMDB0002226,0.0987193166818633,0.0903376589826937,5,HMDB0002226,Adrenic acid,unassigned,Lipids,0.7486837702342964
+raw,HMDB0000020,0.0962941303199748,0.093592732234593,9,HMDB0000020,p-hydroxyphenylacetate,scfa,,0.759185769495875
+raw,HMDB0001431,0.094976398732197,0.0828966299903639,5,HMDB0001431,pyridoxamine,vitamin,Compounds with biological roles; Risk category of Japanese OTC drugs,0.8849808333335462
+raw,HMDB0000030,0.09450710639846355,0.0947352023136406,4,HMDB0000030,C00120_Biotin,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8330408742949098
+raw,HMDB0000127,0.092866505526882,0.1229518958421035,6,HMDB0000127,glucuronate,unassigned,Compounds with biological roles; Risk category of Japanese OTC drugs,0.7993597259861043
+raw,HMDB0000448,0.09147423419947075,0.02799841655799095,8,HMDB0000448,adipate,unassigned,Compounds with biological roles; Lipids,0.7456029168796675
+raw,HMDB0000252,0.0912573286357514,0.0972236131024427,5,HMDB0000252,sphingosine,unassigned,Lipids,0.8837390637255153
+raw,HMDB0000898,0.0900814187671799,0.0797666920260554,5,HMDB0000898,1-methylhistamine,unassigned,,0.8688225037064099
+raw,HMDB0002203,0.0898764542121438,0.07392874226585805,4,HMDB0002203,3-hydroxydecanoate,unassigned,,0.9673773964280804
+raw,HMDB0000168,0.0885314294312863,0.1113029997857892,11,HMDB0000168,asparagine,amino_acid,Compounds with biological roles,0.2999462815499268
+raw,HMDB0000472,0.08516572849068525,0.0501138013975244,5,HMDB0000472,5-hydroxytryptophan,indole_tryptophan,Anatomical Therapeutic Chemical (ATC) classification,0.8962704204185576
+raw,HMDB0000237,0.0844432645526217,0.0507565425656073,9,HMDB0000237,Propionate,scfa,Compounds with biological roles; Lipids,0.5657550970847126
+raw,HMDB0000562,0.08436888124677935,0.07482597231564495,10,HMDB0000562,creatinine,unassigned,,0.8159294544863686
+raw,HMDB0000623,0.0808785415472149,0.0911729786818253,7,HMDB0000623,dodecanedioate,unassigned,Lipids,0.7390497212239399
+raw,HMDB0000182,0.0799518785768508,0.0842695020810075,12,HMDB0000182,lysine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs,0.6150673250354601
+raw,HMDB0001999,0.0773184553881298,0.017861182309773,5,HMDB0001999,Eicosapentaenoic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.8401509569861255
+raw,HMDB0004827,0.0750410811038788,0.0709323700465763,7,HMDB0004827,proline betaine,tma_tmao,Phytochemical compounds,0.866797221887493
+raw,HMDB0000518,0.0742037694483711,0.0706460768231052,5,HMDB0000518,chenodeoxycholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.7363893457918632
+raw,HMDB0000875,0.0738501117029047,0.0645774916423296,5,HMDB0000875,C01004_Trigonelline,unassigned,Phytochemical compounds,0.8501010159335839
+raw,HMDB0000186,0.07298294985109349,0.0779367289866072,4,HMDB0000186,lactose,sugar_carbohydrate,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.8376603454972169
+raw,HMDB0000158,0.072749107926459,0.0970400711402614,13,HMDB0000158,tyrosine,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.6472649644346903
+raw,HMDB0002322,0.07184543724736425,0.06284627042401156,6,HMDB0002322,Cadaverine,polyamine,,0.8876670289848314
+raw,HMDB0059655,0.07051034610394594,0.08809920909856206,10,HMDB0059655,2-hydroxyglutarate,unassigned,Lipids,0.4793216297031791
+raw,HMDB0000696,0.0595767769940314,0.0240942985463202,11,HMDB0000696,methionine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4971596964272217
+raw,HMDB0000535,0.0559626351027202,0.0713446630334008,7,HMDB0000535,caproate,scfa,Compounds with biological roles; Lipids; Phytochemical compounds,0.8240810251990891
+raw,HMDB0000784,0.055246373304228595,0.036342511162723995,8,HMDB0000784,azelaic acid,unassigned,Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,0.4581705736454475
+raw,HMDB0000897,0.0533799777426903,0.1441882839929931,7,HMDB0000897,7-methylguanine,unassigned,,0.8715652607286801
+raw,HMDB0000097,0.05314297191517615,0.05274512538658975,10,HMDB0000097,choline,tma_tmao,Pesticides; Risk category of Japanese OTC drugs,0.6007109006782916
+raw,HMDB0000036,0.05254382006370205,0.04569489939496005,6,HMDB0000036,Taurocholic acid,bile_acid,Compounds with biological roles; Lipids,0.7981356581987119
+raw,HMDB0000214,0.05166381898737605,0.0626191451555132,10,HMDB0000214,ornithine,amino_acid,Compounds with biological roles,0.6503553054546631
+raw,HMDB0000190,0.051478161721742105,0.10657763926663394,12,HMDB0000190,lactate,unassigned,Compounds with biological roles,0.5993633939573372
+raw,HMDB0000883,0.0511627906976744,0.0514207500304127,13,HMDB0000883,valine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6516606807750178
+raw,HMDB0002271,0.04991885368753165,0.0028784930511119504,4,HMDB0002271,imidazole propionate,scfa,,0.9133892505327932
+raw,HMDB0000172,0.04806346124986245,0.0560984984080166,12,HMDB0000172,isoleucine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5465480871186095
+raw,HMDB0000101,0.0478158603673523,0.0173350518223041,5,HMDB0000101,2-deoxyadenosine,nucleotide,Compounds with biological roles,0.8296900179264319
+raw,HMDB0000132,0.046850424373040406,0.06571071029116425,8,HMDB0000132,guanine,unassigned,Compounds with biological roles,0.7370864473250492
+raw,HMDB0000070,0.0441236698749497,0.0256416863543644,8,HMDB0000070,pipecolic acid,unassigned,Phytochemical compounds,0.6846081903711119
+raw,HMDB0000925,0.042009432330614604,0.06475610017171696,6,HMDB0000925,trimethylamine-N-oxide,tma_tmao,,0.8604245549334301
+raw,HMDB0003357,0.0417435940845347,0.063691080281665,7,HMDB0003357,N-acetylornithine,amino_acid,,0.7566364170453502
+raw,HMDB0000929,0.0413375503116493,0.0350006002570344,13,HMDB0000929,tryptophan,indole_tryptophan,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5729037967497843
+raw,HMDB0001138,0.0412606460880418,0.0459811911996236,8,HMDB0001138,N-acetylglutamate,amino_acid,,0.8971915546741543
+raw,HMDB0000216,0.040936915924067854,0.054890694568861455,4,HMDB0000216,C00547_Noradrenaline,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.8939041451609427
+raw,HMDB0003070,0.0396148322026093,0.0692487548828644,5,HMDB0003070,C00493_Shikimate,unassigned,,0.7246502574855059
+raw,HMDB0000206,0.0377434552504795,0.0820058942121077,5,HMDB0000206,N6-acetyllysine,amino_acid,,0.6079958520933548
+raw,HMDB0000148,0.0362925464049059,0.0262623196724844,11,HMDB0000148,glutamate,amino_acid,Risk category of Japanese OTC drugs,0.6645359927851949
+raw,HMDB0000802,0.0350344117001253,0.04112546925363995,6,HMDB0000802,pterin,unassigned,,0.9015576176238624
+raw,HMDB0001488,0.0346759361917191,0.0438341717206385,11,HMDB0001488,nicotinate,unassigned,Compounds with biological roles; Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.3958919500477869
+raw,HMDB0000687,0.033569150191941,0.0387706770082501,13,HMDB0000687,leucine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5572966427018652
+raw,HMDB0000630,0.03312527430238005,-0.005467909717638801,10,HMDB0000630,cytosine,unassigned,Compounds with biological roles,0.384624011884734
+raw,HMDB0000162,0.032446436063679696,0.011186889694285,12,HMDB0000162,proline,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.5870238718334121
+raw,HMDB0000259,0.0315409690462986,0.0092376111132391,7,HMDB0000259,serotonin,unassigned,Compounds with biological roles; Phytochemical compounds,0.7660007952286138
+raw,HMDB0000626,0.0310100790802924,-0.0465936000439767,7,HMDB0000626,deoxycholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,0.7088048548429075
+raw,HMDB0000766,0.0306049310306486,0.0109262879426036,5,HMDB0000766,N-acetylalanine,amino_acid,,0.902548862112739
+raw,HMDB0000294,0.029958803458364748,0.06685463727965305,6,HMDB0000294,Urea,unassigned,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,0.8004817007513869
+raw,HMDB0000763,0.0298238035119599,0.0446003438175793,5,HMDB0000763,5-HIAA,unassigned,,0.8088233794125378
+raw,HMDB0000355,0.0294066583074631,-0.0047281775267314,5,HMDB0000355,C03761_3-Hydroxy-3-methylglutarate,unassigned,Anatomical Therapeutic Chemical (ATC) classification,0.7935751544142433
+raw,HMDB0000174,0.0288477951635846,0.0314546881644511,5,HMDB0000174,fucose,unassigned,Compounds with biological roles,0.8137993334541563
+raw,HMDB0000243,0.0285730926033779,0.0283153436436208,9,HMDB0000243,pyruvate,unassigned,Compounds with biological roles; Lipids,
+raw,HMDB0000067,0.0282834279540891,0.0203227721776746,5,HMDB0000067,cholesterol,lipid_complex,Compounds with biological roles; Lipids; Phytochemical compounds; Drugs listed in the Japanese Pharmacopoeia,0.9344344354034704
+raw,HMDB0000244,0.027017884615211894,0.041981494613858444,6,HMDB0000244,riboflavin,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4185965615687463
+raw,HMDB0001325,0.0264967908803525,0.0862083047729026,5,HMDB0001325,"C03793_N6,N6,N6-Trimethyllysine",amino_acid,,0.8856184701968055
+raw,HMDB0000191,0.0257731958762886,0.0260544668818539,11,HMDB0000191,aspartate,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6590858907960815
+raw,HMDB0011756,0.0254304734131331,-0.0029984636967431,5,HMDB0011756,N-acetylleucine,amino_acid,Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,
+raw,HMDB0000226,0.025416696864263,0.01134611938290555,8,HMDB0000226,orotate,unassigned,Risk category of Japanese OTC drugs,0.8648238526188303
+raw,HMDB0000812,0.0251493598862019,0.0746652099266357,5,HMDB0000812,C01042_N-Acetylaspartate,amino_acid,,0.9023781530829288
+raw,HMDB0001406,0.0231883923252579,0.03132878138613885,8,HMDB0001406,niacinamide,vitamin,Compounds with biological roles; Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8256985545949845
+raw,HMDB0000071,0.0225410526110872,0.0139903351140874,6,HMDB0000071,deoxyinosine,nucleotide,,0.7163918666748559
+raw,HMDB0003072,0.0224633814547686,0.0333634011864013,5,HMDB0003072,quinate,unassigned,,
+raw,HMDB0000017,0.0216918235731044,0.0301211902986381,9,HMDB0000017,4-pyridoxate,vitamin,,0.7449944153503483
+raw,HMDB0001123,0.0186879306378729,-0.0241642530079864,6,HMDB0001123,anthranilic acid,unassigned,,0.929714123556522
+raw,HMDB0000089,0.0159902154339031,-0.0126796207104463,7,HMDB0000089,cytidine,nucleotide,Compounds with biological roles,0.6788476046900139
+raw,HMDB0000197,0.013542721490207202,0.0113986233081238,8,HMDB0000197,C00954_Indole-3-acetate,scfa,Phytochemical compounds; Pesticides,0.787642321449339
+raw,HMDB0000452,0.0130205715552711,0.0138803185704734,7,HMDB0000452,C02356_2AB,unassigned,Lipids,0.686337529175018
+raw,HMDB0000044,0.01294156894336615,0.022407942916069547,4,HMDB0000044,ascorbate,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8818127427640349
+raw,HMDB0000008,0.012905736856938,0.013002491183091,5,HMDB0000008,alpha-hydroxybutyrate,scfa,Lipids,
+raw,HMDB0001257,0.0124320825044991,-0.0010338563972219,7,HMDB0001257,spermidine,polyamine,,0.7719159056224347
+raw,HMDB0000157,0.0099540001290317,-0.019796236495068002,10,HMDB0000157,hypoxanthine,nucleotide,Phytochemical compounds,0.4581376628961526
+raw,HMDB0000019,0.0090271540691535,0.0457390030401081,5,HMDB0000019,C00141_2-Oxoisopentanoate,unassigned,Compounds with biological roles; Lipids,0.8801296790354175
+raw,HMDB0002123,0.00835282556103795,-0.0032132672925470496,4,HMDB0002123,1-3-7-trimethylurate,nucleotide,Phytochemical compounds,0.9181443301851212
+raw,HMDB0000133,0.0079358321063087,0.02029054038143335,10,HMDB0000133,guanosine,nucleotide,Compounds with biological roles,0.5045442508838889
+raw,HMDB0029377,0.0071350158517094996,0.01305670174706085,4,HMDB0029377,piperine,unassigned,Phytochemical compounds,0.8926874047043746
+raw,HMDB0031057,0.0062160313802694005,-0.021232123270653103,4,HMDB0031057,2-hydroxyhexadecanoate,unassigned,,0.900589167191353
+raw,HMDB0000896,0.0035992578849721,-0.0204365417358696,5,HMDB0000896,Taurodeoxycholic acid,bile_acid,Lipids,0.7312855140763864
+raw,HMDB0000062,0.003242007738786,-0.0364441324254949,9,HMDB0000062,carnitine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs,0.4727206598564733
+raw,HMDB0000134,0.0027208934980343,-0.0451585315696272,7,HMDB0000134,Fumarate,unassigned,Anatomical Therapeutic Chemical (ATC) classification,0.537445418328253
+raw,HMDB0000042,0.0005155777166071,0.0026523465553795,4,HMDB0000042,Acetate,scfa,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.719798451184332
+raw,HMDB0000779,-0.0005408384744541479,-0.0033741539247545,8,HMDB0000779,phenyllactate,phenolic,,0.8311984692082133
+raw,HMDB0000267,-0.0013126655686625,-0.0081001538317991,9,HMDB0000267,pyroglutamic acid,amino_acid,Compounds with biological roles,0.3705347772676582
+raw,HMDB0000210,-0.0020967408396521496,0.018226728867971047,8,HMDB0000210,pantothenate,vitamin,Compounds with biological roles; Risk category of Japanese OTC drugs,0.8744144442960681
+raw,HMDB0000039,-0.003202096380891549,0.0269210929056184,8,HMDB0000039,Butyrate,scfa,Compounds with biological roles; Lipids; Phytochemical compounds,0.6942381434353545
+raw,HMDB0000201,-0.0048600936847451,-0.0154027349058862,7,HMDB0000201,C2 carnitine,tma_tmao,Lipids; Anatomical Therapeutic Chemical (ATC) classification,0.7674350202777293
+raw,HMDB0000641,-0.0091253146452863,0.0306024787108505,11,HMDB0000641,glutamine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,0.5261768226126436
+raw,HMDB0000195,-0.009818860089816599,-0.03336960983564785,8,HMDB0000195,inosine,nucleotide,Glycosides; Anatomical Therapeutic Chemical (ATC) classification,0.8158460059153998
+raw,HMDB0000840,-0.0126695843174306,0.0259010220189475,5,HMDB0000840,salicylate,xenobiotic_drug,,0.8569575699764705
+raw,HMDB0000296,-0.01844910620492955,-0.035617799816193396,10,HMDB0000296,uridine,nucleotide,Compounds with biological roles,0.5309847611496904
+raw,HMDB0000092,-0.01948081169858295,-0.02697111418098675,8,HMDB0000092,dimethylglycine,amino_acid,,0.359759569876982
+raw,HMDB0002005,-0.0199173912308481,-0.0138454019815462,9,HMDB0002005,methionine sulfoxide,amino_acid,,0.7931333751389285
+raw,HMDB0000235,-0.02147574472593835,-0.0044470372090999995,6,HMDB0000235,thiamine,vitamin,Compounds with biological roles,0.8484300739637846
+raw,HMDB0000156,-0.0225188273997816,0.00510551372639685,10,HMDB0000156,malate,unassigned,Compounds with biological roles,0.4625819041144246
+raw,HMDB0000299,-0.0230060222785125,0.012194630552225,5,HMDB0000299,xanthosine,unassigned,Phytochemical compounds,0.8827301851651407
+raw,HMDB0000159,-0.02514157549079385,-0.01063120614186455,12,HMDB0000159,phenylalanine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5854678557391882
+raw,HMDB0032055,-0.0258404189633833,-0.0313654381927408,6,HMDB0032055,N-acetylhistidine,amino_acid,,0.9009819652151372
+raw,HMDB0000767,-0.030252421366456502,-0.0217326666417819,6,HMDB0000767,pseudouridine,nucleotide,,0.884064909018254
+raw,HMDB0001859,-0.033332969928342,-0.014843757079480449,4,HMDB0001859,Acetaminophen,xenobiotic_drug,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.958435326644088
+raw,HMDB0000208,-0.0376105093217857,-0.0348562421408787,9,HMDB0000208,alpha-ketoglutarate,unassigned,Compounds with biological roles,0.4019922027553116
+raw,HMDB0000289,-0.0391393149233558,-0.0288994681951062,9,HMDB0000289,urate,nucleotide,,0.8461354001978527
+raw,HMDB0000209,-0.03957724200217565,-0.08749049708820135,8,HMDB0000209,phenylacetate,scfa,,0.7229409350992921
+raw,HMDB0000511,-0.0422706536477859,-0.04589323564554375,6,HMDB0000511,C01571_Decanoate,unassigned,Compounds with biological roles; Lipids; Phytochemical compounds,0.8473969112612127
+raw,HMDB0000638,-0.0425604052835599,-0.009781208999908,5,HMDB0000638,C02679_Dodecanoate,unassigned,Compounds with biological roles; Lipids; Phytochemical compounds,0.8162840303030416
+raw,HMDB0000904,-0.0437664086624134,-0.0499297647957473,9,HMDB0000904,citrulline,amino_acid,Compounds with biological roles,0.6045171458817
+raw,HMDB0004620,-0.0438671009665745,-0.0811731811985848,5,HMDB0004620,N-acetylarginine,amino_acid,,0.8883995890442152
+raw,HMDB0000126,-0.0444894032785907,0.0057309772575359,5,HMDB0000126,C00093_Glycerophosphate,unassigned,Risk category of Japanese OTC drugs,0.7059898096983688
+raw,HMDB0001015,-0.0447807280507291,-0.0442750048255089,5,HMDB0001015,C03145_N-Formylmethionine,amino_acid,Compounds with biological roles,
+raw,HMDB0000098,-0.0466302004533337,-0.0340468371986143,7,HMDB0000098,xylose,sugar_carbohydrate,Compounds with biological roles,0.689401613407213
+raw,HMDB0000761,-0.0467934691970684,0.02208706895761035,4,HMDB0000761,Lithocholic acid,bile_acid,Compounds with biological roles; Lipids,0.7653948205247039
+raw,HMDB0000718,-0.0469517005401073,0.0283461535520301,9,HMDB0000718,Isovalerate,scfa,Lipids,
+raw,HMDB0000301,-0.0482248104501002,0.018091855541460297,6,HMDB0000301,urocanic acid,unassigned,,
+raw,HMDB0000631,-0.049617586547483945,-0.03850999310106495,6,HMDB0000631,glycodeoxycholate,bile_acid,Lipids,0.7729706207990176
+raw,HMDB0000292,-0.0504663049701463,-0.0769898470229334,11,HMDB0000292,xanthine,nucleotide,Phytochemical compounds,0.3962907587799799
+raw,HMDB0000187,-0.0532570840203355,-0.0288205238009295,11,HMDB0000187,serine,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.6556905307079693
+raw,HMDB0000895,-0.061446866042640554,-0.0579866672593091,6,HMDB0000895,acetylcholine,tma_tmao,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Drug groups,0.87271307964658
+raw,HMDB0000131,-0.062156164062864,-0.0847083803702959,6,HMDB0000131,Glycerol,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,
+raw,HMDB0000300,-0.0675960499693394,-0.0606321481571649,12,HMDB0000300,uracil,unassigned,Compounds with biological roles,0.4706925516234853
+raw,HMDB0000262,-0.0724479843830711,-0.0678217553937165,11,HMDB0000262,thymine,unassigned,Compounds with biological roles,0.443480390924643
+raw,HMDB0011718,-0.07361725043623141,-0.060216213094746146,6,HMDB0011718,4-hydroxybenzaldehyde,unassigned,,0.8948089794316482
+raw,HMDB0000139,-0.07622603408946105,-0.06324871204024896,8,HMDB0000139,glycerate,unassigned,,0.7812006956879399
+raw,HMDB0000014,-0.0770948626136511,-0.1022771219934084,5,HMDB0000014,C00881_2'-Deoxycytidine,nucleotide,Compounds with biological roles; Target-based classification of drugs,0.8962944722760063
+raw,HMDB0000888,-0.0843573271912492,0.0034344485168108,5,HMDB0000888,undecanedionate,unassigned,,0.8748008123604059
+raw,HMDB0000673,-0.0867245566681505,-0.0396825920550031,5,HMDB0000673,linoleic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds; Risk category of Japanese OTC drugs,0.7174421464249057
+raw,HMDB0000220,-0.0867855730791196,-0.0942142117233523,5,HMDB0000220,palmitic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.7811481224161793
+raw,HMDB0001847,-0.0914027757627801,-0.0966773148057271,5,HMDB0001847,caffeine,xenobiotic_drug,Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.8948775294338638
+raw,HMDB0000207,-0.0951172920552453,-0.0368239170755128,5,HMDB0000207,oleic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.7380590861044144
+raw,HMDB0000806,-0.100829634873907,-0.0413685808017434,5,HMDB0000806,myristic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.779288773896222
+raw,HMDB0000245,-0.10540682791763936,-0.1298852120678686,4,HMDB0000245,C00931_Porphobilinogen,unassigned,,0.8717534406392179
+raw,HMDB0000512,-0.1123236045134173,-0.0771350452853511,5,HMDB0000512,C03519_N-Acetylphenylalanine,amino_acid,,
+raw,HMDB0000827,-0.1163229934535937,-0.1768260305810371,5,HMDB0000827,stearic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8091935509528971
+raw,HMDB0000076,-0.1185277502839903,-0.1307792677980182,5,HMDB0000076,C00429_Dihydrouracil,unassigned,,0.6527717619438231
+raw,HMDB0000866,-0.1239183034890157,-0.1211271105602625,4,HMDB0000866,acetytyrosine,amino_acid,,0.8326903808209268
+raw,HMDB0000273,-0.2033346220560211,-0.24811947721457706,8,HMDB0000273,thymidine,nucleotide,Compounds with biological roles; Target-based classification of drugs,
+target_rank,HMDB0002226,0.5545549766707928,0.5215719455978782,5,HMDB0002226,Adrenic acid,unassigned,Lipids,0.7486837702342964
+target_rank,HMDB0000792,0.5374456567459929,0.5204480890282651,6,HMDB0000792,sebacate,unassigned,Lipids,0.8696286056278799
+target_rank,HMDB0004610,0.5337534823838422,0.5312151514345198,4,HMDB0004610,phytosphingosine,unassigned,Lipids,0.8863660231932682
+target_rank,HMDB0002172,0.5281860803351504,0.5360881431240716,4,HMDB0002172,"N1,N12-Diacetylspermine",polyamine,,0.8567770292081938
+target_rank,HMDB0004160,0.5231799027287359,0.5549059324544713,4,HMDB0004160,Urobilin,bile_pigment,,0.8455294828728667
+target_rank,HMDB0000784,0.5074502540763097,0.4084949563889503,8,HMDB0000784,azelaic acid,unassigned,Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,0.4581705736454475
+target_rank,HMDB0001325,0.4976180950395293,0.4735812134415692,5,HMDB0001325,"C03793_N6,N6,N6-Trimethyllysine",amino_acid,,0.8856184701968055
+target_rank,HMDB0012252,0.4930736002079251,0.4975064873116269,4,HMDB0012252,linoleoyl ethanolamide,fatty_acid_long,,0.8689361087832765
+target_rank,HMDB0000303,0.46916622784645223,0.5249413386956137,4,HMDB0000303,tryptamine,indole_tryptophan,Phytochemical compounds,0.6906061881942812
+target_rank,HMDB0002064,0.4686570299755586,0.4797331418298544,8,HMDB0002064,N-acetylputrescine,polyamine,,0.8450843193496637
+target_rank,HMDB0001138,0.46262259554033247,0.40876864030061183,8,HMDB0001138,N-acetylglutamate,amino_acid,,0.8971915546741543
+target_rank,HMDB0002100,0.456801010650363,0.4289851155646872,5,HMDB0002100,palmitoylethanolamide,fatty_acid_long,Lipids,0.873753681337528
+target_rank,HMDB0001276,0.44955045898882773,0.4447015587068073,6,HMDB0001276,C00612_N1-Acetylspermidine,polyamine,,0.2100426522214484
+target_rank,HMDB0000623,0.4444797272217918,0.4417402630850329,7,HMDB0000623,dodecanedioate,unassigned,Lipids,0.7390497212239399
+target_rank,HMDB0000619,0.4415440873118901,0.4634052851724435,10,HMDB0000619,cholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs,0.7864669191364694
+target_rank,HMDB0001414,0.4380573738083733,0.5041650921105089,9,HMDB0001414,putrescine,polyamine,Compounds with biological roles,0.7614020707654614
+target_rank,HMDB0001539,0.4357400166937574,0.4313678789724476,7,HMDB0001539,ADMA,unassigned,,0.8690788774628928
+target_rank,HMDB0001976,0.407916381920279,0.4113286792127164,5,HMDB0001976,docosapentaenoic acid,fatty_acid_long,Lipids,0.8296404833661085
+target_rank,HMDB0000951,0.4048312334573108,0.4209503064985627,6,HMDB0000951,Taurochenodeoxycholate,bile_acid,Lipids,0.7802369448229207
+target_rank,HMDB0000518,0.4037054670602478,0.4291840028527953,5,HMDB0000518,chenodeoxycholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.7363893457918632
+target_rank,HMDB0000064,0.39143917774962794,0.42988215020990794,8,HMDB0000064,creatine,unassigned,,0.316102055849381
+target_rank,HMDB0000517,0.3910512674076352,0.3145307811133189,11,HMDB0000517,arginine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6196082199547526
+target_rank,HMDB0000391,0.3787980179311544,0.4296845411754503,4,HMDB0000391,7-Ketodeoxycholic acid,bile_acid,Lipids,0.8945100726169253
+target_rank,HMDB0000036,0.3745210633833802,0.3503170379579015,6,HMDB0000036,Taurocholic acid,bile_acid,Compounds with biological roles; Lipids,0.7981356581987119
+target_rank,HMDB0000251,0.3679756941123655,0.3499318358711338,12,HMDB0000251,taurine,amino_acid,Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.523455990425743
+target_rank,HMDB0000761,0.36583869328670215,0.4659870485660767,4,HMDB0000761,Lithocholic acid,bile_acid,Compounds with biological roles; Lipids,0.7653948205247039
+target_rank,HMDB0001043,0.3628183665537153,0.3659857169357751,5,HMDB0001043,arachidonic acid,fatty_acid_long,Compounds with biological roles; Lipids,0.7834151211983263
+target_rank,HMDB0000039,0.3616565846725663,0.3198062108016636,8,HMDB0000039,Butyrate,scfa,Compounds with biological roles; Lipids; Phytochemical compounds,0.6942381434353545
+target_rank,HMDB0000562,0.3573174085058411,0.3473952765743545,10,HMDB0000562,creatinine,unassigned,,0.8159294544863686
+target_rank,HMDB0000269,0.3553282942416772,0.3522263822786967,5,HMDB0000269,sphinganine,unassigned,Lipids,0.9071341685957924
+target_rank,HMDB0000764,0.3512914538610576,0.3645430864566439,7,HMDB0000764,hydrocinnamate,unassigned,,0.7897749705667199
+target_rank,HMDB0000448,0.3429819444782448,0.3292858362184193,8,HMDB0000448,adipate,unassigned,Compounds with biological roles; Lipids,0.7456029168796675
+target_rank,HMDB0000112,0.3359226925129928,0.3236536200299335,6,HMDB0000112,C00334_GABA,unassigned,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs,
+target_rank,HMDB0000056,0.3329624867607783,0.3333332206452967,11,HMDB0000056,beta-alanine,amino_acid,Compounds with biological roles,0.5241221121718271
+target_rank,HMDB0000452,0.3241699981410981,0.3302760934493078,7,HMDB0000452,C02356_2AB,unassigned,Lipids,0.686337529175018
+target_rank,HMDB0004705,0.3182222614650816,0.27994702804625893,4,HMDB0004705,"12,13-DHOME",unassigned,Lipids,0.8915223645041339
+target_rank,HMDB0000054,0.3176197310806873,0.2095848780923935,5,HMDB0000054,bilirubin,bile_pigment,,0.8714233179060497
+target_rank,HMDB0000042,0.3173623432752908,0.2979881932003425,4,HMDB0000042,Acetate,scfa,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.719798451184332
+target_rank,HMDB0000122,0.3172239264006649,0.2013371738739336,7,HMDB0000122,Glucose,sugar_carbohydrate,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.9092127276037528
+target_rank,HMDB0000138,0.3160181696629575,0.337030035031184,9,HMDB0000138,glycocholate,bile_acid,Compounds with biological roles; Lipids,0.7911436782533422
+target_rank,HMDB0000252,0.3066046596662036,0.2824248525523312,5,HMDB0000252,sphingosine,unassigned,Lipids,0.8837390637255153
+target_rank,HMDB0002302,0.30616053720199704,0.26552247544706414,6,HMDB0002302,indole-3-propionate,scfa,,0.8385150552661277
+target_rank,HMDB0000766,0.3046028416058228,0.2527568872444106,5,HMDB0000766,N-acetylalanine,amino_acid,,0.902548862112739
+target_rank,HMDB0002322,0.3030813692362852,0.3289819796910905,6,HMDB0002322,Cadaverine,polyamine,,0.8876670289848314
+target_rank,HMDB0000691,0.30191892552891114,0.287259990596223,8,HMDB0000691,malonate,unassigned,Compounds with biological roles; Lipids,0.1433888586107834
+target_rank,HMDB0000152,0.29914173292173035,0.28150169357808175,6,HMDB0000152,gentisate,unassigned,,0.6224087812256407
+target_rank,HMDB0000020,0.2978848441593734,0.261986625186155,9,HMDB0000020,p-hydroxyphenylacetate,scfa,,0.759185769495875
+target_rank,HMDB0001999,0.2884375331994823,0.2843810329769375,5,HMDB0001999,Eicosapentaenoic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.8401509569861255
+target_rank,HMDB0000159,0.28413588071640644,0.26474309500834536,12,HMDB0000159,phenylalanine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5854678557391882
+target_rank,HMDB0000043,0.27660735119886537,0.31289499467136417,8,HMDB0000043,betaine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs,0.3319363493169967
+target_rank,HMDB0000097,0.27588697306956145,0.29137465559952846,10,HMDB0000097,choline,tma_tmao,Pesticides; Risk category of Japanese OTC drugs,0.6007109006782916
+target_rank,HMDB0000067,0.2751337465623781,0.3074525293379841,5,HMDB0000067,cholesterol,lipid_complex,Compounds with biological roles; Lipids; Phytochemical compounds; Drugs listed in the Japanese Pharmacopoeia,0.9344344354034704
+target_rank,HMDB0003072,0.2749435359903782,0.2705338252971473,5,HMDB0003072,quinate,unassigned,,
+target_rank,HMDB0000699,0.2744412552881802,0.2229992434655994,7,HMDB0000699,1-methylnicotinamide,unassigned,,0.8098686169558804
+target_rank,HMDB0013253,0.2698367959912096,0.28872473623446515,4,HMDB0013253,C05135_4-(beta-Acetylaminoethyl)imidazole,unassigned,,0.9103131942206149
+target_rank,HMDB0000168,0.2597688352680471,0.2760070276822853,11,HMDB0000168,asparagine,amino_acid,Compounds with biological roles,0.2999462815499268
+target_rank,HMDB0002123,0.25822610160340037,0.2530998395558962,4,HMDB0002123,1-3-7-trimethylurate,nucleotide,Phytochemical compounds,0.9181443301851212
+target_rank,HMDB0000725,0.25013263320679985,0.24737580021125288,6,HMDB0000725,hydroxyproline,amino_acid,Compounds with biological roles,0.8798398311660489
+target_rank,HMDB0000888,0.2491848895855403,0.2143296290900939,5,HMDB0000888,undecanedionate,unassigned,,0.8748008123604059
+target_rank,HMDB0031057,0.24200940622094858,0.2842897938947274,4,HMDB0031057,2-hydroxyhexadecanoate,unassigned,,0.900589167191353
+target_rank,HMDB0000535,0.241306979717873,0.2290617789301496,7,HMDB0000535,caproate,scfa,Compounds with biological roles; Lipids; Phytochemical compounds,0.8240810251990891
+target_rank,HMDB0000158,0.2365733132303632,0.1803244603098808,13,HMDB0000158,tyrosine,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.6472649644346903
+target_rank,HMDB0002271,0.2344457307751584,0.2406265154583145,4,HMDB0002271,imidazole propionate,scfa,,0.9133892505327932
+target_rank,HMDB0000883,0.2290807466338653,0.2113846205996364,13,HMDB0000883,valine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6516606807750178
+target_rank,HMDB0000161,0.2284778825415764,0.2159101691440782,11,HMDB0000161,alanine,amino_acid,Risk category of Japanese OTC drugs,0.694007894054126
+target_rank,HMDB0000687,0.2282341157914994,0.2174398783547453,13,HMDB0000687,leucine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5572966427018652
+target_rank,HMDB0000929,0.2270265123175492,0.2331396938257804,13,HMDB0000929,tryptophan,indole_tryptophan,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5729037967497843
+target_rank,HMDB0000008,0.2261609462254104,0.2712782802118632,5,HMDB0000008,alpha-hydroxybutyrate,scfa,Lipids,
+target_rank,HMDB0000201,0.2193116993058299,0.204309300121409,7,HMDB0000201,C2 carnitine,tma_tmao,Lipids; Anatomical Therapeutic Chemical (ATC) classification,0.7674350202777293
+target_rank,HMDB0000026,0.2189627904933445,0.2532095009439127,7,HMDB0000026,N-carbamoyl-beta-alanine,amino_acid,,0.5126022438829434
+target_rank,HMDB0000030,0.21839339168741775,0.18764202384818834,4,HMDB0000030,C00120_Biotin,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8330408742949098
+target_rank,HMDB0000479,0.21688969763054533,0.22539799159275895,6,HMDB0000479,3-methylhistidine,amino_acid,,0.8313388642443332
+target_rank,HMDB0000763,0.2160296846011131,0.1542587665299697,5,HMDB0000763,5-HIAA,unassigned,,0.8088233794125378
+target_rank,HMDB0002183,0.21559666707974934,0.1777319889369598,6,HMDB0002183,docosahexaenoic acid,fatty_acid_long,Compounds with biological roles; Lipids,0.8702403828490297
+target_rank,HMDB0000062,0.2150667306019097,0.2101686832767021,9,HMDB0000062,carnitine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Risk category of Japanese OTC drugs,0.4727206598564733
+target_rank,HMDB0000897,0.2135178658557391,0.3948876760272698,7,HMDB0000897,7-methylguanine,unassigned,,0.8715652607286801
+target_rank,HMDB0000718,0.2129131031570056,0.1424840140922743,9,HMDB0000718,Isovalerate,scfa,Lipids,
+target_rank,HMDB0000190,0.21151474613153953,0.2267205100720835,12,HMDB0000190,lactate,unassigned,Compounds with biological roles,0.5993633939573372
+target_rank,HMDB0001431,0.2111952476415443,0.2239683358396593,5,HMDB0001431,pyridoxamine,vitamin,Compounds with biological roles; Risk category of Japanese OTC drugs,0.8849808333335462
+target_rank,HMDB0004704,0.21086687238363716,0.1727676256216211,4,HMDB0004704,"9,10-DHOME",unassigned,Lipids,0.8864435943177745
+target_rank,HMDB0002199,0.203625027106619,0.19079567760156302,4,HMDB0002199,C01744_3-(4-Hydroxyphenyl)propionate,scfa,,0.5381060544456964
+target_rank,HMDB0000237,0.1992837431947278,0.1866218022030608,9,HMDB0000237,Propionate,scfa,Compounds with biological roles; Lipids,0.5657550970847126
+target_rank,HMDB0000208,0.1989088622686359,0.1641725442400441,9,HMDB0000208,alpha-ketoglutarate,unassigned,Compounds with biological roles,0.4019922027553116
+target_rank,HMDB0000641,0.1959459552451369,0.2121416806911929,11,HMDB0000641,glutamine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,0.5261768226126436
+target_rank,HMDB0003355,0.19511713393933733,0.24682196591226188,6,HMDB0003355,C00431_5-Aminovalerate,scfa,Lipids,0.8650077298283786
+target_rank,HMDB0000070,0.192562221591911,0.2100608499748297,8,HMDB0000070,pipecolic acid,unassigned,Phytochemical compounds,0.6846081903711119
+target_rank,HMDB0003464,0.1907884834104099,0.1626920449938988,7,HMDB0003464,4-guanidinobutanoic acid,unassigned,,0.8530260488356536
+target_rank,HMDB0000626,0.1896623525862255,0.2464383958517309,7,HMDB0000626,deoxycholate,bile_acid,Compounds with biological roles; Lipids; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,0.7088048548429075
+target_rank,HMDB0000812,0.1895571826051084,0.1312971261601693,5,HMDB0000812,C01042_N-Acetylaspartate,amino_acid,,0.9023781530829288
+target_rank,HMDB0000182,0.18667461916162814,0.21210777484710006,12,HMDB0000182,lysine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs,0.6150673250354601
+target_rank,HMDB0000262,0.1862873717223861,0.0913769380627983,11,HMDB0000262,thymine,unassigned,Compounds with biological roles,0.443480390924643
+target_rank,HMDB0000186,0.1828754710890996,0.15025507822181028,4,HMDB0000186,lactose,sugar_carbohydrate,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.8376603454972169
+target_rank,HMDB0000898,0.1820695242040732,0.1875212220376203,5,HMDB0000898,1-methylhistamine,unassigned,,0.8688225037064099
+target_rank,HMDB0000289,0.1817423011026666,0.2144656878551484,9,HMDB0000289,urate,nucleotide,,0.8461354001978527
+target_rank,HMDB0000195,0.18036701239079816,0.18986208843850227,8,HMDB0000195,inosine,nucleotide,Glycosides; Anatomical Therapeutic Chemical (ATC) classification,0.8158460059153998
+target_rank,HMDB0000806,0.1802276733496977,0.1150754260389293,5,HMDB0000806,myristic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.779288773896222
+target_rank,HMDB0000177,0.1789214069557838,0.284904071596395,11,HMDB0000177,histidine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4890253067067345
+target_rank,HMDB0000254,0.17727706275252392,0.2109674624390741,12,HMDB0000254,Succinate,unassigned,Compounds with biological roles; Lipids,0.5764599284172836
+target_rank,HMDB0001488,0.1755331910866137,0.1959002697196405,11,HMDB0001488,nicotinate,unassigned,Compounds with biological roles; Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.3958919500477869
+target_rank,HMDB0000127,0.17107716421499802,0.18282192591138463,6,HMDB0000127,glucuronate,unassigned,Compounds with biological roles; Risk category of Japanese OTC drugs,0.7993597259861043
+target_rank,HMDB0000172,0.17083325873339744,0.1990483543174392,12,HMDB0000172,isoleucine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5465480871186095
+target_rank,HMDB0000132,0.16945043916884325,0.17180468688247685,8,HMDB0000132,guanine,unassigned,Compounds with biological roles,0.7370864473250492
+target_rank,HMDB0000118,0.1686970567047434,0.1916378816273478,6,HMDB0000118,homovanillate,unassigned,,0.7624354961425354
+target_rank,HMDB0000157,0.16723491553841355,0.1292756831525427,10,HMDB0000157,hypoxanthine,nucleotide,Phytochemical compounds,0.4581376628961526
+target_rank,HMDB0001161,0.1630078668314047,0.13443324980396754,8,HMDB0001161,butyrobetaine,tma_tmao,,0.8792492691054419
+target_rank,HMDB0000292,0.1594847100465077,0.1402880361175077,11,HMDB0000292,xanthine,nucleotide,Phytochemical compounds,0.3962907587799799
+target_rank,HMDB0000123,0.1579854583710917,0.2185406417397866,11,HMDB0000123,Glycine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6570682058382199
+target_rank,HMDB0000870,0.1574997785740607,0.2199675878230163,7,HMDB0000870,histamine,unassigned,Compounds with biological roles; Target-based classification of drugs,0.8393431773425339
+target_rank,HMDB0000866,0.15729993280541685,0.1195370337373077,4,HMDB0000866,acetytyrosine,amino_acid,,0.8326903808209268
+target_rank,HMDB0000167,0.1571369932192866,0.1457967490053993,11,HMDB0000167,threonine,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.5965880407129572
+target_rank,HMDB0000875,0.1561061261340298,0.1985723839052429,5,HMDB0000875,C01004_Trigonelline,unassigned,Phytochemical compounds,0.8501010159335839
+target_rank,HMDB0004827,0.1533008608002199,0.1616128056916299,7,HMDB0004827,proline betaine,tma_tmao,Phytochemical compounds,0.866797221887493
+target_rank,HMDB0000050,0.1531876731780028,0.19469620690910072,8,HMDB0000050,adenosine,nucleotide,Compounds with biological roles; Glycosides; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Target-based classification of drugs,0.7767218927202447
+target_rank,HMDB0000235,0.14927301536629461,0.08174080639027059,6,HMDB0000235,thiamine,vitamin,Compounds with biological roles,0.8484300739637846
+target_rank,HMDB0000840,0.1455122807255575,0.1126385243791896,5,HMDB0000840,salicylate,xenobiotic_drug,,0.8569575699764705
+target_rank,HMDB0000210,0.14441084311528368,0.13564077680459413,8,HMDB0000210,pantothenate,vitamin,Compounds with biological roles; Risk category of Japanese OTC drugs,0.8744144442960681
+target_rank,HMDB0002024,0.1435558998173359,0.1269570505963427,5,HMDB0002024,C02835_Imidazole-4-acetate,scfa,,0.8965732427379562
+target_rank,HMDB0000044,0.14309452133652234,0.14372000812736435,4,HMDB0000044,ascorbate,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; USP drug classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8818127427640349
+target_rank,HMDB0000355,0.1413543677360071,0.184840143965682,5,HMDB0000355,C03761_3-Hydroxy-3-methylglutarate,unassigned,Anatomical Therapeutic Chemical (ATC) classification,0.7935751544142433
+target_rank,HMDB0000301,0.1360904793075122,0.1400515377239109,6,HMDB0000301,urocanic acid,unassigned,,
+target_rank,HMDB0000089,0.1315755413792289,0.1246166710593635,7,HMDB0000089,cytidine,nucleotide,Compounds with biological roles,0.6788476046900139
+target_rank,HMDB0000630,0.13133882027897975,0.1350982095804966,10,HMDB0000630,cytosine,unassigned,Compounds with biological roles,0.384624011884734
+target_rank,HMDB0000300,0.1309258155435036,0.11613420321673296,12,HMDB0000300,uracil,unassigned,Compounds with biological roles,0.4706925516234853
+target_rank,HMDB0000209,0.1300500376895774,0.11825660387968376,8,HMDB0000209,phenylacetate,scfa,,0.7229409350992921
+target_rank,HMDB0000191,0.1279601945194209,0.1307137473793145,11,HMDB0000191,aspartate,amino_acid,Compounds with biological roles; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.6590858907960815
+target_rank,HMDB0001123,0.1232622119935794,0.11204628905120151,6,HMDB0001123,anthranilic acid,unassigned,,0.929714123556522
+target_rank,HMDB0000226,0.1223421220198013,0.1636654964381473,8,HMDB0000226,orotate,unassigned,Risk category of Japanese OTC drugs,0.8648238526188303
+target_rank,HMDB0000956,0.1183650563176495,0.1621811377074706,5,HMDB0000956,C00898_Tartrate,unassigned,Therapeutic category of drugs in Japan; Drugs listed in the Japanese Pharmacopoeia,0.8153127115065703
+target_rank,HMDB0000086,0.1164164971705642,0.1310500346557533,5,HMDB0000086,C00670_Glycerophosphorylcholine,tma_tmao,Anatomical Therapeutic Chemical (ATC) classification; Drug groups; Target-based classification of drugs,0.8359018136166418
+target_rank,HMDB0004620,0.1154257057632006,0.0751829553873603,5,HMDB0004620,N-acetylarginine,amino_acid,,0.8883995890442152
+target_rank,HMDB0000306,0.11233930881968185,0.1137032721662872,8,HMDB0000306,tyramine,unassigned,Compounds with biological roles; Phytochemical compounds,
+target_rank,HMDB0000214,0.10721798129288695,0.08496571450789844,10,HMDB0000214,ornithine,amino_acid,Compounds with biological roles,0.6503553054546631
+target_rank,HMDB0000017,0.1052827913424206,0.0713125494899064,9,HMDB0000017,4-pyridoxate,vitamin,,0.7449944153503483
+target_rank,HMDB0059655,0.1031829167624414,0.12651088117560325,10,HMDB0059655,2-hydroxyglutarate,unassigned,Lipids,0.4793216297031791
+target_rank,HMDB0000767,0.10296549684028534,0.05047946002740425,6,HMDB0000767,pseudouridine,nucleotide,,0.884064909018254
+target_rank,HMDB0011718,0.10107166927466515,0.1009110225460352,6,HMDB0011718,4-hydroxybenzaldehyde,unassigned,,0.8948089794316482
+target_rank,HMDB0001406,0.1003873184245867,0.08568685227491095,8,HMDB0001406,niacinamide,vitamin,Compounds with biological roles; Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8256985545949845
+target_rank,HMDB0000216,0.1001513741098492,0.11066211932570424,4,HMDB0000216,C00547_Noradrenaline,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.8939041451609427
+target_rank,HMDB0000133,0.09925724940066699,0.13132876885159986,10,HMDB0000133,guanosine,nucleotide,Compounds with biological roles,0.5045442508838889
+target_rank,HMDB0000631,0.09689745838896105,0.0343490065103601,6,HMDB0000631,glycodeoxycholate,bile_acid,Lipids,0.7729706207990176
+target_rank,HMDB0000715,0.096503366187296,0.0616157641853345,7,HMDB0000715,kynurenic acid,indole_tryptophan,,0.852328923984856
+target_rank,HMDB0000779,0.09543366691896546,0.1010662464513306,8,HMDB0000779,phenyllactate,phenolic,,0.8311984692082133
+target_rank,HMDB0000156,0.0945263045581474,0.08363155852922115,10,HMDB0000156,malate,unassigned,Compounds with biological roles,0.4625819041144246
+target_rank,HMDB0000194,0.0942271889917197,0.0672482841370162,7,HMDB0000194,anserine,amino_acid,Compounds with biological roles,0.8273737316186736
+target_rank,HMDB0000872,0.09418962267176335,0.10182964143974145,4,HMDB0000872,tetradecanedioate,unassigned,Pesticides,0.9148892691191536
+target_rank,HMDB0000273,0.09242635120591575,0.07060732895693686,8,HMDB0000273,thymidine,nucleotide,Compounds with biological roles; Target-based classification of drugs,
+target_rank,HMDB0000294,0.0922978565295707,0.06720920642158221,6,HMDB0000294,Urea,unassigned,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,0.8004817007513869
+target_rank,HMDB0000126,0.0895234097613945,0.082039010195562,5,HMDB0000126,C00093_Glycerophosphate,unassigned,Risk category of Japanese OTC drugs,0.7059898096983688
+target_rank,HMDB0003357,0.0892603972480327,0.1110403427777763,7,HMDB0003357,N-acetylornithine,amino_acid,,0.7566364170453502
+target_rank,HMDB0002203,0.08786229908218865,0.05617286945852265,4,HMDB0002203,3-hydroxydecanoate,unassigned,,0.9673773964280804
+target_rank,HMDB0000892,0.0876335016104204,0.1096593634340372,7,HMDB0000892,Valerate,scfa,Compounds with biological roles; Lipids,0.9339990821556388
+target_rank,HMDB0000671,0.086552970300357,0.1120135741873295,7,HMDB0000671,indolelactate,indole_tryptophan,,
+target_rank,HMDB0000139,0.0863190770455924,0.0742159975009679,8,HMDB0000139,glycerate,unassigned,,0.7812006956879399
+target_rank,HMDB0000131,0.08061839116134475,-0.006796085711861549,6,HMDB0000131,Glycerol,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Drugs listed in the Japanese Pharmacopoeia,
+target_rank,HMDB0003070,0.0789770619284675,0.0598788707447049,5,HMDB0003070,C00493_Shikimate,unassigned,,0.7246502574855059
+target_rank,HMDB0011756,0.0776107656541019,0.0885008255072546,5,HMDB0011756,N-acetylleucine,amino_acid,Anatomical Therapeutic Chemical (ATC) classification; USP drug classification,
+target_rank,HMDB0000512,0.0772745016244113,0.0907763697386704,5,HMDB0000512,C03519_N-Acetylphenylalanine,amino_acid,,
+target_rank,HMDB0001015,0.0761006200629517,0.0772894177680608,5,HMDB0001015,C03145_N-Formylmethionine,amino_acid,Compounds with biological roles,
+target_rank,HMDB0001257,0.075896411421759,0.0673716981706246,7,HMDB0001257,spermidine,polyamine,,0.7719159056224347
+target_rank,HMDB0000148,0.0755966771533943,0.0922883151141914,11,HMDB0000148,glutamate,amino_acid,Risk category of Japanese OTC drugs,0.6645359927851949
+target_rank,HMDB0000267,0.0749475243857266,0.0182763804742984,9,HMDB0000267,pyroglutamic acid,amino_acid,Compounds with biological roles,0.3705347772676582
+target_rank,HMDB0032055,0.07462837936339725,0.05396590014244855,6,HMDB0032055,N-acetylhistidine,amino_acid,,0.9009819652151372
+target_rank,HMDB0001847,0.0736498661902768,-0.0366278552499881,5,HMDB0001847,caffeine,xenobiotic_drug,Phytochemical compounds; Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.8948775294338638
+target_rank,HMDB0000034,0.0711631398422663,0.08762674249567685,8,HMDB0000034,adenine,unassigned,Compounds with biological roles; Therapeutic category of drugs in Japan,0.7708989733010754
+target_rank,HMDB0000076,0.0576067332647557,0.0593273967441016,5,HMDB0000076,C00429_Dihydrouracil,unassigned,,0.6527717619438231
+target_rank,HMDB0000162,0.052443207294818994,0.07302744256535185,12,HMDB0000162,proline,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.5870238718334121
+target_rank,HMDB0000299,0.0517485566867396,0.10708410611674804,5,HMDB0000299,xanthosine,unassigned,Phytochemical compounds,0.8827301851651407
+target_rank,HMDB0029377,0.0515919900596801,0.00495504127778335,4,HMDB0029377,piperine,unassigned,Phytochemical compounds,0.8926874047043746
+target_rank,HMDB0000638,0.050482026758217696,0.05930032188624495,5,HMDB0000638,C02679_Dodecanoate,unassigned,Compounds with biological roles; Lipids; Phytochemical compounds,0.8162840303030416
+target_rank,HMDB0000071,0.0504490225105285,0.0377784848616212,6,HMDB0000071,deoxyinosine,nucleotide,,0.7163918666748559
+target_rank,HMDB0000187,0.0497640063139147,0.0900181642816486,11,HMDB0000187,serine,amino_acid,Compounds with biological roles; Drugs listed in the Japanese Pharmacopoeia,0.6556905307079693
+target_rank,HMDB0000019,0.0466900698057949,0.0352953629286625,5,HMDB0000019,C00141_2-Oxoisopentanoate,unassigned,Compounds with biological roles; Lipids,0.8801296790354175
+target_rank,HMDB0000696,0.0435133921891366,0.0555598235250854,11,HMDB0000696,methionine,amino_acid,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4971596964272217
+target_rank,HMDB0000243,0.0429993666067905,0.0422947656601429,9,HMDB0000243,pyruvate,unassigned,Compounds with biological roles; Lipids,
+target_rank,HMDB0000827,0.0408557747221368,0.1079890336498773,5,HMDB0000827,stearic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8091935509528971
+target_rank,HMDB0000244,0.03470814969615545,0.066838972893828,6,HMDB0000244,riboflavin,vitamin,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.4185965615687463
+target_rank,HMDB0000895,0.03126869142928425,0.0214496965163226,6,HMDB0000895,acetylcholine,tma_tmao,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Drug groups,0.87271307964658
+target_rank,HMDB0000101,0.0262876658882336,0.0176945333518183,5,HMDB0000101,2-deoxyadenosine,nucleotide,Compounds with biological roles,0.8296900179264319
+target_rank,HMDB0000094,0.0216102995964417,0.1678339757460622,7,HMDB0000094,citrate,unassigned,Compounds with biological roles; Anatomical Therapeutic Chemical (ATC) classification; Risk category of Japanese OTC drugs; Drugs listed in the Japanese Pharmacopoeia,0.8268571434682065
+target_rank,HMDB0000220,0.0192926463799149,0.0540976174771756,5,HMDB0000220,palmitic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.7811481224161793
+target_rank,HMDB0000296,0.0114990709912143,-0.00504380103903265,10,HMDB0000296,uridine,nucleotide,Compounds with biological roles,0.5309847611496904
+target_rank,HMDB0000197,0.01009363505967775,0.0290279901531934,8,HMDB0000197,C00954_Indole-3-acetate,scfa,Phytochemical compounds; Pesticides,0.787642321449339
+target_rank,HMDB0000472,0.008489444553191101,0.01324395195150325,5,HMDB0000472,5-hydroxytryptophan,indole_tryptophan,Anatomical Therapeutic Chemical (ATC) classification,0.8962704204185576
+target_rank,HMDB0000206,0.0070049541897679,-0.0304519351480229,5,HMDB0000206,N6-acetyllysine,amino_acid,,0.6079958520933548
+target_rank,HMDB0000014,0.0069027376875238,-0.0003922479652768,5,HMDB0000014,C00881_2'-Deoxycytidine,nucleotide,Compounds with biological roles; Target-based classification of drugs,0.8962944722760063
+target_rank,HMDB0000098,-0.0063709667056801,-0.0244439806805375,7,HMDB0000098,xylose,sugar_carbohydrate,Compounds with biological roles,0.689401613407213
+target_rank,HMDB0000134,-0.0152986748590476,0.0260700696770623,7,HMDB0000134,Fumarate,unassigned,Anatomical Therapeutic Chemical (ATC) classification,0.537445418328253
+target_rank,HMDB0000802,-0.03362053896057145,-0.021014391610271452,6,HMDB0000802,pterin,unassigned,,0.9015576176238624
+target_rank,HMDB0000925,-0.033891345354727945,0.031048834693838047,6,HMDB0000925,trimethylamine-N-oxide,tma_tmao,,0.8604245549334301
+target_rank,HMDB0000904,-0.0350256558960081,-0.041850606551454,9,HMDB0000904,citrulline,amino_acid,Compounds with biological roles,0.6045171458817
+target_rank,HMDB0000259,-0.03534078204569685,-0.01016069404088725,7,HMDB0000259,serotonin,unassigned,Compounds with biological roles; Phytochemical compounds,0.7660007952286138
+target_rank,HMDB0000511,-0.037765387293977,-0.0434830088938898,6,HMDB0000511,C01571_Decanoate,unassigned,Compounds with biological roles; Lipids; Phytochemical compounds,0.8473969112612127
+target_rank,HMDB0001859,-0.0406258298270896,-0.014048159763014,4,HMDB0001859,Acetaminophen,xenobiotic_drug,Anatomical Therapeutic Chemical (ATC) classification; Therapeutic category of drugs in Japan; Classification of Japanese OTC drugs; Risk category of Japanese OTC drugs; Drug groups; Target-based classification of drugs; Drugs listed in the Japanese Pharmacopoeia,0.958435326644088
+target_rank,HMDB0002005,-0.0409245870970286,-0.0554682553973458,9,HMDB0002005,methionine sulfoxide,amino_acid,,0.7931333751389285
+target_rank,HMDB0000092,-0.04140152860624405,-0.059103133631993446,8,HMDB0000092,dimethylglycine,amino_acid,,0.359759569876982
+target_rank,HMDB0000673,-0.0688183114738568,-0.1164251310740147,5,HMDB0000673,linoleic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds; Risk category of Japanese OTC drugs,0.7174421464249057
+target_rank,HMDB0000896,-0.0701043009492558,-0.0934106177428372,5,HMDB0000896,Taurodeoxycholic acid,bile_acid,Lipids,0.7312855140763864
+target_rank,HMDB0000174,-0.0734078580716472,-0.1003936673828784,5,HMDB0000174,fucose,unassigned,Compounds with biological roles,0.8137993334541563
+target_rank,HMDB0000245,-0.08397115346334895,-0.054483860927976496,4,HMDB0000245,C00931_Porphobilinogen,unassigned,,0.8717534406392179
+target_rank,HMDB0000207,-0.087244499205688,-0.0721677576701642,5,HMDB0000207,oleic acid,fatty_acid_long,Compounds with biological roles; Lipids; Phytochemical compounds,0.7380590861044144
