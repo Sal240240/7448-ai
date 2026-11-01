@@ -80,7 +80,7 @@ from joblib import Parallel, delayed
 from scipy.stats import norm, rankdata, spearmanr
 from sklearn.linear_model import ElasticNet
 
-from _paths import ROOT
+from _paths import PROCESSED_DIR, ROOT
 
 sys.path.insert(0, str(ROOT / "src"))
 from data import Dataset  # noqa: E402
@@ -107,10 +107,27 @@ VARIANTS: dict[str, tuple[bool, str]] = {
 MIN_TRAIN = 30
 MIN_TEST = 10
 
+# The two feature-normalizing variants cost ~40x the others and are therefore
+# not in the default ladder. Both destroy the feature matrix's sparsity -- the
+# taxonomy table is ~95% zeros, and rank or z transforms map every tied zero to
+# the same nonzero value -- so coordinate descent loses the sparsity it exploits
+# and slows from ~0.15s to ~8s per fit. Worth running deliberately at a reduced
+# target count (--variants target_rank_feat_z target_rank_feat_rank
+# --n-targets 40), not by default, especially since the first measurement had
+# feature ranking scoring *below* target ranking alone.
+DEFAULT_VARIANTS = ["raw", "target_rank"]
+
 
 @dataclass(frozen=True)
 class Panel:
     """The dataset narrowed to the targets under test, with transforms precomputed.
+
+    Everything is held as raw float32 numpy rather than DataFrames. That is a
+    performance requirement, not a style choice: joblib automatically memmaps
+    large numpy arrays so worker processes share one copy, but it pickles
+    DataFrames in full to every worker on every call. Passing frames here cost
+    ~14 minutes for 3 targets, essentially all of it serialization, against
+    0.19s for the actual model fit.
 
     Both normalizations are computed once, per cohort, rather than per fold.
     That is only valid because every fold in this script splits on whole
@@ -120,26 +137,30 @@ class Panel:
     recompute from its own training rows.
     """
 
-    X_raw: pd.DataFrame
-    X_rank: pd.DataFrame
-    Y_raw: pd.DataFrame
-    Y_rank: pd.DataFrame
-    mask: pd.DataFrame
+    X_raw: np.ndarray
+    X_rank: np.ndarray
+    Y_raw: np.ndarray
+    Y_rank: np.ndarray
+    mask: np.ndarray
     targets: tuple[str, ...]
-
-    @property
-    def cohort_of(self) -> np.ndarray:
-        return self.X_raw.index.get_level_values("cohort").to_numpy()
+    cohort_of: np.ndarray
+    feature_names: tuple[str, ...]
 
     @property
     def cohorts(self) -> list[str]:
-        return sorted(set(self.cohort_of))
+        return sorted(set(self.cohort_of.tolist()))
 
-    def features(self, feature_mode: str) -> pd.DataFrame:
+    def features(self, feature_mode: str) -> np.ndarray:
         return self.X_rank if feature_mode == "rank" else self.X_raw
 
-    def train_labels(self, rank_targets: bool) -> pd.DataFrame:
+    def train_labels(self, rank_targets: bool) -> np.ndarray:
         return self.Y_rank if rank_targets else self.Y_raw
+
+    def positions(self, cohorts: list[str] | str, invert: bool = False) -> np.ndarray:
+        """Integer row positions for one cohort or a set of them."""
+        wanted = [cohorts] if isinstance(cohorts, str) else cohorts
+        in_set = np.isin(self.cohort_of, wanted)
+        return np.flatnonzero(~in_set if invert else in_set)
 
 
 # -------------------------------------------------------------- transforms ---
@@ -155,41 +176,38 @@ def inverse_normal(values: np.ndarray) -> np.ndarray:
     return norm.ppf((ranks - 0.5) / n)
 
 
-def rank_targets_per_cohort(Y: pd.DataFrame, mask: pd.DataFrame) -> pd.DataFrame:
+def rank_targets_per_cohort(Y: np.ndarray, mask: np.ndarray, cohort_of: np.ndarray) -> np.ndarray:
     """Inverse-normal each (cohort, target) over that cohort's measured rows.
 
     Unmeasured entries stay NaN: a cohort that never ran a metabolite on its
     panel carries no information about it, and ranking it against the measured
     values would invent some.
     """
-    values = Y.to_numpy(dtype=np.float64)
-    measured = mask.to_numpy(dtype=bool)
-    out = np.full(values.shape, np.nan)
-    cohorts = Y.index.get_level_values("cohort").to_numpy()
-
-    for cohort in pd.unique(cohorts):
-        in_cohort = cohorts == cohort
-        for j in range(values.shape[1]):
-            rows = in_cohort & measured[:, j]
+    out = np.full(Y.shape, np.nan, dtype=np.float32)
+    for cohort in np.unique(cohort_of):
+        in_cohort = cohort_of == cohort
+        for j in range(Y.shape[1]):
+            rows = in_cohort & mask[:, j]
             if rows.sum() < 3:
                 continue
-            out[rows, j] = inverse_normal(values[rows, j])
-    return pd.DataFrame(out, index=Y.index, columns=Y.columns)
+            out[rows, j] = inverse_normal(Y[rows, j])
+    return out
 
 
-def rank_features_per_cohort(X: pd.DataFrame) -> pd.DataFrame:
+def rank_features_per_cohort(X: np.ndarray, cohort_of: np.ndarray) -> np.ndarray:
     """Inverse-normal each (cohort, feature) across that cohort's samples.
 
     Transductive when the test cohort is included -- see module docstring.
     """
-    values = X.to_numpy(dtype=np.float64)
-    out = np.empty_like(values)
-    cohorts = X.index.get_level_values("cohort").to_numpy()
-
-    for cohort in pd.unique(cohorts):
-        rows = cohorts == cohort
-        out[rows] = np.apply_along_axis(inverse_normal, 0, values[rows])
-    return pd.DataFrame(out, index=X.index, columns=X.columns)
+    out = np.empty(X.shape, dtype=np.float32)
+    for cohort in np.unique(cohort_of):
+        rows = cohort_of == cohort
+        block = X[rows]
+        ranked = np.empty(block.shape, dtype=np.float32)
+        for j in range(block.shape[1]):
+            ranked[:, j] = inverse_normal(block[:, j])
+        out[rows] = ranked
+    return out
 
 
 def zscore_from_train(X_train: np.ndarray, X_test: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -210,36 +228,39 @@ def _scores(y_true: np.ndarray, y_pred: np.ndarray) -> tuple[float, float]:
 
 
 def fit_eval_target(
-    target: str,
-    X: pd.DataFrame,
-    Y_train_source: pd.DataFrame,
-    Y_eval: pd.DataFrame,
-    mask: pd.DataFrame,
-    tr_idx: pd.Index,
-    te_idx: pd.Index,
+    X: np.ndarray,
+    Y_train_source: np.ndarray,
+    Y_eval: np.ndarray,
+    mask: np.ndarray,
+    tr_pos: np.ndarray,
+    te_pos: np.ndarray,
+    target_idx: int,
     feature_mode: str,
     alpha: float,
     l1_ratio: float,
 ) -> dict | None:
-    """Fit one metabolite on tr_idx, score on te_idx against raw held-out values.
+    """Fit one metabolite on tr_pos, score on te_pos against raw held-out values.
 
     Y_train_source supplies training labels (possibly normalized); Y_eval always
     supplies the evaluation truth, so no transform can flatter the metric.
     """
-    m_tr = mask.loc[tr_idx, target].to_numpy(dtype=bool)
-    m_te = mask.loc[te_idx, target].to_numpy(dtype=bool)
+    m_tr = mask[tr_pos, target_idx]
+    m_te = mask[te_pos, target_idx]
     if m_tr.sum() < MIN_TRAIN or m_te.sum() < MIN_TEST:
         return None
 
-    y_tr = Y_train_source.loc[tr_idx, target].to_numpy(dtype=np.float64)[m_tr]
+    train_rows = tr_pos[m_tr]
+    y_tr = Y_train_source[train_rows, target_idx]
     finite = np.isfinite(y_tr)
     if finite.sum() < MIN_TRAIN:
         return None
 
-    X_tr = X.loc[tr_idx].to_numpy(dtype=np.float64)[m_tr][finite]
+    train_rows = train_rows[finite]
+    test_rows = te_pos[m_te]
+    X_tr = X[train_rows]
     y_tr = y_tr[finite]
-    X_te = X.loc[te_idx].to_numpy(dtype=np.float64)[m_te]
-    y_te = Y_eval.loc[te_idx, target].to_numpy(dtype=np.float64)[m_te]
+    X_te = X[test_rows]
+    y_te = Y_eval[test_rows, target_idx]
 
     if feature_mode == "z":
         X_tr, X_te = zscore_from_train(X_tr, X_te)
@@ -248,36 +269,48 @@ def fit_eval_target(
     model.fit(X_tr, y_tr)
     rho, r = _scores(y_te, model.predict(X_te))
     return {
-        "target": target,
         "spearman": rho,
         "pearson": r,
         "n_train": int(len(y_tr)),
-        "n_test": int(m_te.sum()),
+        "n_test": int(len(test_rows)),
         "n_nonzero_coef": int((model.coef_ != 0).sum()),
     }
 
 
-def _fit_fold(
-    panel: Panel, tr_idx: pd.Index, te_idx: pd.Index, variant: str, alpha: float, n_jobs: int
-) -> list[dict]:
+Fold = tuple[str, np.ndarray, np.ndarray]
+
+
+def run_variant(panel: Panel, folds: list[Fold], variant: str, alpha: float, n_jobs: int) -> list[dict]:
+    """Fit every (fold, target) pair under one variant in a single Parallel call.
+
+    One call rather than one per fold: joblib dumps the memmap-backed arrays
+    once per call, so batching the whole variant amortizes that over all jobs.
+    """
     rank_targets, feature_mode = VARIANTS[variant]
     X = panel.features(feature_mode)
     Y_src = panel.train_labels(rank_targets)
     # "rank" features are already normalized per cohort, so no train-stat z-scoring on top.
     fit_mode = "raw" if feature_mode == "rank" else feature_mode
-    results = Parallel(n_jobs=n_jobs, verbose=0)(
+
+    jobs = [(i, j) for i in range(len(folds)) for j in range(len(panel.targets))]
+    # Threads, not processes: sklearn's coordinate descent releases the GIL, so
+    # threads parallelize the fit while sharing one copy of the arrays. The
+    # process backend has to memmap them, and every fit then fancy-indexes ~48MB
+    # of rows back off disk -- measurably slower here despite the extra cores.
+    results = Parallel(n_jobs=n_jobs, prefer="threads", verbose=0)(
         delayed(fit_eval_target)(
-            t, X, Y_src, panel.Y_raw, panel.mask, tr_idx, te_idx, fit_mode, alpha, DEFAULT_L1
+            X, Y_src, panel.Y_raw, panel.mask, folds[i][1], folds[i][2], j, fit_mode, alpha, DEFAULT_L1
         )
-        for t in panel.targets
+        for i, j in jobs
     )
-    return [r for r in results if r]
+    return [
+        {"fold": folds[i][0], "target": panel.targets[j], **res}
+        for (i, j), res in zip(jobs, results) if res
+    ]
 
 
-def loco_folds(panel: Panel) -> list[tuple[str, pd.Index, pd.Index]]:
-    cohort_of = panel.cohort_of
-    index = panel.X_raw.index
-    return [(c, index[cohort_of != c], index[cohort_of == c]) for c in panel.cohorts]
+def loco_folds(panel: Panel) -> list[Fold]:
+    return [(c, panel.positions(c, invert=True), panel.positions(c)) for c in panel.cohorts]
 
 
 def _median_rho(rows: list[dict]) -> float:
@@ -289,37 +322,24 @@ def _median_rho(rows: list[dict]) -> float:
 
 def run_loco_variants(panel: Panel, n_jobs: int, variants: list[str]) -> pd.DataFrame:
     """The head-to-head: each rung of the normalization ladder, same folds, same targets."""
+    folds = loco_folds(panel)
     rows: list[dict] = []
     for variant in variants:
-        variant_rows: list[dict] = []
-        for cohort, tr_idx, te_idx in loco_folds(panel):
-            variant_rows += [
-                {"variant": variant, "held_out_cohort": cohort, **r}
-                for r in _fit_fold(panel, tr_idx, te_idx, variant, DEFAULT_ALPHA, n_jobs)
-            ]
-        rows += variant_rows
-        print(f"  {variant:24s} median rho = {_median_rho(variant_rows):6.3f}  "
-              f"({len(variant_rows)} cohort-target fits)")
+        found = run_variant(panel, folds, variant, DEFAULT_ALPHA, n_jobs)
+        rows += [{"variant": variant, "held_out_cohort": r.pop("fold"), **r} for r in found]
+        print(f"  {variant:24s} median rho = {_median_rho(found):6.3f}  ({len(found)} cohort-target fits)")
     return pd.DataFrame(rows)
 
 
 def run_transfer_matrix(panel: Panel, n_jobs: int, variant: str) -> pd.DataFrame:
     """All ordered single-cohort pairs: does transfer work between similar cohorts?"""
-    index = panel.X_raw.index
-    cohort_of = panel.cohort_of
     rows: list[dict] = []
-
     for train_cohort in panel.cohorts:
-        tr_idx = index[cohort_of == train_cohort]
-        for test_cohort in panel.cohorts:
-            if test_cohort == train_cohort:
-                continue
-            pair = _fit_fold(panel, tr_idx, index[cohort_of == test_cohort], variant, DEFAULT_ALPHA, n_jobs)
-            if not pair:
-                continue
-            rows += [{"train_cohort": train_cohort, "test_cohort": test_cohort, **r} for r in pair]
-            print(f"  {train_cohort[:30]:30s} -> {test_cohort[:30]:30s} "
-                  f"rho = {_median_rho(pair):6.3f}  (n={len(pair)})")
+        tr_pos = panel.positions(train_cohort)
+        folds = [(c, tr_pos, panel.positions(c)) for c in panel.cohorts if c != train_cohort]
+        found = run_variant(panel, folds, variant, DEFAULT_ALPHA, n_jobs)
+        rows += [{"train_cohort": train_cohort, "test_cohort": r.pop("fold"), **r} for r in found]
+        print(f"  train on {train_cohort[:32]:32s} median rho = {_median_rho(found):6.3f}  (n={len(found)})")
     return pd.DataFrame(rows)
 
 
@@ -328,41 +348,38 @@ def run_n_cohorts(
 ) -> pd.DataFrame:
     """Transfer vs. number of training cohorts -- the 'will more data fix it' curve."""
     rng = np.random.default_rng(seed)
-    index = panel.X_raw.index
-    cohort_of = panel.cohort_of
     rows: list[dict] = []
 
-    for held_out in panel.cohorts:
-        pool = [c for c in panel.cohorts if c != held_out]
-        te_idx = index[cohort_of == held_out]
-        for k in k_values:
+    for k in k_values:
+        folds: list[Fold] = []
+        provenance: dict[str, tuple[str, int]] = {}
+        for held_out in panel.cohorts:
+            pool = [c for c in panel.cohorts if c != held_out]
             if k > len(pool):
                 continue
             # k == len(pool) has only one possible draw.
             for draw in range(1 if k == len(pool) else n_draws):
                 chosen = pool if k == len(pool) else list(rng.choice(pool, size=k, replace=False))
-                tr_idx = index[np.isin(cohort_of, chosen)]
-                rows += [
-                    {"held_out_cohort": held_out, "k_train_cohorts": k, "draw": draw, **r}
-                    for r in _fit_fold(panel, tr_idx, te_idx, variant, DEFAULT_ALPHA, n_jobs)
-                ]
-        print(f"  {held_out:36s} done")
+                label = f"{held_out}|{draw}"
+                folds.append((label, panel.positions(chosen), panel.positions(held_out)))
+                provenance[label] = (held_out, draw)
+        found = run_variant(panel, folds, variant, DEFAULT_ALPHA, n_jobs)
+        for res in found:
+            held_out, draw = provenance[res.pop("fold")]
+            rows.append({"held_out_cohort": held_out, "k_train_cohorts": k, "draw": draw, **res})
+        print(f"  k = {k:2d}  median rho = {_median_rho(found):6.3f}  ({len(found)} fits)")
     return pd.DataFrame(rows)
 
 
 def run_regularization(panel: Panel, n_jobs: int, variant: str, alphas: list[float]) -> pd.DataFrame:
     """Does transfer improve when the model is not allowed to memorize?"""
+    folds = loco_folds(panel)
     rows: list[dict] = []
     for alpha in alphas:
-        alpha_rows: list[dict] = []
-        for cohort, tr_idx, te_idx in loco_folds(panel):
-            alpha_rows += [
-                {"alpha": alpha, "held_out_cohort": cohort, **r}
-                for r in _fit_fold(panel, tr_idx, te_idx, variant, alpha, n_jobs)
-            ]
-        rows += alpha_rows
-        sparsity = np.median([r["n_nonzero_coef"] for r in alpha_rows]) if alpha_rows else np.nan
-        print(f"  alpha {alpha:<8g} median rho = {_median_rho(alpha_rows):6.3f}  "
+        found = run_variant(panel, folds, variant, alpha, n_jobs)
+        rows += [{"alpha": alpha, "held_out_cohort": r.pop("fold"), **r} for r in found]
+        sparsity = np.median([r["n_nonzero_coef"] for r in found]) if found else np.nan
+        print(f"  alpha {alpha:<8g} median rho = {_median_rho(found):6.3f}  "
               f"median nonzero coefs = {sparsity:.0f}")
     return pd.DataFrame(rows)
 
@@ -383,16 +400,32 @@ def select_targets(ds: Dataset, n_targets: int, min_cohorts: int = 4) -> list[st
 
 
 def build_panel(ds: Dataset, targets: list[str], need_feature_rank: bool) -> Panel:
-    Y = ds.Y[targets]
-    mask = ds.mask[targets]
+    cohort_of = np.asarray(ds.X.index.get_level_values("cohort"), dtype=object)
+    X = np.ascontiguousarray(ds.X.to_numpy(dtype=np.float32))
+    Y = np.ascontiguousarray(ds.Y[targets].to_numpy(dtype=np.float32))
+    mask = np.ascontiguousarray(ds.mask[targets].to_numpy(dtype=bool))
+
     print("  normalizing targets per cohort...")
-    Y_rank = rank_targets_per_cohort(Y, mask)
+    Y_rank = rank_targets_per_cohort(Y, mask, cohort_of)
+
+    X_rank = X
     if need_feature_rank:
-        print("  normalizing features per cohort...")
-        X_rank = rank_features_per_cohort(ds.X)
-    else:
-        X_rank = ds.X
-    return Panel(X_raw=ds.X, X_rank=X_rank, Y_raw=Y, Y_rank=Y_rank, mask=mask, targets=tuple(targets))
+        # Depends only on the feature table, so it survives across runs and
+        # target selections -- worth caching, it is the slowest step here.
+        cache = PROCESSED_DIR / "features_rank_per_cohort.npy"
+        if cache.exists():
+            print(f"  loading cached per-cohort feature ranks ({cache.name})")
+            X_rank = np.load(cache)
+        else:
+            print("  normalizing features per cohort (one-time, caching)...")
+            X_rank = rank_features_per_cohort(X, cohort_of)
+            np.save(cache, X_rank)
+
+    return Panel(
+        X_raw=X, X_rank=X_rank, Y_raw=Y, Y_rank=Y_rank, mask=mask,
+        targets=tuple(targets), cohort_of=cohort_of,
+        feature_names=tuple(ds.feature_cols),
+    )
 
 
 def main() -> None:
@@ -401,7 +434,7 @@ def main() -> None:
                         choices=["all", "loco_variants", "transfer_matrix", "n_cohorts", "regularization"])
     parser.add_argument("--n-targets", type=int, default=30)
     parser.add_argument("--n-jobs", type=int, default=3)
-    parser.add_argument("--variants", nargs="*", default=list(VARIANTS), choices=list(VARIANTS))
+    parser.add_argument("--variants", nargs="*", default=DEFAULT_VARIANTS, choices=list(VARIANTS))
     parser.add_argument("--variant", default="target_rank",
                         help="Normalization used by transfer_matrix/n_cohorts/regularization")
     parser.add_argument("--alphas", type=float, nargs="*", default=[0.001, 0.01, 0.05, 0.2, 1.0])
